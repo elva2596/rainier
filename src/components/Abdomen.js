@@ -30,4 +30,6 @@ const abdomen = new WHS.Importer({
   scale:[20,20,20]
 })
 
+
+
 export {abdomen}

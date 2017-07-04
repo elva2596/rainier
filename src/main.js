@@ -26,12 +26,18 @@ const app = new WHS.App([
 ironPlate.addTo(app)
 ambientlight.addTo(app)
 pointLight.addTo(app)
-abdomen.addTo(app).then(abdomen=>{
-	mouseModule.track(abdomen)
-	abdomen.on('click',()=>{
-		alert(123)
-	})
+abdomen.addTo(app)
+mouseModule.track(abdomen)
+abdomen.on('mousedown',(n,e,l)=>{
+	controlsModule.controls.enabled = false
+	console.log("mousedown")
 })
-console.log(mouseModule.mouse)
-
+abdomen.on('mousemove',function (){
+	console.log(abdomen.position)
+	console.log("mousemove")
+})
+abdomen.on("mouseup",()=>{
+	controlsModule.controls.enabled = true;
+	console.log("mouseup")
+})
 app.start()

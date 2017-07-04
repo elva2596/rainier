@@ -1,3 +1,4 @@
+
 const carapaceTexture = new WHS.TextureModule({
   url: `/static/models/ShuFu/Carapace_Diffuse.png`
 }).textures[0][1];

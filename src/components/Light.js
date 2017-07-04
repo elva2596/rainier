@@ -1,3 +1,4 @@
+
 const ambientlight = new WHS.AmbientLight({
   color:0xffffff,
   intensity:0.2

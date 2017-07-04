@@ -389,7 +389,6 @@ var MeshComponent = (_dec = __WEBPACK_IMPORTED_MODULE_10__prototype_attributes__
 
   /**
    * @method build
-   * @instance
    * @description Build livecycle should return a native object.
    * @throws {CompositionError}
    * @memberof module:core.MeshComponent
@@ -1345,75 +1344,75 @@ module.exports = {};
 
 
 var CompositionError = function (_Error) {
-  __WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_inherits___default.a(CompositionError, _Error);
+    __WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_inherits___default.a(CompositionError, _Error);
 
-  function CompositionError(classInstance, message, component) {
-    __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_classCallCheck___default.a(this, CompositionError);
+    function CompositionError(classInstance, message, component) {
+        __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_classCallCheck___default.a(this, CompositionError);
 
-    var _this = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_possibleConstructorReturn___default.a(this, (CompositionError.__proto__ || __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_get_prototype_of___default.a(CompositionError)).call(this, '@' + classInstance + ': ' + message));
+        var _this = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_possibleConstructorReturn___default.a(this, (CompositionError.__proto__ || __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_get_prototype_of___default.a(CompositionError)).call(this, '@' + classInstance + ': ' + message));
 
-    var stackArray = _this.stack.split('\n');
-    stackArray.splice(1, 2);
+        var stackArray = _this.stack.split('\n');
+        stackArray.splice(1, 2);
 
-    _this.stack = stackArray.join('\n');
+        _this.stack = stackArray.join('\n');
 
-    if (!process) console.error('Component:', component);
+        if (!process) console.error('Component:', component);
 
-    _this.name = 'CompositionError';
-    return _this;
-  }
+        _this.name = 'CompositionError';
+        return _this;
+    }
 
-  return CompositionError;
+    return CompositionError;
 }(Error);
 
 var DependencyError = function (_Error2) {
-  __WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_inherits___default.a(DependencyError, _Error2);
+    __WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_inherits___default.a(DependencyError, _Error2);
 
-  function DependencyError(classInstance, message, activeModule) {
-    var dependencyModule = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
+    function DependencyError(classInstance, message, activeModule) {
+        var dependencyModule = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
 
-    __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_classCallCheck___default.a(this, DependencyError);
+        __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_classCallCheck___default.a(this, DependencyError);
 
-    var _this2 = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_possibleConstructorReturn___default.a(this, (DependencyError.__proto__ || __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_get_prototype_of___default.a(DependencyError)).call(this, '@' + classInstance + ': ' + message));
+        var _this2 = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_possibleConstructorReturn___default.a(this, (DependencyError.__proto__ || __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_get_prototype_of___default.a(DependencyError)).call(this, '@' + classInstance + ': ' + message));
 
-    var stackArray = _this2.stack.split('\n');
-    stackArray.splice(1, 2);
+        var stackArray = _this2.stack.split('\n');
+        stackArray.splice(1, 2);
 
-    _this2.stack = stackArray.join('\n');
+        _this2.stack = stackArray.join('\n');
 
-    if (!process) console.error('Active module:', activeModule);
-    if (!process && dependencyModule) console.error('Dependency published by module:', dependencyModule);
+        if (!process) console.error('Active module:', activeModule);
+        if (!process && dependencyModule) console.error('Dependency published by module:', dependencyModule);
 
-    _this2.name = 'DependencyError';
-    return _this2;
-  }
+        _this2.name = 'DependencyError';
+        return _this2;
+    }
 
-  return DependencyError;
+    return DependencyError;
 }(Error);
 
 var ManagerError = function (_Error3) {
-  __WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_inherits___default.a(ManagerError, _Error3);
+    __WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_inherits___default.a(ManagerError, _Error3);
 
-  function ManagerError(classInstance, message, component) {
-    var activeModule = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
+    function ManagerError(classInstance, message, component) {
+        var activeModule = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
 
-    __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_classCallCheck___default.a(this, ManagerError);
+        __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_classCallCheck___default.a(this, ManagerError);
 
-    var _this3 = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_possibleConstructorReturn___default.a(this, (ManagerError.__proto__ || __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_get_prototype_of___default.a(ManagerError)).call(this, '@' + classInstance + ': ' + message));
+        var _this3 = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_possibleConstructorReturn___default.a(this, (ManagerError.__proto__ || __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_get_prototype_of___default.a(ManagerError)).call(this, '@' + classInstance + ': ' + message));
 
-    var stackArray = _this3.stack.split('\n');
-    stackArray.splice(1, 2);
+        var stackArray = _this3.stack.split('\n');
+        stackArray.splice(1, 2);
 
-    _this3.stack = stackArray.join('\n');
+        _this3.stack = stackArray.join('\n');
 
-    if (!process) console.error('Component:', dependencyModule);
-    if (!process && activeModule) console.error('Active module:', activeModule);
+        if (!process) console.error('Component:', dependencyModule);
+        if (!process && activeModule) console.error('Active module:', activeModule);
 
-    _this3.name = 'ManagerError';
-    return _this3;
-  }
+        _this3.name = 'ManagerError';
+        return _this3;
+    }
 
-  return ManagerError;
+    return ManagerError;
 }(Error);
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(59)))
 
@@ -4420,11 +4419,73 @@ var _class, _temp;
 
 
 
+/**
+ * @class Importer
+ * @category components/meshes
+ * @description Importer is a loader for meshes and any other data to your scene
+ * @param {Object} [params] - The params.
+ * @extends module:core.MeshComponent
+ * @memberof module:components/meshes
+ * @example <caption>Creating a Importer, and adding to app</caption>
+ * new Importer({
+ *   loader: new THREE.OBJLoader(),
+ *
+ *   parser(geometry, material) { // data from loader
+ *     return new THREE.Mesh(geometry, material); // should return your .native (mesh in this case)
+ *   },
+ *
+ *   position: [0, 100, 0]
+ * }).addTo(app);
+ */
 var Importer = (_temp = _class = function (_MeshComponent) {
   __WEBPACK_IMPORTED_MODULE_7_babel_runtime_helpers_inherits___default.a(Importer, _MeshComponent);
 
   __WEBPACK_IMPORTED_MODULE_6_babel_runtime_helpers_createClass___default.a(Importer, null, [{
     key: 'filter',
+
+
+    /**
+     * @method filter
+     * @description Default values for parameters
+     * @static
+     * @param {THREE.Mesh} object Instance for iterating through it's children.
+     * @param {Function} filter Function with child as argument, should return a boolean whether include the child or not.
+     * @return {THREE.Mesh} object with children
+     * @memberof module:components/meshes.Importer
+     * @example <caption>Removing unnecessary lights from children</caption>
+     * new Icosahedron({
+     *   loader: new THREE.OBJLoader(),
+     *
+     *   parse(group) { // data from loader
+     *     return Importer.filter(group, child => !child.isLight); // remove lights
+     *   },
+     *
+     *   position: [0, 100, 0]
+     * }).addTo(app);
+     */
+
+
+    /**
+     * Default values for parameters
+     * @member {Object} module:components/meshes.Importer#defaults
+     * @static
+     * @default <pre>
+     * {
+     *   url: '',
+     *   loader: new JSONLoader(),
+     *
+     *   onLoad() {},
+     *   onProgress() {},
+     *   onError() {},
+     *
+     *   texturePath: null,
+     *   useCustomMaterial: false,
+     *
+     *   parser(geometry, materials) {
+     *     return new Mesh(geometry, materials);
+     *   }
+     * }</pre>
+     */
     value: function filter(object, _filter) {
       var processFilter = function processFilter(object) {
         object.children.forEach(function (el, index) {
@@ -4446,6 +4507,15 @@ var Importer = (_temp = _class = function (_MeshComponent) {
 
     return __WEBPACK_IMPORTED_MODULE_4_babel_runtime_helpers_possibleConstructorReturn___default.a(this, (Importer.__proto__ || __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of___default.a(Importer)).call(this, params, Importer.defaults, Importer.instructions, false));
   }
+
+  /**
+   * @method build
+   * @description Build livecycle creates a mesh using input params.
+   * @param {Object} params Component parameters.
+   * @return {THREE.Mesh} Built mesh
+   * @memberof module:components/meshes.Importer
+   */
+
 
   __WEBPACK_IMPORTED_MODULE_6_babel_runtime_helpers_createClass___default.a(Importer, [{
     key: 'build',
@@ -6296,7 +6366,7 @@ var extend = function extend(object) {
       // console.log(extension);
       // console.log(typeof extension);
 
-      if (!extension) continue; // Ignore null and undefined objects and paramaters.
+      if (!extension) continue; // Ignore null and undefined objects and parameters.
 
       var _iteratorNormalCompletion2 = true;
       var _didIteratorError2 = false;
@@ -7268,7 +7338,7 @@ var App = function (_ModuleSystem) {
 module.exports = {
 	"name": "whs",
 	"version": "2.0.0",
-	"description": "Framework for developing 3D web apps with physics.",
+	"description": "Super-fast 3D framework for Web Applications & Games. Based on Three.js",
 	"main": "build/whs.js",
 	"typings": "types/index.d.ts",
 	"scripts": {
@@ -7350,6 +7420,7 @@ module.exports = {
 		"nyc": "^11.0.3",
 		"path": "^0.12.7",
 		"postprocessing": "^2.2.0",
+		"prebuild": "^6.2.0",
 		"present": "^1.0.0",
 		"pug": "^2.0.0-rc.2",
 		"redux": "^3.7.1",
@@ -8354,6 +8425,15 @@ var Box = (_temp = _class = function (_MeshComponent) {
   }
 
   /**
+   * @method build
+   * @description Build livecycle creates a mesh using input params.
+   * @param {Object} params Component parameters.
+   * @return {THREE.Mesh} Built mesh
+   * @memberof module:components/meshes.Box
+   */
+
+
+  /**
    * Instructions
    * @member {Object} module:components/meshes.Box#instructions
    * @static
@@ -8485,6 +8565,15 @@ var Circle = (_temp = _class = function (_MeshComponent) {
 
     return __WEBPACK_IMPORTED_MODULE_4_babel_runtime_helpers_possibleConstructorReturn___default.a(this, (Circle.__proto__ || __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_prototype_of___default.a(Circle)).call(this, params, Circle.defaults, Circle.instructions));
   }
+
+  /**
+   * @method build
+   * @description Build livecycle creates a mesh using input params.
+   * @param {Object} params Component parameters.
+   * @return {THREE.Mesh} Built mesh
+   * @memberof module:components/meshes.Circle
+   */
+
 
   /**
    * Instructions
@@ -8631,6 +8720,15 @@ var Cone = (_temp = _class = function (_MeshComponent) {
     }
     return _this;
   }
+
+  /**
+   * @method build
+   * @description Build livecycle creates a mesh using input params.
+   * @param {Object} params Component parameters.
+   * @return {THREE.Mesh} Built mesh
+   * @memberof module:components/meshes.Cone
+   */
+
 
   /**
    * Instructions
@@ -8793,6 +8891,15 @@ var Cylinder = (_temp = _class = function (_MeshComponent) {
   }
 
   /**
+   * @method build
+   * @description Build livecycle creates a mesh using input params.
+   * @param {Object} params Component parameters.
+   * @return {THREE.Mesh} Built mesh
+   * @memberof module:components/meshes.Cylinder
+   */
+
+
+  /**
    * Instructions
    * @member {Object} module:components/meshes.Cylinder#instructions
    * @static
@@ -8947,6 +9054,15 @@ var Dodecahedron = (_temp = _class = function (_MeshComponent) {
     }
     return _this;
   }
+
+  /**
+   * @method build
+   * @description Build livecycle creates a mesh using input params.
+   * @param {Object} params Component parameters.
+   * @return {THREE.Mesh} Built mesh
+   * @memberof module:components/meshes.Dodecahedron
+   */
+
 
   /**
    * Instructions
@@ -9111,6 +9227,15 @@ var Extrude = (_temp = _class = function (_MeshComponent) {
   }
 
   /**
+   * @method build
+   * @description Build livecycle creates a mesh using input params.
+   * @param {Object} params Component parameters.
+   * @return {THREE.Mesh} Built mesh
+   * @memberof module:components/meshes.Extrude
+   */
+
+
+  /**
    * Instructions
    * @member {Object} module:components/meshes.Extrude#instructions
    * @static
@@ -9250,6 +9375,15 @@ var Icosahedron = (_temp = _class = function (_MeshComponent) {
     }
     return _this;
   }
+
+  /**
+   * @method build
+   * @description Build livecycle creates a mesh using input params.
+   * @param {Object} params Component parameters.
+   * @return {THREE.Mesh} Built mesh
+   * @memberof module:components/meshes.Icosahedron
+   */
+
 
   /**
    * Instructions
@@ -9400,6 +9534,15 @@ var Lathe = (_temp = _class = function (_MeshComponent) {
   }
 
   /**
+   * @method build
+   * @description Build livecycle creates a mesh using input params.
+   * @param {Object} params Component parameters.
+   * @return {THREE.Mesh} Built mesh
+   * @memberof module:components/meshes.Lathe
+   */
+
+
+  /**
    * Instructions
    * @member {Object} module:components/meshes.Lathe#instructions
    * @static
@@ -9518,6 +9661,15 @@ var Line = (_temp = _class = function (_MeshComponent) {
 
     return __WEBPACK_IMPORTED_MODULE_4_babel_runtime_helpers_possibleConstructorReturn___default.a(this, (Line.__proto__ || __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_prototype_of___default.a(Line)).call(this, params, Line.defaults, Line.instructions));
   }
+
+  /**
+   * @method build
+   * @description Build livecycle creates a mesh using input params.
+   * @param {Object} params Component parameters.
+   * @return {THREE.Mesh} Built mesh
+   * @memberof module:components/meshes.Line
+   */
+
 
   /**
    * Instructions
@@ -9662,6 +9814,15 @@ var Octahedron = (_temp = _class = function (_MeshComponent) {
     }
     return _this;
   }
+
+  /**
+   * @method build
+   * @description Build livecycle creates a mesh using input params.
+   * @param {Object} params Component parameters.
+   * @return {THREE.Mesh} Built mesh
+   * @memberof module:components/meshes.Octahedron
+   */
+
   /**
    * Default values for parameters
    * @member {Object} module:components/meshes.Octahedron#defaults
@@ -9789,6 +9950,15 @@ var Parametric = (_temp = _class = function (_MeshComponent) {
 
     return __WEBPACK_IMPORTED_MODULE_4_babel_runtime_helpers_possibleConstructorReturn___default.a(this, (Parametric.__proto__ || __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_prototype_of___default.a(Parametric)).call(this, params, Parametric.defaults, Parametric.instructions));
   }
+
+  /**
+   * @method build
+   * @description Build livecycle creates a mesh using input params.
+   * @param {Object} params Component parameters.
+   * @return {THREE.Mesh} Built mesh
+   * @memberof module:components/meshes.Parametric
+   */
+
   /**
    * Default values for parameters
    * @member {Object} module:components/meshes.Parametric#defaults
@@ -9931,6 +10101,15 @@ var Plane = (_temp = _class = function (_MeshComponent) {
     }
     return _this;
   }
+
+  /**
+   * @method build
+   * @description Build livecycle creates a mesh using input params.
+   * @param {Object} params Component parameters.
+   * @return {THREE.Mesh} Built mesh
+   * @memberof module:components/meshes.Plane
+   */
+
 
   /**
    * Instructions
@@ -10094,6 +10273,15 @@ var Polyhedron = (_temp = _class = function (_MeshComponent) {
   }
 
   /**
+   * @method build
+   * @description Build livecycle creates a mesh using input params.
+   * @param {Object} params Component parameters.
+   * @return {THREE.Mesh} Built mesh
+   * @memberof module:components/meshes.Polyhedron
+   */
+
+
+  /**
    * Instructions
    * @member {Object} module:components/meshes.Polyhedron#instructions
    * @static
@@ -10241,6 +10429,15 @@ var Ring = (_temp = _class = function (_MeshComponent) {
     }
     return _this;
   }
+
+  /**
+   * @method build
+   * @description Build livecycle creates a mesh using input params.
+   * @param {Object} params Component parameters.
+   * @return {THREE.Mesh} Built mesh
+   * @memberof module:components/meshes.Ring
+   */
+
 
   /**
    * Instructions
@@ -10400,6 +10597,15 @@ var Shape = (_temp = _class = function (_MeshComponent) {
   }
 
   /**
+   * @method build
+   * @description Build livecycle creates a mesh using input params.
+   * @param {Object} params Component parameters.
+   * @return {THREE.Mesh} Built mesh
+   * @memberof module:components/meshes.Shape
+   */
+
+
+  /**
    * Instructions
    * @member {Object} module:components/meshes.Shape#instructions
    * @static
@@ -10532,6 +10738,15 @@ var Sphere = (_temp = _class = function (_MeshComponent) {
 
     return __WEBPACK_IMPORTED_MODULE_4_babel_runtime_helpers_possibleConstructorReturn___default.a(this, (Sphere.__proto__ || __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_prototype_of___default.a(Sphere)).call(this, params, Sphere.defaults, Sphere.instructions));
   }
+
+  /**
+   * @method build
+   * @description Build livecycle creates a mesh using input params.
+   * @param {Object} params Component parameters.
+   * @return {THREE.Mesh} Built mesh
+   * @memberof module:components/meshes.Sphere
+   */
+
 
   /**
    * Instructions
@@ -10679,6 +10894,15 @@ var Tetrahedron = (_temp = _class = function (_MeshComponent) {
     }
     return _this;
   }
+
+  /**
+   * @method build
+   * @description Build livecycle creates a mesh using input params.
+   * @param {Object} params Component parameters.
+   * @return {THREE.Mesh} Built mesh
+   * @memberof module:components/meshes.Tetrahedron
+   */
+
 
   /**
    * Instructions
@@ -10843,6 +11067,15 @@ var Text = (_temp = _class = function (_MeshComponent) {
   }
 
   /**
+   * @method build
+   * @description Build livecycle creates a mesh using input params.
+   * @param {Object} params Component parameters.
+   * @return {THREE.Mesh} Built mesh
+   * @memberof module:components/meshes.Text
+   */
+
+
+  /**
    * Instructions
    * @member {Object} module:components/meshes.Text#instructions
    * @static
@@ -11004,6 +11237,15 @@ var Torus = (_temp = _class = function (_MeshComponent) {
   }
 
   /**
+   * @method build
+   * @description Build livecycle creates a mesh using input params.
+   * @param {Object} params Component parameters.
+   * @return {THREE.Mesh} Built mesh
+   * @memberof module:components/meshes.Torus
+   */
+
+
+  /**
    * Instructions
    * @member {Object} module:components/meshes.Torus#instructions
    * @static
@@ -11155,6 +11397,15 @@ var Torusknot = (_temp = _class = function (_MeshComponent) {
     }
     return _this;
   }
+
+  /**
+   * @method build
+   * @description Build livecycle creates a mesh using input params.
+   * @param {Object} params Component parameters.
+   * @return {THREE.Mesh} Built mesh
+   * @memberof module:components/meshes.Torusknot
+   */
+
 
   /**
    * Instructions
@@ -11322,6 +11573,15 @@ var Tube = (_temp = _class = function (_MeshComponent) {
     }
     return _this;
   }
+
+  /**
+   * @method build
+   * @description Build livecycle creates a mesh using input params.
+   * @param {Object} params Component parameters.
+   * @return {THREE.Mesh} Built mesh
+   * @memberof module:components/meshes.Tube
+   */
+
 
   /**
    * Instructions
@@ -17041,10 +17301,12 @@ var VirtualMouseModule = function (_Events) {
     value: function track(component) {
       var _this3 = this;
 
+      var nested = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
+
       var isHovered = false;
 
       this.on('move', function () {
-        if (_this3.hovers(component)) {
+        if (_this3.hovers(component, nested)) {
           if (isHovered) component.emit('mousemove');else {
             component.emit('mouseover');
             isHovered = true;
@@ -17069,8 +17331,20 @@ var VirtualMouseModule = function (_Events) {
     }
   }, {
     key: 'intersection',
-    value: function intersection(component) {
-      return this.raycaster.intersectObject(component.native);
+    value: function intersection(_ref) {
+      var native = _ref.native;
+      var nested = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
+
+      if (native.children.length > 0 && nested) {
+        var objects = [];
+        native.traverse(function (child) {
+          return objects.push(child);
+        });
+
+        return this.raycaster.intersectObjects(objects);
+      }
+
+      return this.raycaster.intersectObject(native);
     }
   }, {
     key: 'project',
@@ -17082,8 +17356,9 @@ var VirtualMouseModule = function (_Events) {
   }, {
     key: 'hovers',
     value: function hovers(component) {
-      var intersection = this.intersection(component)[0];
-      return intersection ? intersection.object === component.native : false;
+      var nested = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
+
+      return this.intersection(component, nested).length > 0;
     }
   }, {
     key: 'ray',
