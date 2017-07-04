@@ -1,77 +1,77 @@
 /*! WhitestormJS Framework v2.0.0 */
 (function webpackUniversalModuleDefinition(root, factory) {
-	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("three"));
-	else if(typeof define === 'function' && define.amd)
-		define(["three"], factory);
-	else if(typeof exports === 'object')
-		exports["WHS"] = factory(require("three"));
-	else
-		root["WHS"] = factory(root["THREE"]);
+  if(typeof exports === 'object' && typeof module === 'object')
+    module.exports = factory(require("three"));
+  else if(typeof define === 'function' && define.amd)
+    define(["three"], factory);
+  else if(typeof exports === 'object')
+    exports["WHS"] = factory(require("three"));
+  else
+    root["WHS"] = factory(root["THREE"]);
 })(this, function(__WEBPACK_EXTERNAL_MODULE_0__) {
 return /******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
+/******/  // The module cache
+/******/  var installedModules = {};
 /******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
+/******/  // The require function
+/******/  function __webpack_require__(moduleId) {
 /******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId]) {
-/******/ 			return installedModules[moduleId].exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			i: moduleId,
-/******/ 			l: false,
-/******/ 			exports: {}
-/******/ 		};
+/******/    // Check if module is in cache
+/******/    if(installedModules[moduleId]) {
+/******/      return installedModules[moduleId].exports;
+/******/    }
+/******/    // Create a new module (and put it into the cache)
+/******/    var module = installedModules[moduleId] = {
+/******/      i: moduleId,
+/******/      l: false,
+/******/      exports: {}
+/******/    };
 /******/
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/    // Execute the module function
+/******/    modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
 /******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.l = true;
+/******/    // Flag the module as loaded
+/******/    module.l = true;
 /******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
+/******/    // Return the exports of the module
+/******/    return module.exports;
+/******/  }
 /******/
 /******/
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = modules;
+/******/  // expose the modules object (__webpack_modules__)
+/******/  __webpack_require__.m = modules;
 /******/
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = installedModules;
+/******/  // expose the module cache
+/******/  __webpack_require__.c = installedModules;
 /******/
-/******/ 	// define getter function for harmony exports
-/******/ 	__webpack_require__.d = function(exports, name, getter) {
-/******/ 		if(!__webpack_require__.o(exports, name)) {
-/******/ 			Object.defineProperty(exports, name, {
-/******/ 				configurable: false,
-/******/ 				enumerable: true,
-/******/ 				get: getter
-/******/ 			});
-/******/ 		}
-/******/ 	};
+/******/  // define getter function for harmony exports
+/******/  __webpack_require__.d = function(exports, name, getter) {
+/******/    if(!__webpack_require__.o(exports, name)) {
+/******/      Object.defineProperty(exports, name, {
+/******/        configurable: false,
+/******/        enumerable: true,
+/******/        get: getter
+/******/      });
+/******/    }
+/******/  };
 /******/
-/******/ 	// getDefaultExport function for compatibility with non-harmony modules
-/******/ 	__webpack_require__.n = function(module) {
-/******/ 		var getter = module && module.__esModule ?
-/******/ 			function getDefault() { return module['default']; } :
-/******/ 			function getModuleExports() { return module; };
-/******/ 		__webpack_require__.d(getter, 'a', getter);
-/******/ 		return getter;
-/******/ 	};
+/******/  // getDefaultExport function for compatibility with non-harmony modules
+/******/  __webpack_require__.n = function(module) {
+/******/    var getter = module && module.__esModule ?
+/******/      function getDefault() { return module['default']; } :
+/******/      function getModuleExports() { return module; };
+/******/    __webpack_require__.d(getter, 'a', getter);
+/******/    return getter;
+/******/  };
 /******/
-/******/ 	// Object.prototype.hasOwnProperty.call
-/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/  // Object.prototype.hasOwnProperty.call
+/******/  __webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/  // __webpack_public_path__
+/******/  __webpack_require__.p = "";
 /******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 96);
+/******/  // Load entry module and return exports
+/******/  return __webpack_require__(__webpack_require__.s = 96);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -569,195 +569,195 @@ exports.default = function get(object, property, receiver) {
 
 class Pass {
 
-	/**
-	 * Constructs a new pass.
-	 *
-	 * @param {Scene} [scene] - The scene to render.
-	 * @param {Camera} [camera] - The camera.
-	 * @param {Mesh} [quad] - A quad that fills the screen to render 2D filter effects. Set this to null, if you don't need it (see {@link RenderPass}).
-	 */
+  /**
+   * Constructs a new pass.
+   *
+   * @param {Scene} [scene] - The scene to render.
+   * @param {Camera} [camera] - The camera.
+   * @param {Mesh} [quad] - A quad that fills the screen to render 2D filter effects. Set this to null, if you don't need it (see {@link RenderPass}).
+   */
 
-	constructor(
-		scene = new __WEBPACK_IMPORTED_MODULE_0_three__["Scene"](),
-		camera = new __WEBPACK_IMPORTED_MODULE_0_three__["OrthographicCamera"](-1, 1, 1, -1, 0, 1),
-		quad = new __WEBPACK_IMPORTED_MODULE_0_three__["Mesh"](new __WEBPACK_IMPORTED_MODULE_0_three__["PlaneBufferGeometry"](2, 2), null)
-	) {
+  constructor(
+    scene = new __WEBPACK_IMPORTED_MODULE_0_three__["Scene"](),
+    camera = new __WEBPACK_IMPORTED_MODULE_0_three__["OrthographicCamera"](-1, 1, 1, -1, 0, 1),
+    quad = new __WEBPACK_IMPORTED_MODULE_0_three__["Mesh"](new __WEBPACK_IMPORTED_MODULE_0_three__["PlaneBufferGeometry"](2, 2), null)
+  ) {
 
-		/**
-		 * The name of this pass.
-		 *
-		 * @type {String}
-		 */
+    /**
+     * The name of this pass.
+     *
+     * @type {String}
+     */
 
-		this.name = "Pass";
+    this.name = "Pass";
 
-		/**
-		 * The scene to render.
-		 *
-		 * @type {Scene}
-		 * @protected
-		 * @default new Scene()
-		 */
+    /**
+     * The scene to render.
+     *
+     * @type {Scene}
+     * @protected
+     * @default new Scene()
+     */
 
-		this.scene = scene;
+    this.scene = scene;
 
-		/**
-		 * The camera.
-		 *
-		 * @type {Camera}
-		 * @protected
-		 * @default new OrthographicCamera(-1, 1, 1, -1, 0, 1)
-		 */
+    /**
+     * The camera.
+     *
+     * @type {Camera}
+     * @protected
+     * @default new OrthographicCamera(-1, 1, 1, -1, 0, 1)
+     */
 
-		this.camera = camera;
+    this.camera = camera;
 
-		/**
-		 * A quad mesh that fills the screen.
-		 *
-		 * Assign your shader material to this mesh!
-		 *
-		 * @type {Mesh}
-		 * @protected
-		 * @default new Mesh(new PlaneBufferGeometry(2, 2), null)
-		 * @example this.quad.material = this.myMaterial;
-		 */
+    /**
+     * A quad mesh that fills the screen.
+     *
+     * Assign your shader material to this mesh!
+     *
+     * @type {Mesh}
+     * @protected
+     * @default new Mesh(new PlaneBufferGeometry(2, 2), null)
+     * @example this.quad.material = this.myMaterial;
+     */
 
-		this.quad = quad;
+    this.quad = quad;
 
-		if(this.quad !== null) {
+    if(this.quad !== null) {
 
-			this.quad.frustumCulled = false;
+      this.quad.frustumCulled = false;
 
-			if(this.scene !== null) {
+      if(this.scene !== null) {
 
-				this.scene.add(this.quad);
+        this.scene.add(this.quad);
 
-			}
+      }
 
-		}
+    }
 
-		/**
-		 * Indicates whether the read and write buffers should be swapped after this
-		 * pass has finished rendering.
-		 *
-		 * Set this to true if this pass renders to the write buffer so that a
-		 * following pass can find the result in the read buffer.
-		 *
-		 * @type {Boolean}
-		 * @default false
-		 */
+    /**
+     * Indicates whether the read and write buffers should be swapped after this
+     * pass has finished rendering.
+     *
+     * Set this to true if this pass renders to the write buffer so that a
+     * following pass can find the result in the read buffer.
+     *
+     * @type {Boolean}
+     * @default false
+     */
 
-		this.needsSwap = false;
+    this.needsSwap = false;
 
-		/**
-		 * Enabled flag.
-		 *
-		 * @type {Boolean}
-		 * @default true
-		 */
+    /**
+     * Enabled flag.
+     *
+     * @type {Boolean}
+     * @default true
+     */
 
-		this.enabled = true;
+    this.enabled = true;
 
-		/**
-		 * Render to screen flag.
-		 *
-		 * @type {Boolean}
-		 * @default false
-		 */
+    /**
+     * Render to screen flag.
+     *
+     * @type {Boolean}
+     * @default false
+     */
 
-		this.renderToScreen = false;
+    this.renderToScreen = false;
 
-	}
+  }
 
-	/**
-	 * Renders the effect.
-	 *
-	 * This is an abstract method that must be overridden.
-	 *
-	 * @abstract
-	 * @throws {Error} An error is thrown if the method is not overridden.
-	 * @param {WebGLRenderer} renderer - The renderer.
-	 * @param {WebGLRenderTarget} readBuffer - A read buffer. Contains the result of the previous pass.
-	 * @param {WebGLRenderTarget} writeBuffer - A write buffer. Normally used as the render target when the read buffer is used as input.
-	 * @param {Number} [delta] - The delta time.
-	 * @param {Boolean} [maskActive] - Indicates whether a stencil test mask is active or not.
-	 */
+  /**
+   * Renders the effect.
+   *
+   * This is an abstract method that must be overridden.
+   *
+   * @abstract
+   * @throws {Error} An error is thrown if the method is not overridden.
+   * @param {WebGLRenderer} renderer - The renderer.
+   * @param {WebGLRenderTarget} readBuffer - A read buffer. Contains the result of the previous pass.
+   * @param {WebGLRenderTarget} writeBuffer - A write buffer. Normally used as the render target when the read buffer is used as input.
+   * @param {Number} [delta] - The delta time.
+   * @param {Boolean} [maskActive] - Indicates whether a stencil test mask is active or not.
+   */
 
-	render(renderer, readBuffer, writeBuffer, delta, maskActive) {
+  render(renderer, readBuffer, writeBuffer, delta, maskActive) {
 
-		throw new Error("Render method not implemented!");
+    throw new Error("Render method not implemented!");
 
-	}
+  }
 
-	/**
-	 * Updates this pass with the renderer's size.
-	 *
-	 * You may override this method in case you want to be informed about the main
-	 * render size.
-	 *
-	 * The {@link EffectComposer} calls this method before this pass is
-	 * initialised and every time its own size is updated.
-	 *
-	 * @param {Number} width - The renderer's width.
-	 * @param {Number} height - The renderer's height.
-	 * @example this.myRenderTarget.setSize(width, height);
-	 */
+  /**
+   * Updates this pass with the renderer's size.
+   *
+   * You may override this method in case you want to be informed about the main
+   * render size.
+   *
+   * The {@link EffectComposer} calls this method before this pass is
+   * initialised and every time its own size is updated.
+   *
+   * @param {Number} width - The renderer's width.
+   * @param {Number} height - The renderer's height.
+   * @example this.myRenderTarget.setSize(width, height);
+   */
 
-	setSize(width, height) {}
+  setSize(width, height) {}
 
-	/**
-	 * Performs initialisation tasks.
-	 *
-	 * By overriding this method you gain access to the renderer. You'll also be
-	 * able to configure your custom render targets to use the appropriate format
-	 * (RGB or RGBA).
-	 *
-	 * The provided renderer can be used to warm up special off-screen render
-	 * targets by performing a preliminary render operation.
-	 *
-	 * The {@link EffectComposer} calls this method when this pass is added to its
-	 * queue.
-	 *
-	 * @method initialise
-	 * @param {WebGLRenderer} renderer - The renderer.
-	 * @param {Boolean} alpha - Whether the renderer uses the alpha channel or not.
-	 * @example if(!alpha) { this.myRenderTarget.texture.format = RGBFormat; }
-	 */
+  /**
+   * Performs initialisation tasks.
+   *
+   * By overriding this method you gain access to the renderer. You'll also be
+   * able to configure your custom render targets to use the appropriate format
+   * (RGB or RGBA).
+   *
+   * The provided renderer can be used to warm up special off-screen render
+   * targets by performing a preliminary render operation.
+   *
+   * The {@link EffectComposer} calls this method when this pass is added to its
+   * queue.
+   *
+   * @method initialise
+   * @param {WebGLRenderer} renderer - The renderer.
+   * @param {Boolean} alpha - Whether the renderer uses the alpha channel or not.
+   * @example if(!alpha) { this.myRenderTarget.texture.format = RGBFormat; }
+   */
 
-	initialise(renderer, alpha) {}
+  initialise(renderer, alpha) {}
 
-	/**
-	 * Performs a shallow search for properties that define a dispose method and
-	 * deletes them. The pass will be inoperative after this method was called!
-	 *
-	 * Disposable objects:
-	 *  - render targets
-	 *  - materials
-	 *  - textures
-	 *
-	 * The {@link EffectComposer} calls this method when it is being destroyed.
-	 * You may, however, use it independently to free memory when you are certain
-	 * that you don't need this pass anymore.
-	 */
+  /**
+   * Performs a shallow search for properties that define a dispose method and
+   * deletes them. The pass will be inoperative after this method was called!
+   *
+   * Disposable objects:
+   *  - render targets
+   *  - materials
+   *  - textures
+   *
+   * The {@link EffectComposer} calls this method when it is being destroyed.
+   * You may, however, use it independently to free memory when you are certain
+   * that you don't need this pass anymore.
+   */
 
-	dispose() {
+  dispose() {
 
-		const keys = Object.keys(this);
+    const keys = Object.keys(this);
 
-		let key;
+    let key;
 
-		for(key of keys) {
+    for(key of keys) {
 
-			if(this[key] !== null && typeof this[key].dispose === "function") {
+      if(this[key] !== null && typeof this[key].dispose === "function") {
 
-				this[key].dispose();
-				this[key] = null;
+        this[key].dispose();
+        this[key] = null;
 
-			}
+      }
 
-		}
+    }
 
-	}
+  }
 
 }
 /* harmony export (immutable) */ __webpack_exports__["a"] = Pass;
@@ -1344,75 +1344,75 @@ module.exports = {};
 
 
 var CompositionError = function (_Error) {
-    __WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_inherits___default.a(CompositionError, _Error);
+  __WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_inherits___default.a(CompositionError, _Error);
 
-    function CompositionError(classInstance, message, component) {
-        __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_classCallCheck___default.a(this, CompositionError);
+  function CompositionError(classInstance, message, component) {
+    __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_classCallCheck___default.a(this, CompositionError);
 
-        var _this = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_possibleConstructorReturn___default.a(this, (CompositionError.__proto__ || __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_get_prototype_of___default.a(CompositionError)).call(this, '@' + classInstance + ': ' + message));
+    var _this = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_possibleConstructorReturn___default.a(this, (CompositionError.__proto__ || __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_get_prototype_of___default.a(CompositionError)).call(this, '@' + classInstance + ': ' + message));
 
-        var stackArray = _this.stack.split('\n');
-        stackArray.splice(1, 2);
+    var stackArray = _this.stack.split('\n');
+    stackArray.splice(1, 2);
 
-        _this.stack = stackArray.join('\n');
+    _this.stack = stackArray.join('\n');
 
-        if (!process) console.error('Component:', component);
+    if (!process) console.error('Component:', component);
 
-        _this.name = 'CompositionError';
-        return _this;
-    }
+    _this.name = 'CompositionError';
+    return _this;
+  }
 
-    return CompositionError;
+  return CompositionError;
 }(Error);
 
 var DependencyError = function (_Error2) {
-    __WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_inherits___default.a(DependencyError, _Error2);
+  __WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_inherits___default.a(DependencyError, _Error2);
 
-    function DependencyError(classInstance, message, activeModule) {
-        var dependencyModule = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
+  function DependencyError(classInstance, message, activeModule) {
+    var dependencyModule = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
 
-        __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_classCallCheck___default.a(this, DependencyError);
+    __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_classCallCheck___default.a(this, DependencyError);
 
-        var _this2 = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_possibleConstructorReturn___default.a(this, (DependencyError.__proto__ || __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_get_prototype_of___default.a(DependencyError)).call(this, '@' + classInstance + ': ' + message));
+    var _this2 = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_possibleConstructorReturn___default.a(this, (DependencyError.__proto__ || __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_get_prototype_of___default.a(DependencyError)).call(this, '@' + classInstance + ': ' + message));
 
-        var stackArray = _this2.stack.split('\n');
-        stackArray.splice(1, 2);
+    var stackArray = _this2.stack.split('\n');
+    stackArray.splice(1, 2);
 
-        _this2.stack = stackArray.join('\n');
+    _this2.stack = stackArray.join('\n');
 
-        if (!process) console.error('Active module:', activeModule);
-        if (!process && dependencyModule) console.error('Dependency published by module:', dependencyModule);
+    if (!process) console.error('Active module:', activeModule);
+    if (!process && dependencyModule) console.error('Dependency published by module:', dependencyModule);
 
-        _this2.name = 'DependencyError';
-        return _this2;
-    }
+    _this2.name = 'DependencyError';
+    return _this2;
+  }
 
-    return DependencyError;
+  return DependencyError;
 }(Error);
 
 var ManagerError = function (_Error3) {
-    __WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_inherits___default.a(ManagerError, _Error3);
+  __WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_inherits___default.a(ManagerError, _Error3);
 
-    function ManagerError(classInstance, message, component) {
-        var activeModule = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
+  function ManagerError(classInstance, message, component) {
+    var activeModule = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
 
-        __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_classCallCheck___default.a(this, ManagerError);
+    __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_classCallCheck___default.a(this, ManagerError);
 
-        var _this3 = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_possibleConstructorReturn___default.a(this, (ManagerError.__proto__ || __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_get_prototype_of___default.a(ManagerError)).call(this, '@' + classInstance + ': ' + message));
+    var _this3 = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_possibleConstructorReturn___default.a(this, (ManagerError.__proto__ || __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_get_prototype_of___default.a(ManagerError)).call(this, '@' + classInstance + ': ' + message));
 
-        var stackArray = _this3.stack.split('\n');
-        stackArray.splice(1, 2);
+    var stackArray = _this3.stack.split('\n');
+    stackArray.splice(1, 2);
 
-        _this3.stack = stackArray.join('\n');
+    _this3.stack = stackArray.join('\n');
 
-        if (!process) console.error('Component:', dependencyModule);
-        if (!process && activeModule) console.error('Active module:', activeModule);
+    if (!process) console.error('Component:', dependencyModule);
+    if (!process && activeModule) console.error('Active module:', activeModule);
 
-        _this3.name = 'ManagerError';
-        return _this3;
-    }
+    _this3.name = 'ManagerError';
+    return _this3;
+  }
 
-    return ManagerError;
+  return ManagerError;
 }(Error);
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(59)))
 
@@ -1981,16 +1981,16 @@ var g;
 
 // This works in non-strict mode
 g = (function() {
-	return this;
+  return this;
 })();
 
 try {
-	// This works if eval is allowed (see CSP)
-	g = g || Function("return this")() || (1,eval)("this");
+  // This works if eval is allowed (see CSP)
+  g = g || Function("return this")() || (1,eval)("this");
 } catch(e) {
-	// This works if the window reference is available
-	if(typeof window === "object")
-		g = window;
+  // This works if the window reference is available
+  if(typeof window === "object")
+    g = window;
 }
 
 // g can still be undefined, but nothing to do about it...
@@ -2970,196 +2970,196 @@ global.performance = {
 
 class BlurPass extends __WEBPACK_IMPORTED_MODULE_2__pass_js__["a" /* Pass */] {
 
-	/**
-	 * Constructs a new blur pass.
-	 *
-	 * @param {Object} [options] - The options.
-	 * @param {Number} [options.resolutionScale=0.5] - The render texture resolution scale, relative to the screen render size.
-	 * @param {Number} [options.kernelSize=KernelSize.LARGE] - The blur kernel size.
-	 */
+  /**
+   * Constructs a new blur pass.
+   *
+   * @param {Object} [options] - The options.
+   * @param {Number} [options.resolutionScale=0.5] - The render texture resolution scale, relative to the screen render size.
+   * @param {Number} [options.kernelSize=KernelSize.LARGE] - The blur kernel size.
+   */
 
-	constructor(options = {}) {
+  constructor(options = {}) {
 
-		super();
+    super();
 
-		/**
-		 * The name of this pass.
-		 */
+    /**
+     * The name of this pass.
+     */
 
-		this.name = "BlurPass";
+    this.name = "BlurPass";
 
-		/**
-		 * This pass renders to the write buffer.
-		 */
+    /**
+     * This pass renders to the write buffer.
+     */
 
-		this.needsSwap = true;
+    this.needsSwap = true;
 
-		/**
-		 * A render target.
-		 *
-		 * @type {WebGLRenderTarget}
-		 * @private
-		 */
+    /**
+     * A render target.
+     *
+     * @type {WebGLRenderTarget}
+     * @private
+     */
 
-		this.renderTargetX = new __WEBPACK_IMPORTED_MODULE_0_three__["WebGLRenderTarget"](1, 1, {
-			minFilter: __WEBPACK_IMPORTED_MODULE_0_three__["LinearFilter"],
-			magFilter: __WEBPACK_IMPORTED_MODULE_0_three__["LinearFilter"],
-			stencilBuffer: false,
-			depthBuffer: false
-		});
+    this.renderTargetX = new __WEBPACK_IMPORTED_MODULE_0_three__["WebGLRenderTarget"](1, 1, {
+      minFilter: __WEBPACK_IMPORTED_MODULE_0_three__["LinearFilter"],
+      magFilter: __WEBPACK_IMPORTED_MODULE_0_three__["LinearFilter"],
+      stencilBuffer: false,
+      depthBuffer: false
+    });
 
-		this.renderTargetX.texture.name = "Blur.TargetX";
-		this.renderTargetX.texture.generateMipmaps = false;
+    this.renderTargetX.texture.name = "Blur.TargetX";
+    this.renderTargetX.texture.generateMipmaps = false;
 
-		/**
-		 * A second render target.
-		 *
-		 * @type {WebGLRenderTarget}
-		 * @private
-		 */
+    /**
+     * A second render target.
+     *
+     * @type {WebGLRenderTarget}
+     * @private
+     */
 
-		this.renderTargetY = this.renderTargetX.clone();
+    this.renderTargetY = this.renderTargetX.clone();
 
-		this.renderTargetY.texture.name = "Blur.TargetY";
+    this.renderTargetY.texture.name = "Blur.TargetY";
 
-		/**
-		 * The resolution scale.
-		 *
-		 * You need to call {@link EffectComposer#setSize} after changing this
-		 * value.
-		 *
-		 * @type {Number}
-		 * @default 0.5
-		 */
+    /**
+     * The resolution scale.
+     *
+     * You need to call {@link EffectComposer#setSize} after changing this
+     * value.
+     *
+     * @type {Number}
+     * @default 0.5
+     */
 
-		this.resolutionScale = (options.resolutionScale !== undefined) ? options.resolutionScale : 0.5;
+    this.resolutionScale = (options.resolutionScale !== undefined) ? options.resolutionScale : 0.5;
 
-		/**
-		 * A convolution shader material.
-		 *
-		 * @type {ConvolutionMaterial}
-		 * @private
-		 */
+    /**
+     * A convolution shader material.
+     *
+     * @type {ConvolutionMaterial}
+     * @private
+     */
 
-		this.convolutionMaterial = new __WEBPACK_IMPORTED_MODULE_1__materials__["e" /* ConvolutionMaterial */]();
+    this.convolutionMaterial = new __WEBPACK_IMPORTED_MODULE_1__materials__["e" /* ConvolutionMaterial */]();
 
-		this.kernelSize = options.kernelSize;
+    this.kernelSize = options.kernelSize;
 
-		this.quad.material = this.convolutionMaterial;
+    this.quad.material = this.convolutionMaterial;
 
-	}
+  }
 
-	/**
-	 * The absolute width of the internal render targets.
-	 *
-	 * @type {Number}
-	 */
+  /**
+   * The absolute width of the internal render targets.
+   *
+   * @type {Number}
+   */
 
-	get width() { return this.renderTargetX.width; }
+  get width() { return this.renderTargetX.width; }
 
-	/**
-	 * The absolute height of the internal render targets.
-	 *
-	 * @type {Number}
-	 */
+  /**
+   * The absolute height of the internal render targets.
+   *
+   * @type {Number}
+   */
 
-	get height() { return this.renderTargetX.height; }
+  get height() { return this.renderTargetX.height; }
 
-	/**
-	 * The kernel size.
-	 *
-	 * @type {KernelSize}
-	 * @default KernelSize.LARGE
-	 */
+  /**
+   * The kernel size.
+   *
+   * @type {KernelSize}
+   * @default KernelSize.LARGE
+   */
 
-	get kernelSize() { return this.convolutionMaterial.kernelSize; }
+  get kernelSize() { return this.convolutionMaterial.kernelSize; }
 
-	/**
-	 * @type {KernelSize}
-	 */
+  /**
+   * @type {KernelSize}
+   */
 
-	set kernelSize(x = __WEBPACK_IMPORTED_MODULE_1__materials__["l" /* KernelSize */].LARGE) { this.convolutionMaterial.kernelSize = x; }
+  set kernelSize(x = __WEBPACK_IMPORTED_MODULE_1__materials__["l" /* KernelSize */].LARGE) { this.convolutionMaterial.kernelSize = x; }
 
-	/**
-	 * Blurs the read buffer.
-	 *
-	 * @param {WebGLRenderer} renderer - The renderer.
-	 * @param {WebGLRenderTarget} readBuffer - The read buffer.
-	 * @param {WebGLRenderTarget} writeBuffer - The write buffer.
-	 */
+  /**
+   * Blurs the read buffer.
+   *
+   * @param {WebGLRenderer} renderer - The renderer.
+   * @param {WebGLRenderTarget} readBuffer - The read buffer.
+   * @param {WebGLRenderTarget} writeBuffer - The write buffer.
+   */
 
-	render(renderer, readBuffer, writeBuffer) {
+  render(renderer, readBuffer, writeBuffer) {
 
-		const scene = this.scene;
-		const camera = this.camera;
+    const scene = this.scene;
+    const camera = this.camera;
 
-		const renderTargetX = this.renderTargetX;
-		const renderTargetY = this.renderTargetY;
+    const renderTargetX = this.renderTargetX;
+    const renderTargetY = this.renderTargetY;
 
-		const material = this.convolutionMaterial;
-		const uniforms = material.uniforms;
-		const kernel = material.getKernel();
+    const material = this.convolutionMaterial;
+    const uniforms = material.uniforms;
+    const kernel = material.getKernel();
 
-		let lastRT = readBuffer;
-		let destRT;
-		let i, l;
+    let lastRT = readBuffer;
+    let destRT;
+    let i, l;
 
-		// Apply the multi-pass blur.
-		for(i = 0, l = kernel.length - 1; i < l; ++i) {
+    // Apply the multi-pass blur.
+    for(i = 0, l = kernel.length - 1; i < l; ++i) {
 
-			// Alternate between targets.
-			destRT = ((i % 2) === 0) ? renderTargetX : renderTargetY;
+      // Alternate between targets.
+      destRT = ((i % 2) === 0) ? renderTargetX : renderTargetY;
 
-			uniforms.kernel.value = kernel[i];
-			uniforms.tDiffuse.value = lastRT.texture;
-			renderer.render(scene, camera, destRT);
+      uniforms.kernel.value = kernel[i];
+      uniforms.tDiffuse.value = lastRT.texture;
+      renderer.render(scene, camera, destRT);
 
-			lastRT = destRT;
+      lastRT = destRT;
 
-		}
+    }
 
-		uniforms.kernel.value = kernel[i];
-		uniforms.tDiffuse.value = lastRT.texture;
-		renderer.render(scene, camera, this.renderToScreen ? null : writeBuffer);
+    uniforms.kernel.value = kernel[i];
+    uniforms.tDiffuse.value = lastRT.texture;
+    renderer.render(scene, camera, this.renderToScreen ? null : writeBuffer);
 
-	}
+  }
 
-	/**
-	 * Adjusts the format of the render targets.
-	 *
-	 * @param {WebGLRenderer} renderer - The renderer.
-	 * @param {Boolean} alpha - Whether the renderer uses the alpha channel or not.
-	 */
+  /**
+   * Adjusts the format of the render targets.
+   *
+   * @param {WebGLRenderer} renderer - The renderer.
+   * @param {Boolean} alpha - Whether the renderer uses the alpha channel or not.
+   */
 
-	initialise(renderer, alpha) {
+  initialise(renderer, alpha) {
 
-		if(!alpha) {
+    if(!alpha) {
 
-			this.renderTargetX.texture.format = __WEBPACK_IMPORTED_MODULE_0_three__["RGBFormat"];
-			this.renderTargetY.texture.format = __WEBPACK_IMPORTED_MODULE_0_three__["RGBFormat"];
+      this.renderTargetX.texture.format = __WEBPACK_IMPORTED_MODULE_0_three__["RGBFormat"];
+      this.renderTargetY.texture.format = __WEBPACK_IMPORTED_MODULE_0_three__["RGBFormat"];
 
-		}
+    }
 
-	}
+  }
 
-	/**
-	 * Updates this pass with the renderer's size.
-	 *
-	 * @param {Number} width - The width.
-	 * @param {Number} height - The height.
-	 */
+  /**
+   * Updates this pass with the renderer's size.
+   *
+   * @param {Number} width - The width.
+   * @param {Number} height - The height.
+   */
 
-	setSize(width, height) {
+  setSize(width, height) {
 
-		width = Math.max(1, Math.floor(width * this.resolutionScale));
-		height = Math.max(1, Math.floor(height * this.resolutionScale));
+    width = Math.max(1, Math.floor(width * this.resolutionScale));
+    height = Math.max(1, Math.floor(height * this.resolutionScale));
 
-		this.renderTargetX.setSize(width, height);
-		this.renderTargetY.setSize(width, height);
+    this.renderTargetX.setSize(width, height);
+    this.renderTargetY.setSize(width, height);
 
-		this.convolutionMaterial.setTexelSize(1.0 / width, 1.0 / height);
+    this.convolutionMaterial.setTexelSize(1.0 / width, 1.0 / height);
 
-	}
+  }
 
 }
 /* harmony export (immutable) */ __webpack_exports__["a"] = BlurPass;
@@ -4683,75 +4683,75 @@ const color = new __WEBPACK_IMPORTED_MODULE_0_three__["Color"]();
 
 class ClearPass extends __WEBPACK_IMPORTED_MODULE_1__pass_js__["a" /* Pass */] {
 
-	/**
-	 * Constructs a new clear pass.
-	 *
-	 * @param {Object} [options] - Additional options.
-	 * @param {Color} [options.clearColor=null] - An override clear color.
-	 * @param {Number} [options.clearAlpha=0.0] - An override clear alpha.
-	 */
+  /**
+   * Constructs a new clear pass.
+   *
+   * @param {Object} [options] - Additional options.
+   * @param {Color} [options.clearColor=null] - An override clear color.
+   * @param {Number} [options.clearAlpha=0.0] - An override clear alpha.
+   */
 
-	constructor(options = {}) {
+  constructor(options = {}) {
 
-		super(null, null, null);
+    super(null, null, null);
 
-		/**
-		 * The name of this pass.
-		 */
+    /**
+     * The name of this pass.
+     */
 
-		this.name = "ClearPass";
+    this.name = "ClearPass";
 
-		/**
-		 * Clear color.
-		 *
-		 * @type {Color}
-		 * @default null
-		 */
+    /**
+     * Clear color.
+     *
+     * @type {Color}
+     * @default null
+     */
 
-		this.clearColor = (options.clearColor !== undefined) ? options.clearColor : null;
+    this.clearColor = (options.clearColor !== undefined) ? options.clearColor : null;
 
-		/**
-		 * Clear alpha.
-		 *
-		 * @type {Number}
-		 * @default 0.0
-		 */
+    /**
+     * Clear alpha.
+     *
+     * @type {Number}
+     * @default 0.0
+     */
 
-		this.clearAlpha = (options.clearAlpha !== undefined) ? options.clearAlpha : 0.0;
+    this.clearAlpha = (options.clearAlpha !== undefined) ? options.clearAlpha : 0.0;
 
-	}
+  }
 
-	/**
-	 * Clears the read buffer or the screen.
-	 *
-	 * @param {WebGLRenderer} renderer - The renderer.
-	 * @param {WebGLRenderTarget} readBuffer - The read buffer.
-	 */
+  /**
+   * Clears the read buffer or the screen.
+   *
+   * @param {WebGLRenderer} renderer - The renderer.
+   * @param {WebGLRenderTarget} readBuffer - The read buffer.
+   */
 
-	render(renderer, readBuffer) {
+  render(renderer, readBuffer) {
 
-		const clearColor = this.clearColor;
+    const clearColor = this.clearColor;
 
-		let clearAlpha;
+    let clearAlpha;
 
-		if(clearColor !== null) {
+    if(clearColor !== null) {
 
-			color.copy(renderer.getClearColor());
-			clearAlpha = renderer.getClearAlpha();
-			renderer.setClearColor(clearColor, this.clearAlpha);
+      color.copy(renderer.getClearColor());
+      clearAlpha = renderer.getClearAlpha();
+      renderer.setClearColor(clearColor, this.clearAlpha);
 
-		}
+    }
 
-		renderer.setRenderTarget(this.renderToScreen ? null : readBuffer);
-		renderer.clear();
+    renderer.setRenderTarget(this.renderToScreen ? null : readBuffer);
+    renderer.clear();
 
-		if(clearColor !== null) {
+    if(clearColor !== null) {
 
-			renderer.setClearColor(color, clearAlpha);
+      renderer.setClearColor(color, clearAlpha);
 
-		}
+    }
 
-	}
+  }
 
 }
 /* harmony export (immutable) */ __webpack_exports__["a"] = ClearPass;
@@ -4775,98 +4775,98 @@ class ClearPass extends __WEBPACK_IMPORTED_MODULE_1__pass_js__["a" /* Pass */] {
 
 class RenderPass extends __WEBPACK_IMPORTED_MODULE_1__pass_js__["a" /* Pass */] {
 
-	/**
-	 * Constructs a new render pass.
-	 *
-	 * @param {Scene} scene - The scene to render.
-	 * @param {Camera} camera - The camera to use to render the scene.
-	 * @param {Object} [options] - Additional options.
-	 * @param {Material} [options.overrideMaterial=null] - An override material for the scene.
-	 * @param {Color} [options.clearColor=null] - An override clear color.
-	 * @param {Number} [options.clearAlpha=1.0] - An override clear alpha.
-	 * @param {Boolean} [options.clearDepth=false] - Whether depth should be cleared explicitly.
-	 * @param {Boolean} [options.clear=true] - Whether all buffers should be cleared.
-	 */
+  /**
+   * Constructs a new render pass.
+   *
+   * @param {Scene} scene - The scene to render.
+   * @param {Camera} camera - The camera to use to render the scene.
+   * @param {Object} [options] - Additional options.
+   * @param {Material} [options.overrideMaterial=null] - An override material for the scene.
+   * @param {Color} [options.clearColor=null] - An override clear color.
+   * @param {Number} [options.clearAlpha=1.0] - An override clear alpha.
+   * @param {Boolean} [options.clearDepth=false] - Whether depth should be cleared explicitly.
+   * @param {Boolean} [options.clear=true] - Whether all buffers should be cleared.
+   */
 
-	constructor(scene, camera, options = {}) {
+  constructor(scene, camera, options = {}) {
 
-		super(scene, camera, null);
+    super(scene, camera, null);
 
-		/**
-		 * The name of this pass.
-		 */
+    /**
+     * The name of this pass.
+     */
 
-		this.name = "RenderPass";
+    this.name = "RenderPass";
 
-		/**
-		 * A clear pass.
-		 *
-		 * @type {ClearPass}
-		 */
+    /**
+     * A clear pass.
+     *
+     * @type {ClearPass}
+     */
 
-		this.clearPass = new __WEBPACK_IMPORTED_MODULE_0__clear_js__["a" /* ClearPass */](options);
+    this.clearPass = new __WEBPACK_IMPORTED_MODULE_0__clear_js__["a" /* ClearPass */](options);
 
-		/**
-		 * An override material.
-		 *
-		 * @type {Material}
-		 * @default null
-		 */
+    /**
+     * An override material.
+     *
+     * @type {Material}
+     * @default null
+     */
 
-		this.overrideMaterial = (options.overrideMaterial !== undefined) ? options.overrideMaterial : null;
+    this.overrideMaterial = (options.overrideMaterial !== undefined) ? options.overrideMaterial : null;
 
-		/**
-		 * Indicates whether the depth buffer should be cleared explicitly.
-		 *
-		 * @type {Boolean}
-		 * @default false
-		 */
+    /**
+     * Indicates whether the depth buffer should be cleared explicitly.
+     *
+     * @type {Boolean}
+     * @default false
+     */
 
-		this.clearDepth = (options.clearDepth !== undefined) ? options.clearDepth : false;
+    this.clearDepth = (options.clearDepth !== undefined) ? options.clearDepth : false;
 
-		/**
-		 * Indicates whether the color, depth and stencil buffers should be cleared.
-		 *
-		 * Even with clear set to true you can prevent specific buffers from being
-		 * cleared by setting either the autoClearColor, autoClearStencil or
-		 * autoClearDepth properties of the renderer to false.
-		 *
-		 * @type {Boolean}
-		 * @default true
-		 */
+    /**
+     * Indicates whether the color, depth and stencil buffers should be cleared.
+     *
+     * Even with clear set to true you can prevent specific buffers from being
+     * cleared by setting either the autoClearColor, autoClearStencil or
+     * autoClearDepth properties of the renderer to false.
+     *
+     * @type {Boolean}
+     * @default true
+     */
 
-		this.clear = (options.clear !== undefined) ? options.clear : true;
+    this.clear = (options.clear !== undefined) ? options.clear : true;
 
-	}
+  }
 
-	/**
-	 * Renders the scene.
-	 *
-	 * @param {WebGLRenderer} renderer - The renderer.
-	 * @param {WebGLRenderTarget} readBuffer - The read buffer.
-	 */
+  /**
+   * Renders the scene.
+   *
+   * @param {WebGLRenderer} renderer - The renderer.
+   * @param {WebGLRenderTarget} readBuffer - The read buffer.
+   */
 
-	render(renderer, readBuffer) {
+  render(renderer, readBuffer) {
 
-		const scene = this.scene;
-		const target = this.renderToScreen ? null : readBuffer;
+    const scene = this.scene;
+    const target = this.renderToScreen ? null : readBuffer;
 
-		if(this.clear) {
+    if(this.clear) {
 
-			this.clearPass.render(renderer, target);
+      this.clearPass.render(renderer, target);
 
-		} else if(this.clearDepth) {
+    } else if(this.clearDepth) {
 
-			renderer.setRenderTarget(target);
-			renderer.clearDepth();
+      renderer.setRenderTarget(target);
+      renderer.clearDepth();
 
-		}
+    }
 
-		scene.overrideMaterial = this.overrideMaterial;
-		renderer.render(scene, this.camera, target);
-		scene.overrideMaterial = null;
+    scene.overrideMaterial = this.overrideMaterial;
+    renderer.render(scene, this.camera, target);
+    scene.overrideMaterial = null;
 
-	}
+  }
 
 }
 /* harmony export (immutable) */ __webpack_exports__["a"] = RenderPass;
@@ -6800,26 +6800,26 @@ exports['default'] = result;
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
-	if(!module.webpackPolyfill) {
-		module.deprecate = function() {};
-		module.paths = [];
-		// module.parent = undefined by default
-		if(!module.children) module.children = [];
-		Object.defineProperty(module, "loaded", {
-			enumerable: true,
-			get: function() {
-				return module.l;
-			}
-		});
-		Object.defineProperty(module, "id", {
-			enumerable: true,
-			get: function() {
-				return module.i;
-			}
-		});
-		module.webpackPolyfill = 1;
-	}
-	return module;
+  if(!module.webpackPolyfill) {
+    module.deprecate = function() {};
+    module.paths = [];
+    // module.parent = undefined by default
+    if(!module.children) module.children = [];
+    Object.defineProperty(module, "loaded", {
+      enumerable: true,
+      get: function() {
+        return module.l;
+      }
+    });
+    Object.defineProperty(module, "id", {
+      enumerable: true,
+      get: function() {
+        return module.i;
+      }
+    });
+    module.webpackPolyfill = 1;
+  }
+  return module;
 };
 
 
@@ -6831,25 +6831,25 @@ module.exports = function(module) {
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+  value: true
 });
 exports['default'] = symbolObservablePonyfill;
 function symbolObservablePonyfill(root) {
-	var result;
-	var _Symbol = root.Symbol;
+  var result;
+  var _Symbol = root.Symbol;
 
-	if (typeof _Symbol === 'function') {
-		if (_Symbol.observable) {
-			result = _Symbol.observable;
-		} else {
-			result = _Symbol('observable');
-			_Symbol.observable = result;
-		}
-	} else {
-		result = '@@observable';
-	}
+  if (typeof _Symbol === 'function') {
+    if (_Symbol.observable) {
+      result = _Symbol.observable;
+    } else {
+      result = _Symbol('observable');
+      _Symbol.observable = result;
+    }
+  } else {
+    result = '@@observable';
+  }
 
-	return result;
+  return result;
 };
 
 /***/ }),
@@ -7336,166 +7336,165 @@ var App = function (_ModuleSystem) {
 /***/ (function(module, exports) {
 
 module.exports = {
-	"name": "whs",
-	"version": "2.0.0",
-	"description": "Super-fast 3D framework for Web Applications & Games. Based on Three.js",
-	"main": "build/whs.js",
-	"typings": "types/index.d.ts",
-	"scripts": {
-		"version": "gulp build --prod && git add .",
-		"test": "xo ./src/**/*.js && jest",
-		"start": "webpack-dashboard -t WhitestormJS -- gulp dev",
-		"start:physics": "webpack-dashboard -t WhitestormJS -- gulp dev --devPhysics 8001",
-		"build": "cross-env NODE_ENV=production gulp build && gulp examples:build",
-		"deploy": "surge --project ./ --domain whs-dev.surge.sh",
-		"docs": "gulp docs --all",
-		"deploy:docs": "surge --project ./docs/public/ --domain whsjs.io"
-	},
-	"repository": "WhitestormJS/whitestorm.js",
-	"keywords": [
-		"whitestorm.js",
-		"three.js",
-		"webgl",
-		"ammo.js",
-		"api",
-		"3d",
-		"web",
-		"javascript",
-		"webpack",
-		"gulpjs"
-	],
-	"author": "Alexander Buzin",
-	"license": "MIT",
-	"homepage": "https://github.com/WhitestormJS/whitestorm.js#readme",
-	"dependencies": {
-		"@types/node": "^8.0.4",
-		"lodash-es": "^4.17.4",
-		"minivents": "^2.1.0",
-		"three": "^0.86.0"
-	},
-	"devDependencies": {
-		"babel": "^6.23.0",
-		"babel-core": "^6.25.0",
-		"babel-eslint": "^7.2.3",
-		"babel-jest": "^20.0.3",
-		"babel-loader": "^7.1.0",
-		"babel-plugin-add-module-exports": "^0.2.1",
-		"babel-plugin-istanbul": "^4.1.4",
-		"babel-plugin-transform-class-properties": "^6.24.1",
-		"babel-plugin-transform-decorators-legacy": "^1.3.4",
-		"babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
-		"babel-plugin-transform-object-rest-spread": "^6.23.0",
-		"babel-plugin-transform-runtime": "^6.23.0",
-		"babel-polyfill": "^6.23.0",
-		"babel-preset-es2015": "^6.24.1",
-		"babel-preset-stage-1": "^6.24.1",
-		"babel-register": "^6.24.1",
-		"babelify": "^7.3.0",
-		"babili-webpack-plugin": "^0.1.2",
-		"benchmark": "^2.1.4",
-		"buffer-shims": "^1.0.0",
-		"coveralls": "^2.13.1",
-		"cross-env": "^5.0.1",
-		"del": "^3.0.0",
-		"express": "^4.15.3",
-		"gl": "^4.0.3",
-		"gulp": "^3.9.1",
-		"gulp-babel": "^6.1.2",
-		"gulp-benchmark": "^1.1.1",
-		"gulp-browser-basedir": "^1.0.1",
-		"gulp-browserify": "^0.5.1",
-		"gulp-cli": "^1.3.0",
-		"gulp-jsdoc3": "^1.0.1",
-		"gulp-less": "^3.3.2",
-		"gulp-watch": "^4.3.11",
-		"happypack": "^4.0.0-beta.1",
-		"jest": "^20.0.4",
-		"jest-babel": "^1.0.1",
-		"js-yaml": "^3.8.4",
-		"jsdoc-babel": "^0.3.0",
-		"less": "^2.7.2",
-		"mdurl": "^1.0.1",
-		"minami": "^1.2.3",
-		"mocha": "^3.4.2",
-		"nyc": "^11.0.3",
-		"path": "^0.12.7",
-		"postprocessing": "^2.2.0",
-		"prebuild": "^6.2.0",
-		"present": "^1.0.0",
-		"pug": "^2.0.0-rc.2",
-		"redux": "^3.7.1",
-		"semantic-ui-less": "^2.2.10",
-		"snyk": "^1.36.2",
-		"surge": "^0.19.0",
-		"tslint": "^5.4.3",
-		"typescript": "^2.4.1",
-		"uglify-js": "git://github.com/mishoo/UglifyJS2.git#harmony-v2.8.22",
-		"uglify-loader": "^2.0.0",
-		"webpack": "^3.0.0",
-		"webpack-dashboard": "^0.4.0",
-		"webpack-dev-middleware": "^1.11.0",
-		"xo": "^0.18.2",
-		"yargs": "^8.0.2"
-	},
-	"eslintConfig": {
-		"parserOptions": {
-			"ecmaVersion": 2017,
-			"sourceType": "module"
-		}
-	},
-	"xo": {
-		"space": 2,
-		"esnext": true,
-		"parser": "babel-eslint",
-		"envs": [
-			"node",
-			"browser",
-			"es6"
-		],
-		"syntax_map": {
-			"JavaScript (Babel)": "javascript"
-		},
-		"rules": {
-			"operator-linebreak": [
-				2,
-				"before"
-			],
-			"curly": [
-				2,
-				"multi-or-nest"
-			],
-			"one-var": 0,
-			"no-else-return": 1,
-			"capitalized-comments": 0,
-			"no-undef": 0,
-			"no-new": 0,
-			"camelcase": 0,
-			"linebreak-style": 0,
-			"new-cap": [
-				1,
-				{
-					"newIsCap": true,
-					"capIsNew": true,
-					"properties": false
-				}
-			],
-			"babel/arrow-parens": 0,
-			"xo/filename-case": 0,
-			"no-warning-comments": 0,
-			"unicorn/filename-case": 0,
-			"import/no-unassigned-import": 0,
-			"import/prefer-default-export": 0
-		}
-	},
-	"jest": {
-		"transform": {
-			".js$": "babel-jest"
-		},
-		"coveragePathIgnorePatterns": [
-			"/node_modules",
-			"src/extras/pass"
-		]
-	}
+  "name": "whs",
+  "version": "2.0.0",
+  "description": "Super-fast 3D framework for Web Applications & Games. Based on Three.js",
+  "main": "build/whs.js",
+  "typings": "types/index.d.ts",
+  "scripts": {
+    "version": "gulp build --prod && git add .",
+    "test": "xo ./src/**/*.js && jest",
+    "start": "webpack-dashboard -t WhitestormJS -- gulp dev",
+    "start:physics": "webpack-dashboard -t WhitestormJS -- gulp dev --devPhysics 8001",
+    "build": "cross-env NODE_ENV=production gulp build && gulp examples:build",
+    "deploy": "surge --project ./ --domain whs-dev.surge.sh",
+    "docs": "gulp docs --all",
+    "deploy:docs": "surge --project ./docs/public/ --domain whsjs.io"
+  },
+  "repository": "WhitestormJS/whitestorm.js",
+  "keywords": [
+    "whitestorm.js",
+    "three.js",
+    "webgl",
+    "ammo.js",
+    "api",
+    "3d",
+    "web",
+    "javascript",
+    "webpack",
+    "gulpjs"
+  ],
+  "author": "Alexander Buzin",
+  "license": "MIT",
+  "homepage": "https://github.com/WhitestormJS/whitestorm.js#readme",
+  "dependencies": {
+    "@types/node": "^8.0.4",
+    "lodash-es": "^4.17.4",
+    "minivents": "^2.1.0",
+    "three": "^0.86.0"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.25.0",
+    "babel-eslint": "^7.2.3",
+    "babel-jest": "^20.0.3",
+    "babel-loader": "^7.1.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-istanbul": "^4.1.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "babelify": "^7.3.0",
+    "babili-webpack-plugin": "^0.1.2",
+    "benchmark": "^2.1.4",
+    "buffer-shims": "^1.0.0",
+    "coveralls": "^2.13.1",
+    "cross-env": "^5.0.1",
+    "del": "^3.0.0",
+    "express": "^4.15.3",
+    "gl": "^4.0.3",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-benchmark": "^1.1.1",
+    "gulp-browser-basedir": "^1.0.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-cli": "^1.3.0",
+    "gulp-jsdoc3": "^1.0.1",
+    "gulp-less": "^3.3.2",
+    "gulp-watch": "^4.3.11",
+    "happypack": "^4.0.0-beta.1",
+    "jest": "^20.0.4",
+    "jest-babel": "^1.0.1",
+    "js-yaml": "^3.8.4",
+    "jsdoc-babel": "^0.3.0",
+    "less": "^2.7.2",
+    "mdurl": "^1.0.1",
+    "minami": "^1.2.3",
+    "mocha": "^3.4.2",
+    "nyc": "^11.0.3",
+    "path": "^0.12.7",
+    "postprocessing": "^2.2.0",
+    "present": "^1.0.0",
+    "pug": "^2.0.0-rc.2",
+    "redux": "^3.7.1",
+    "semantic-ui-less": "^2.2.10",
+    "snyk": "^1.36.2",
+    "surge": "^0.19.0",
+    "tslint": "^5.4.3",
+    "typescript": "^2.4.1",
+    "uglify-js": "git://github.com/mishoo/UglifyJS2.git#harmony-v2.8.22",
+    "uglify-loader": "^2.0.0",
+    "webpack": "^3.0.0",
+    "webpack-dashboard": "^0.4.0",
+    "webpack-dev-middleware": "^1.11.0",
+    "xo": "^0.18.2",
+    "yargs": "^8.0.2"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 2017,
+      "sourceType": "module"
+    }
+  },
+  "xo": {
+    "space": 2,
+    "esnext": true,
+    "parser": "babel-eslint",
+    "envs": [
+      "node",
+      "browser",
+      "es6"
+    ],
+    "syntax_map": {
+      "JavaScript (Babel)": "javascript"
+    },
+    "rules": {
+      "operator-linebreak": [
+        2,
+        "before"
+      ],
+      "curly": [
+        2,
+        "multi-or-nest"
+      ],
+      "one-var": 0,
+      "no-else-return": 1,
+      "capitalized-comments": 0,
+      "no-undef": 0,
+      "no-new": 0,
+      "camelcase": 0,
+      "linebreak-style": 0,
+      "new-cap": [
+        1,
+        {
+          "newIsCap": true,
+          "capIsNew": true,
+          "properties": false
+        }
+      ],
+      "babel/arrow-parens": 0,
+      "xo/filename-case": 0,
+      "no-warning-comments": 0,
+      "unicorn/filename-case": 0,
+      "import/no-unassigned-import": 0,
+      "import/prefer-default-export": 0
+    }
+  },
+  "jest": {
+    "transform": {
+      ".js$": "babel-jest"
+    },
+    "coveragePathIgnorePatterns": [
+      "/node_modules",
+      "src/extras/pass"
+    ]
+  }
 };
 
 /***/ }),
@@ -12625,407 +12624,407 @@ var PostProcessorModule = function () {
 
 class EffectComposer {
 
-	/**
-	 * Constructs a new effect composer.
-	 *
-	 * @param {WebGLRenderer} [renderer] - The renderer that should be used.
-	 * @param {Object} [options] - The options.
-	 * @param {Boolean} [options.depthBuffer=true] - Whether the main render targets should have a depth buffer.
-	 * @param {Boolean} [options.stencilBuffer=false] - Whether the main render targets should have a stencil buffer.
-	 * @param {Boolean} [options.depthTexture=false] - Set to true if one of your passes relies on a depth texture.
-	 */
-
-	constructor(renderer = null, options = {}) {
-
-		/**
-		 * The renderer.
-		 *
-		 * You may replace the renderer at any time by using
-		 * {@link EffectComposer#replaceRenderer}.
-		 *
-		 * @type {WebGLRenderer}
-		 */
-
-		this.renderer = renderer;
-
-		/**
-		 * The read buffer.
-		 *
-		 * Reading from and writing to the same render target should be avoided.
-		 * Therefore, two seperate yet identical buffers are used.
-		 *
-		 * @type {WebGLRenderTarget}
-		 * @private
-		 */
-
-		this.readBuffer = null;
-
-		/**
-		 * The write buffer.
-		 *
-		 * @type {WebGLRenderTarget}
-		 * @private
-		 */
-
-		this.writeBuffer = null;
-
-		if(this.renderer !== null) {
-
-			this.renderer.autoClear = false;
-
-			this.readBuffer = this.createBuffer(
-				(options.depthBuffer !== undefined) ? options.depthBuffer : true,
-				(options.stencilBuffer !== undefined) ? options.stencilBuffer : false,
-				(options.depthTexture !== undefined) ? options.depthTexture : false
-			);
+  /**
+   * Constructs a new effect composer.
+   *
+   * @param {WebGLRenderer} [renderer] - The renderer that should be used.
+   * @param {Object} [options] - The options.
+   * @param {Boolean} [options.depthBuffer=true] - Whether the main render targets should have a depth buffer.
+   * @param {Boolean} [options.stencilBuffer=false] - Whether the main render targets should have a stencil buffer.
+   * @param {Boolean} [options.depthTexture=false] - Set to true if one of your passes relies on a depth texture.
+   */
+
+  constructor(renderer = null, options = {}) {
+
+    /**
+     * The renderer.
+     *
+     * You may replace the renderer at any time by using
+     * {@link EffectComposer#replaceRenderer}.
+     *
+     * @type {WebGLRenderer}
+     */
+
+    this.renderer = renderer;
+
+    /**
+     * The read buffer.
+     *
+     * Reading from and writing to the same render target should be avoided.
+     * Therefore, two seperate yet identical buffers are used.
+     *
+     * @type {WebGLRenderTarget}
+     * @private
+     */
+
+    this.readBuffer = null;
+
+    /**
+     * The write buffer.
+     *
+     * @type {WebGLRenderTarget}
+     * @private
+     */
+
+    this.writeBuffer = null;
+
+    if(this.renderer !== null) {
+
+      this.renderer.autoClear = false;
+
+      this.readBuffer = this.createBuffer(
+        (options.depthBuffer !== undefined) ? options.depthBuffer : true,
+        (options.stencilBuffer !== undefined) ? options.stencilBuffer : false,
+        (options.depthTexture !== undefined) ? options.depthTexture : false
+      );
 
-			this.writeBuffer = this.readBuffer.clone();
+      this.writeBuffer = this.readBuffer.clone();
 
-		}
+    }
 
-		/**
-		 * A copy pass used for copying masked scenes.
-		 *
-		 * @type {ShaderPass}
-		 * @private
-		 */
-
-		this.copyPass = new __WEBPACK_IMPORTED_MODULE_1__passes__["d" /* ShaderPass */](new __WEBPACK_IMPORTED_MODULE_2__materials__["f" /* CopyMaterial */]());
-
-		/**
-		 * The passes.
-		 *
-		 * @type {Pass[]}
-		 * @private
-		 */
-
-		this.passes = [];
-
-	}
-
-	/**
-	 * The depth texture of the read and write buffers.
-	 *
-	 * @type {DepthTexture}
-	 * @default null
-	 */
-
-	get depthTexture() { return this.readBuffer.depthTexture; }
-
-	/**
-	 * The read and write buffers share a single depth texture. Depth will be
-	 * written to this texture when something is rendered into one of the buffers
-	 * and the involved materials have depth write enabled.
-	 *
-	 * You may enable this mechanism during the instantiation of the composer or
-	 * by assigning a DepthTexture instance later on. You may also disable it by
-	 * assigning null.
-	 *
-	 * @type {DepthTexture}
-	 */
+    /**
+     * A copy pass used for copying masked scenes.
+     *
+     * @type {ShaderPass}
+     * @private
+     */
+
+    this.copyPass = new __WEBPACK_IMPORTED_MODULE_1__passes__["d" /* ShaderPass */](new __WEBPACK_IMPORTED_MODULE_2__materials__["f" /* CopyMaterial */]());
+
+    /**
+     * The passes.
+     *
+     * @type {Pass[]}
+     * @private
+     */
+
+    this.passes = [];
+
+  }
+
+  /**
+   * The depth texture of the read and write buffers.
+   *
+   * @type {DepthTexture}
+   * @default null
+   */
+
+  get depthTexture() { return this.readBuffer.depthTexture; }
+
+  /**
+   * The read and write buffers share a single depth texture. Depth will be
+   * written to this texture when something is rendered into one of the buffers
+   * and the involved materials have depth write enabled.
+   *
+   * You may enable this mechanism during the instantiation of the composer or
+   * by assigning a DepthTexture instance later on. You may also disable it by
+   * assigning null.
+   *
+   * @type {DepthTexture}
+   */
 
-	set depthTexture(x) {
+  set depthTexture(x) {
 
-		this.readBuffer.depthTexture = x;
-		this.writeBuffer.depthTexture = x;
+    this.readBuffer.depthTexture = x;
+    this.writeBuffer.depthTexture = x;
 
-	}
+  }
 
-	/**
-	 * Replaces the current renderer with the given one. The DOM element of the
-	 * current renderer will automatically be removed from its parent node and the
-	 * DOM element of the new renderer will take its place.
-	 *
-	 * The auto clear mechanism of the provided renderer will be disabled.
-	 *
-	 * Switching between renderers allows you to dynamically enable or disable
-	 * antialiasing.
-	 *
-	 * @param {WebGLRenderer} renderer - The new renderer.
-	 * @return {WebGLRenderer} The old renderer.
-	 */
+  /**
+   * Replaces the current renderer with the given one. The DOM element of the
+   * current renderer will automatically be removed from its parent node and the
+   * DOM element of the new renderer will take its place.
+   *
+   * The auto clear mechanism of the provided renderer will be disabled.
+   *
+   * Switching between renderers allows you to dynamically enable or disable
+   * antialiasing.
+   *
+   * @param {WebGLRenderer} renderer - The new renderer.
+   * @return {WebGLRenderer} The old renderer.
+   */
 
-	replaceRenderer(renderer) {
+  replaceRenderer(renderer) {
 
-		const oldRenderer = this.renderer;
+    const oldRenderer = this.renderer;
 
-		let parent, oldSize, newSize;
+    let parent, oldSize, newSize;
 
-		if(oldRenderer !== null && oldRenderer !== renderer) {
+    if(oldRenderer !== null && oldRenderer !== renderer) {
 
-			this.renderer = renderer;
-			this.renderer.autoClear = false;
+      this.renderer = renderer;
+      this.renderer.autoClear = false;
 
-			parent = oldRenderer.domElement.parentNode;
-			oldSize = oldRenderer.getSize();
-			newSize = renderer.getSize();
+      parent = oldRenderer.domElement.parentNode;
+      oldSize = oldRenderer.getSize();
+      newSize = renderer.getSize();
 
-			if(parent !== null) {
+      if(parent !== null) {
 
-				parent.removeChild(oldRenderer.domElement);
-				parent.appendChild(renderer.domElement);
+        parent.removeChild(oldRenderer.domElement);
+        parent.appendChild(renderer.domElement);
 
-			}
+      }
 
-			if(oldSize.width !== newSize.width || oldSize.height !== newSize.height) {
+      if(oldSize.width !== newSize.width || oldSize.height !== newSize.height) {
 
-				this.setSize();
+        this.setSize();
 
-			}
+      }
 
-		}
+    }
 
-		return oldRenderer;
+    return oldRenderer;
 
-	}
+  }
 
-	/**
-	 * Creates a new render target by replicating the renderer's canvas.
-	 *
-	 * The created render target uses a linear filter for texel minification and
-	 * magnification. Its render texture format depends on whether the renderer
-	 * uses the alpha channel. Mipmaps are disabled.
-	 *
-	 * @param {Boolean} depthBuffer - Whether the render target should have a depth buffer.
-	 * @param {Boolean} stencilBuffer - Whether the render target should have a stencil buffer.
-	 * @param {Boolean} depthTexture - Whether the render target should have a depth texture.
-	 * @return {WebGLRenderTarget} A new render target that equals the renderer's canvas.
-	 */
+  /**
+   * Creates a new render target by replicating the renderer's canvas.
+   *
+   * The created render target uses a linear filter for texel minification and
+   * magnification. Its render texture format depends on whether the renderer
+   * uses the alpha channel. Mipmaps are disabled.
+   *
+   * @param {Boolean} depthBuffer - Whether the render target should have a depth buffer.
+   * @param {Boolean} stencilBuffer - Whether the render target should have a stencil buffer.
+   * @param {Boolean} depthTexture - Whether the render target should have a depth texture.
+   * @return {WebGLRenderTarget} A new render target that equals the renderer's canvas.
+   */
 
-	createBuffer(depthBuffer, stencilBuffer, depthTexture) {
+  createBuffer(depthBuffer, stencilBuffer, depthTexture) {
 
-		const size = this.renderer.getSize();
-		const pixelRatio = this.renderer.getPixelRatio();
-		const alpha = this.renderer.context.getContextAttributes().alpha;
+    const size = this.renderer.getSize();
+    const pixelRatio = this.renderer.getPixelRatio();
+    const alpha = this.renderer.context.getContextAttributes().alpha;
 
-		const renderTarget = new __WEBPACK_IMPORTED_MODULE_0_three__["WebGLRenderTarget"](size.width * pixelRatio, size.height * pixelRatio, {
-			minFilter: __WEBPACK_IMPORTED_MODULE_0_three__["LinearFilter"],
-			magFilter: __WEBPACK_IMPORTED_MODULE_0_three__["LinearFilter"],
-			format: alpha ? __WEBPACK_IMPORTED_MODULE_0_three__["RGBAFormat"] : __WEBPACK_IMPORTED_MODULE_0_three__["RGBFormat"],
-			depthBuffer: depthBuffer,
-			stencilBuffer: stencilBuffer,
-			depthTexture: depthTexture ? new __WEBPACK_IMPORTED_MODULE_0_three__["DepthTexture"]() : null
-		});
+    const renderTarget = new __WEBPACK_IMPORTED_MODULE_0_three__["WebGLRenderTarget"](size.width * pixelRatio, size.height * pixelRatio, {
+      minFilter: __WEBPACK_IMPORTED_MODULE_0_three__["LinearFilter"],
+      magFilter: __WEBPACK_IMPORTED_MODULE_0_three__["LinearFilter"],
+      format: alpha ? __WEBPACK_IMPORTED_MODULE_0_three__["RGBAFormat"] : __WEBPACK_IMPORTED_MODULE_0_three__["RGBFormat"],
+      depthBuffer: depthBuffer,
+      stencilBuffer: stencilBuffer,
+      depthTexture: depthTexture ? new __WEBPACK_IMPORTED_MODULE_0_three__["DepthTexture"]() : null
+    });
 
-		if(depthTexture && stencilBuffer) {
+    if(depthTexture && stencilBuffer) {
 
-			renderTarget.depthTexture.format = __WEBPACK_IMPORTED_MODULE_0_three__["DepthStencilFormat"];
-			renderTarget.depthTexture.type = __WEBPACK_IMPORTED_MODULE_0_three__["UnsignedInt248Type"];
+      renderTarget.depthTexture.format = __WEBPACK_IMPORTED_MODULE_0_three__["DepthStencilFormat"];
+      renderTarget.depthTexture.type = __WEBPACK_IMPORTED_MODULE_0_three__["UnsignedInt248Type"];
 
-		}
+    }
 
-		renderTarget.texture.name = "EffectComposer.Buffer";
-		renderTarget.texture.generateMipmaps = false;
+    renderTarget.texture.name = "EffectComposer.Buffer";
+    renderTarget.texture.generateMipmaps = false;
 
-		return renderTarget;
+    return renderTarget;
 
-	}
+  }
 
-	/**
-	 * Adds a pass, optionally at a specific index.
-	 *
-	 * @param {Pass} pass - A new pass.
-	 * @param {Number} [index] - An index at which the pass should be inserted.
-	 */
+  /**
+   * Adds a pass, optionally at a specific index.
+   *
+   * @param {Pass} pass - A new pass.
+   * @param {Number} [index] - An index at which the pass should be inserted.
+   */
 
-	addPass(pass, index) {
+  addPass(pass, index) {
 
-		const renderer = this.renderer;
-		const size = renderer.getSize();
-		const pixelRatio = renderer.getPixelRatio();
+    const renderer = this.renderer;
+    const size = renderer.getSize();
+    const pixelRatio = renderer.getPixelRatio();
 
-		pass.setSize(size.width * pixelRatio, size.height * pixelRatio);
-		pass.initialise(renderer, renderer.context.getContextAttributes().alpha);
+    pass.setSize(size.width * pixelRatio, size.height * pixelRatio);
+    pass.initialise(renderer, renderer.context.getContextAttributes().alpha);
 
-		if(index !== undefined) {
+    if(index !== undefined) {
 
-			this.passes.splice(index, 0, pass);
+      this.passes.splice(index, 0, pass);
 
-		} else {
+    } else {
 
-			this.passes.push(pass);
+      this.passes.push(pass);
 
-		}
+    }
 
-	}
+  }
 
-	/**
-	 * Removes a pass.
-	 *
-	 * @param {Pass} pass - The pass.
-	 */
+  /**
+   * Removes a pass.
+   *
+   * @param {Pass} pass - The pass.
+   */
 
-	removePass(pass) {
+  removePass(pass) {
 
-		this.passes.splice(this.passes.indexOf(pass), 1);
+    this.passes.splice(this.passes.indexOf(pass), 1);
 
-	}
+  }
 
-	/**
-	 * Renders all enabled passes in the order in which they were added.
-	 *
-	 * @param {Number} delta - The time between the last frame and the current one in seconds.
-	 */
+  /**
+   * Renders all enabled passes in the order in which they were added.
+   *
+   * @param {Number} delta - The time between the last frame and the current one in seconds.
+   */
 
-	render(delta) {
+  render(delta) {
 
-		const passes = this.passes;
-		const renderer = this.renderer;
-		const copyPass = this.copyPass;
+    const passes = this.passes;
+    const renderer = this.renderer;
+    const copyPass = this.copyPass;
 
-		let readBuffer = this.readBuffer;
-		let writeBuffer = this.writeBuffer;
+    let readBuffer = this.readBuffer;
+    let writeBuffer = this.writeBuffer;
 
-		let maskActive = false;
-		let pass, context, buffer;
-		let i, l;
+    let maskActive = false;
+    let pass, context, buffer;
+    let i, l;
 
-		for(i = 0, l = passes.length; i < l; ++i) {
+    for(i = 0, l = passes.length; i < l; ++i) {
 
-			pass = passes[i];
+      pass = passes[i];
 
-			if(pass.enabled) {
+      if(pass.enabled) {
 
-				pass.render(renderer, readBuffer, writeBuffer, delta, maskActive);
+        pass.render(renderer, readBuffer, writeBuffer, delta, maskActive);
 
-				if(pass.needsSwap) {
+        if(pass.needsSwap) {
 
-					if(maskActive) {
+          if(maskActive) {
 
-						context = renderer.context;
-						context.stencilFunc(context.NOTEQUAL, 1, 0xffffffff);
-						copyPass.render(renderer, readBuffer, writeBuffer);
-						context.stencilFunc(context.EQUAL, 1, 0xffffffff);
+            context = renderer.context;
+            context.stencilFunc(context.NOTEQUAL, 1, 0xffffffff);
+            copyPass.render(renderer, readBuffer, writeBuffer);
+            context.stencilFunc(context.EQUAL, 1, 0xffffffff);
 
-					}
+          }
 
-					buffer = readBuffer;
-					readBuffer = writeBuffer;
-					writeBuffer = buffer;
+          buffer = readBuffer;
+          readBuffer = writeBuffer;
+          writeBuffer = buffer;
 
-				}
+        }
 
-				if(pass instanceof __WEBPACK_IMPORTED_MODULE_1__passes__["b" /* MaskPass */]) {
+        if(pass instanceof __WEBPACK_IMPORTED_MODULE_1__passes__["b" /* MaskPass */]) {
 
-					maskActive = true;
+          maskActive = true;
 
-				} else if(pass instanceof __WEBPACK_IMPORTED_MODULE_1__passes__["a" /* ClearMaskPass */]) {
+        } else if(pass instanceof __WEBPACK_IMPORTED_MODULE_1__passes__["a" /* ClearMaskPass */]) {
 
-					maskActive = false;
+          maskActive = false;
 
-				}
+        }
 
-			}
+      }
 
-		}
+    }
 
-	}
+  }
 
-	/**
-	 * Sets the size of the buffers and the renderer's output canvas.
-	 *
-	 * Every pass will be informed of the new size. It's up to each pass how that
-	 * information is used.
-	 *
-	 * If no width or height is specified, the render targets and passes will be
-	 * updated with the current size of the renderer.
-	 *
-	 * @param {Number} [width] - The width.
-	 * @param {Number} [height] - The height.
-	 */
+  /**
+   * Sets the size of the buffers and the renderer's output canvas.
+   *
+   * Every pass will be informed of the new size. It's up to each pass how that
+   * information is used.
+   *
+   * If no width or height is specified, the render targets and passes will be
+   * updated with the current size of the renderer.
+   *
+   * @param {Number} [width] - The width.
+   * @param {Number} [height] - The height.
+   */
 
-	setSize(width, height) {
+  setSize(width, height) {
 
-		const passes = this.passes;
-		const size = this.renderer.getSize();
-		const pixelRatio = this.renderer.getPixelRatio();
+    const passes = this.passes;
+    const size = this.renderer.getSize();
+    const pixelRatio = this.renderer.getPixelRatio();
 
-		let i, l;
+    let i, l;
 
-		if(width === undefined || height === undefined) {
+    if(width === undefined || height === undefined) {
 
-			width = size.width;
-			height = size.height;
+      width = size.width;
+      height = size.height;
 
-		}
+    }
 
-		this.renderer.setSize(width, height);
+    this.renderer.setSize(width, height);
 
-		width *= pixelRatio;
-		height *= pixelRatio;
+    width *= pixelRatio;
+    height *= pixelRatio;
 
-		this.readBuffer.setSize(width, height);
-		this.writeBuffer.setSize(width, height);
+    this.readBuffer.setSize(width, height);
+    this.writeBuffer.setSize(width, height);
 
-		for(i = 0, l = passes.length; i < l; ++i) {
+    for(i = 0, l = passes.length; i < l; ++i) {
 
-			passes[i].setSize(width, height);
+      passes[i].setSize(width, height);
 
-		}
+    }
 
-	}
+  }
 
-	/**
-	 * Resets this composer by deleting all passes and creating new buffers.
-	 *
-	 * @param {WebGLRenderTarget} [renderTarget] - A new render target. If none is provided, the settings of the renderer will be used.
-	 */
+  /**
+   * Resets this composer by deleting all passes and creating new buffers.
+   *
+   * @param {WebGLRenderTarget} [renderTarget] - A new render target. If none is provided, the settings of the renderer will be used.
+   */
 
-	reset(renderTarget) {
+  reset(renderTarget) {
 
-		const depthBuffer = this.readBuffer.depthBuffer;
-		const stencilBuffer = this.readBuffer.stencilBuffer;
-		const depthTexture = (this.readBuffer.depthTexture !== null);
+    const depthBuffer = this.readBuffer.depthBuffer;
+    const stencilBuffer = this.readBuffer.stencilBuffer;
+    const depthTexture = (this.readBuffer.depthTexture !== null);
 
-		this.dispose((renderTarget === undefined) ?
-			this.createBuffer(depthBuffer, stencilBuffer, depthTexture) :
-			renderTarget
-		);
+    this.dispose((renderTarget === undefined) ?
+      this.createBuffer(depthBuffer, stencilBuffer, depthTexture) :
+      renderTarget
+    );
 
-	}
+  }
 
-	/**
-	 * Destroys all passes and render targets.
-	 *
-	 * This method deallocates all render targets, textures and materials created
-	 * by the passes. It also deletes this composer's frame buffers.
-	 *
-	 * @param {WebGLRenderTarget} [renderTarget] - A new render target. If none is provided, the composer will become inoperative.
-	 */
+  /**
+   * Destroys all passes and render targets.
+   *
+   * This method deallocates all render targets, textures and materials created
+   * by the passes. It also deletes this composer's frame buffers.
+   *
+   * @param {WebGLRenderTarget} [renderTarget] - A new render target. If none is provided, the composer will become inoperative.
+   */
 
-	dispose(renderTarget) {
+  dispose(renderTarget) {
 
-		const passes = this.passes;
+    const passes = this.passes;
 
-		if(this.readBuffer !== null && this.writeBuffer !== null) {
+    if(this.readBuffer !== null && this.writeBuffer !== null) {
 
-			this.readBuffer.dispose();
-			this.writeBuffer.dispose();
+      this.readBuffer.dispose();
+      this.writeBuffer.dispose();
 
-			this.readBuffer = null;
-			this.writeBuffer = null;
+      this.readBuffer = null;
+      this.writeBuffer = null;
 
-		}
+    }
 
-		while(passes.length > 0) {
+    while(passes.length > 0) {
 
-			passes.pop().dispose();
+      passes.pop().dispose();
 
-		}
+    }
 
-		if(renderTarget !== undefined) {
+    if(renderTarget !== undefined) {
 
-			// Reanimate.
-			this.readBuffer = renderTarget;
-			this.writeBuffer = this.readBuffer.clone();
+      // Reanimate.
+      this.readBuffer = renderTarget;
+      this.writeBuffer = this.readBuffer.clone();
 
-		} else {
+    } else {
 
-			this.copyPass.dispose();
+      this.copyPass.dispose();
 
-		}
+    }
 
-	}
+  }
 
 }
 /* harmony export (immutable) */ __webpack_exports__["a"] = EffectComposer;
@@ -13056,216 +13055,216 @@ class EffectComposer {
 
 class BloomPass extends __WEBPACK_IMPORTED_MODULE_3__pass_js__["a" /* Pass */] {
 
-	/**
-	 * Constructs a new bloom pass.
-	 *
-	 * @param {Object} [options] - The options.
-	 * @param {Number} [options.resolutionScale=0.5] - The render texture resolution scale, relative to the screen render size.
-	 * @param {Number} [options.kernelSize=KernelSize.LARGE] - The blur kernel size.
-	 * @param {Number} [options.intensity=1.0] - The strength of the bloom effect.
-	 * @param {Number} [options.distinction=1.0] - The luminance distinction factor. Raise this value to bring out the brighter elements in the scene.
-	 * @param {Number} [options.screenMode=true] - Whether the screen blend mode should be used for combining the bloom texture with the scene colors.
-	 */
+  /**
+   * Constructs a new bloom pass.
+   *
+   * @param {Object} [options] - The options.
+   * @param {Number} [options.resolutionScale=0.5] - The render texture resolution scale, relative to the screen render size.
+   * @param {Number} [options.kernelSize=KernelSize.LARGE] - The blur kernel size.
+   * @param {Number} [options.intensity=1.0] - The strength of the bloom effect.
+   * @param {Number} [options.distinction=1.0] - The luminance distinction factor. Raise this value to bring out the brighter elements in the scene.
+   * @param {Number} [options.screenMode=true] - Whether the screen blend mode should be used for combining the bloom texture with the scene colors.
+   */
 
-	constructor(options = {}) {
+  constructor(options = {}) {
 
-		super();
+    super();
 
-		/**
-		 * The name of this pass.
-		 */
+    /**
+     * The name of this pass.
+     */
 
-		this.name = "BloomPass";
+    this.name = "BloomPass";
 
-		/**
-		 * This pass renders to the write buffer.
-		 */
+    /**
+     * This pass renders to the write buffer.
+     */
 
-		this.needsSwap = true;
+    this.needsSwap = true;
 
-		/**
-		 * A blur pass.
-		 *
-		 * @type {BlurPass}
-		 * @private
-		 */
+    /**
+     * A blur pass.
+     *
+     * @type {BlurPass}
+     * @private
+     */
 
-		this.blurPass = new __WEBPACK_IMPORTED_MODULE_2__blur_js__["a" /* BlurPass */](options);
+    this.blurPass = new __WEBPACK_IMPORTED_MODULE_2__blur_js__["a" /* BlurPass */](options);
 
-		/**
-		 * A render target.
-		 *
-		 * @type {WebGLRenderTarget}
-		 * @private
-		 */
+    /**
+     * A render target.
+     *
+     * @type {WebGLRenderTarget}
+     * @private
+     */
 
-		this.renderTarget = new __WEBPACK_IMPORTED_MODULE_0_three__["WebGLRenderTarget"](1, 1, {
-			minFilter: __WEBPACK_IMPORTED_MODULE_0_three__["LinearFilter"],
-			magFilter: __WEBPACK_IMPORTED_MODULE_0_three__["LinearFilter"],
-			stencilBuffer: false,
-			depthBuffer: false
-		});
+    this.renderTarget = new __WEBPACK_IMPORTED_MODULE_0_three__["WebGLRenderTarget"](1, 1, {
+      minFilter: __WEBPACK_IMPORTED_MODULE_0_three__["LinearFilter"],
+      magFilter: __WEBPACK_IMPORTED_MODULE_0_three__["LinearFilter"],
+      stencilBuffer: false,
+      depthBuffer: false
+    });
 
-		this.renderTarget.texture.name = "Bloom.Target";
-		this.renderTarget.texture.generateMipmaps = false;
+    this.renderTarget.texture.name = "Bloom.Target";
+    this.renderTarget.texture.generateMipmaps = false;
 
-		/**
-		 * A combine shader material.
-		 *
-		 * @type {CombineMaterial}
-		 * @private
-		 */
+    /**
+     * A combine shader material.
+     *
+     * @type {CombineMaterial}
+     * @private
+     */
 
-		this.combineMaterial = new __WEBPACK_IMPORTED_MODULE_1__materials__["d" /* CombineMaterial */]((options.screenMode !== undefined) ? options.screenMode : true);
+    this.combineMaterial = new __WEBPACK_IMPORTED_MODULE_1__materials__["d" /* CombineMaterial */]((options.screenMode !== undefined) ? options.screenMode : true);
 
-		this.intensity = options.intensity;
+    this.intensity = options.intensity;
 
-		/**
-		 * A luminosity shader material.
-		 *
-		 * @type {LuminosityMaterial}
-		 * @private
-		 */
+    /**
+     * A luminosity shader material.
+     *
+     * @type {LuminosityMaterial}
+     * @private
+     */
 
-		this.luminosityMaterial = new __WEBPACK_IMPORTED_MODULE_1__materials__["m" /* LuminosityMaterial */](true);
+    this.luminosityMaterial = new __WEBPACK_IMPORTED_MODULE_1__materials__["m" /* LuminosityMaterial */](true);
 
-		this.distinction = options.distinction;
+    this.distinction = options.distinction;
 
-	}
+  }
 
-	/**
-	 * The resolution scale.
-	 *
-	 * @type {Number}
-	 * @default 0.5
-	 */
+  /**
+   * The resolution scale.
+   *
+   * @type {Number}
+   * @default 0.5
+   */
 
-	get resolutionScale() { return this.blurPass.resolutionScale; }
+  get resolutionScale() { return this.blurPass.resolutionScale; }
 
-	/**
-	 * You need to call {@link EffectComposer#setSize} after changing this value.
-	 *
-	 * @type {Number}
-	 */
+  /**
+   * You need to call {@link EffectComposer#setSize} after changing this value.
+   *
+   * @type {Number}
+   */
 
-	set resolutionScale(x = 0.5) { this.blurPass.resolutionScale = x; }
+  set resolutionScale(x = 0.5) { this.blurPass.resolutionScale = x; }
 
-	/**
-	 * The blur kernel size.
-	 *
-	 * @type {KernelSize}
-	 * @default KernelSize.LARGE
-	 */
+  /**
+   * The blur kernel size.
+   *
+   * @type {KernelSize}
+   * @default KernelSize.LARGE
+   */
 
-	get kernelSize() { return this.blurPass.kernelSize; }
+  get kernelSize() { return this.blurPass.kernelSize; }
 
-	/**
-	 * @type {KernelSize}
-	 */
+  /**
+   * @type {KernelSize}
+   */
 
-	set kernelSize(x = __WEBPACK_IMPORTED_MODULE_1__materials__["l" /* KernelSize */].LARGE) { this.blurPass.kernelSize = x; }
+  set kernelSize(x = __WEBPACK_IMPORTED_MODULE_1__materials__["l" /* KernelSize */].LARGE) { this.blurPass.kernelSize = x; }
 
-	/**
-	 * The overall intensity of the effect.
-	 *
-	 * @type {Number}
-	 * @default 1.0
-	 */
+  /**
+   * The overall intensity of the effect.
+   *
+   * @type {Number}
+   * @default 1.0
+   */
 
-	get intensity() { return this.combineMaterial.uniforms.opacity2.value; }
+  get intensity() { return this.combineMaterial.uniforms.opacity2.value; }
 
-	/**
-	 * @type {Number}
-	 */
+  /**
+   * @type {Number}
+   */
 
-	set intensity(x = 1.0) { this.combineMaterial.uniforms.opacity2.value = x; }
+  set intensity(x = 1.0) { this.combineMaterial.uniforms.opacity2.value = x; }
 
-	/**
-	 * The luminance distinction factor.
-	 *
-	 * @type {Number}
-	 * @default 1.0
-	 */
+  /**
+   * The luminance distinction factor.
+   *
+   * @type {Number}
+   * @default 1.0
+   */
 
-	get distinction() { return this.luminosityMaterial.uniforms.distinction.value; }
+  get distinction() { return this.luminosityMaterial.uniforms.distinction.value; }
 
-	/**
-	 * @type {Number}
-	 */
+  /**
+   * @type {Number}
+   */
 
-	set distinction(x = 1.0) { this.luminosityMaterial.uniforms.distinction.value = x; }
+  set distinction(x = 1.0) { this.luminosityMaterial.uniforms.distinction.value = x; }
 
-	/**
-	 * Renders the effect.
-	 *
-	 * Extracts a luminance map from the read buffer, blurs it and combines it
-	 * with the read buffer.
-	 *
-	 * @param {WebGLRenderer} renderer - The renderer.
-	 * @param {WebGLRenderTarget} readBuffer - The read buffer.
-	 * @param {WebGLRenderTarget} writeBuffer - The write buffer.
-	 */
+  /**
+   * Renders the effect.
+   *
+   * Extracts a luminance map from the read buffer, blurs it and combines it
+   * with the read buffer.
+   *
+   * @param {WebGLRenderer} renderer - The renderer.
+   * @param {WebGLRenderTarget} readBuffer - The read buffer.
+   * @param {WebGLRenderTarget} writeBuffer - The write buffer.
+   */
 
-	render(renderer, readBuffer, writeBuffer) {
+  render(renderer, readBuffer, writeBuffer) {
 
-		const quad = this.quad;
-		const scene = this.scene;
-		const camera = this.camera;
-		const blurPass = this.blurPass;
+    const quad = this.quad;
+    const scene = this.scene;
+    const camera = this.camera;
+    const blurPass = this.blurPass;
 
-		const luminosityMaterial = this.luminosityMaterial;
-		const combineMaterial = this.combineMaterial;
-		const renderTarget = this.renderTarget;
+    const luminosityMaterial = this.luminosityMaterial;
+    const combineMaterial = this.combineMaterial;
+    const renderTarget = this.renderTarget;
 
-		// Luminance filter.
-		quad.material = luminosityMaterial;
-		luminosityMaterial.uniforms.tDiffuse.value = readBuffer.texture;
-		renderer.render(scene, camera, renderTarget);
+    // Luminance filter.
+    quad.material = luminosityMaterial;
+    luminosityMaterial.uniforms.tDiffuse.value = readBuffer.texture;
+    renderer.render(scene, camera, renderTarget);
 
-		// Convolution phase.
-		blurPass.render(renderer, renderTarget, renderTarget);
+    // Convolution phase.
+    blurPass.render(renderer, renderTarget, renderTarget);
 
-		// Render the original scene with superimposed blur.
-		quad.material = combineMaterial;
-		combineMaterial.uniforms.texture1.value = readBuffer.texture;
-		combineMaterial.uniforms.texture2.value = renderTarget.texture;
+    // Render the original scene with superimposed blur.
+    quad.material = combineMaterial;
+    combineMaterial.uniforms.texture1.value = readBuffer.texture;
+    combineMaterial.uniforms.texture2.value = renderTarget.texture;
 
-		renderer.render(scene, camera, this.renderToScreen ? null : writeBuffer);
+    renderer.render(scene, camera, this.renderToScreen ? null : writeBuffer);
 
-	}
+  }
 
-	/**
-	 * Adjusts the format of the render targets.
-	 *
-	 * @param {WebGLRenderer} renderer - The renderer.
-	 * @param {Boolean} alpha - Whether the renderer uses the alpha channel or not.
-	 */
+  /**
+   * Adjusts the format of the render targets.
+   *
+   * @param {WebGLRenderer} renderer - The renderer.
+   * @param {Boolean} alpha - Whether the renderer uses the alpha channel or not.
+   */
 
-	initialise(renderer, alpha) {
+  initialise(renderer, alpha) {
 
-		this.blurPass.initialise(renderer, alpha);
+    this.blurPass.initialise(renderer, alpha);
 
-		if(!alpha) { this.renderTarget.texture.format = __WEBPACK_IMPORTED_MODULE_0_three__["RGBFormat"]; }
+    if(!alpha) { this.renderTarget.texture.format = __WEBPACK_IMPORTED_MODULE_0_three__["RGBFormat"]; }
 
-	}
+  }
 
-	/**
-	 * Updates this pass with the renderer's size.
-	 *
-	 * @param {Number} width - The width.
-	 * @param {Number} height - The height.
-	 */
+  /**
+   * Updates this pass with the renderer's size.
+   *
+   * @param {Number} width - The width.
+   * @param {Number} height - The height.
+   */
 
-	setSize(width, height) {
+  setSize(width, height) {
 
-		this.blurPass.setSize(width, height);
+    this.blurPass.setSize(width, height);
 
-		width = this.blurPass.width;
-		height = this.blurPass.height;
+    width = this.blurPass.width;
+    height = this.blurPass.height;
 
-		this.renderTarget.setSize(width, height);
+    this.renderTarget.setSize(width, height);
 
-	}
+  }
 
 }
 /* unused harmony export BloomPass */
@@ -13290,41 +13289,41 @@ const vertex = "varying vec2 vUv;\r\n\r\nvoid main() {\r\n\r\n\tvUv = uv;\r\n\tg
 
 class AdaptiveLuminosityMaterial extends __WEBPACK_IMPORTED_MODULE_0_three__["ShaderMaterial"] {
 
-	/**
-	 * Constructs a new adaptive luminosity material.
-	 */
+  /**
+   * Constructs a new adaptive luminosity material.
+   */
 
-	constructor() {
+  constructor() {
 
-		super({
+    super({
 
-			type: "AdaptiveLuminosityMaterial",
+      type: "AdaptiveLuminosityMaterial",
 
-			defines: {
+      defines: {
 
-				MIP_LEVEL_1X1: "0.0"
+        MIP_LEVEL_1X1: "0.0"
 
-			},
+      },
 
-			uniforms: {
+      uniforms: {
 
-				tPreviousLum: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
-				tCurrentLum: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
-				minLuminance: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.01),
-				delta: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.0),
-				tau: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](1.0)
+        tPreviousLum: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
+        tCurrentLum: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
+        minLuminance: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.01),
+        delta: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.0),
+        tau: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](1.0)
 
-			},
+      },
 
-			fragmentShader: fragment,
-			vertexShader: vertex,
+      fragmentShader: fragment,
+      vertexShader: vertex,
 
-			depthWrite: false,
-			depthTest: false
+      depthWrite: false,
+      depthTest: false
 
-		});
+    });
 
-	}
+  }
 
 }
 /* harmony export (immutable) */ __webpack_exports__["a"] = AdaptiveLuminosityMaterial;
@@ -13352,66 +13351,66 @@ const vertex = "varying vec2 vUv;\r\n\r\nvoid main() {\r\n\r\n\tvUv = uv;\r\n\tg
 
 class BokehMaterial extends __WEBPACK_IMPORTED_MODULE_0_three__["ShaderMaterial"] {
 
-	/**
-	 * Constructs a new bokeh material.
-	 *
-	 * @param {PerspectiveCamera} [camera] - A camera.
-	 * @param {Object} [options] - The options.
-	 * @param {Number} [options.focus=1.0] - Focus distance.
-	 * @param {Number} [options.aperture=0.025] - Camera aperture scale. Bigger values for shallower depth of field.
-	 * @param {Number} [options.maxBlur=1.0] - Maximum blur strength.
-	 */
+  /**
+   * Constructs a new bokeh material.
+   *
+   * @param {PerspectiveCamera} [camera] - A camera.
+   * @param {Object} [options] - The options.
+   * @param {Number} [options.focus=1.0] - Focus distance.
+   * @param {Number} [options.aperture=0.025] - Camera aperture scale. Bigger values for shallower depth of field.
+   * @param {Number} [options.maxBlur=1.0] - Maximum blur strength.
+   */
 
-	constructor(camera = null, options = {}) {
+  constructor(camera = null, options = {}) {
 
-		if(options.focus === undefined) { options.focus = 1.0; }
-		if(options.aperture === undefined) { options.aperture = 0.025; }
-		if(options.maxBlur === undefined) { options.maxBlur = 1.0; }
+    if(options.focus === undefined) { options.focus = 1.0; }
+    if(options.aperture === undefined) { options.aperture = 0.025; }
+    if(options.maxBlur === undefined) { options.maxBlur = 1.0; }
 
-		super({
+    super({
 
-			type: "BokehMaterial",
+      type: "BokehMaterial",
 
-			uniforms: {
+      uniforms: {
 
-				cameraNear: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.1),
-				cameraFar: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](2000),
-				aspect: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](1.0),
+        cameraNear: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.1),
+        cameraFar: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](2000),
+        aspect: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](1.0),
 
-				tDiffuse: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
-				tDepth: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
+        tDiffuse: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
+        tDepth: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
 
-				focus: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](options.focus),
-				aperture: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](options.aperture),
-				maxBlur: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](options.maxBlur)
+        focus: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](options.focus),
+        aperture: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](options.aperture),
+        maxBlur: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](options.maxBlur)
 
-			},
+      },
 
-			fragmentShader: fragment,
-			vertexShader: vertex,
+      fragmentShader: fragment,
+      vertexShader: vertex,
 
-			depthWrite: false,
-			depthTest: false
+      depthWrite: false,
+      depthTest: false
 
-		});
+    });
 
-		if(camera !== null) { this.adoptCameraSettings(camera); }
+    if(camera !== null) { this.adoptCameraSettings(camera); }
 
-	}
+  }
 
-	/**
-	 * Adopts the settings of the given camera.
-	 *
-	 * @param {PerspectiveCamera} camera - A camera.
-	 */
+  /**
+   * Adopts the settings of the given camera.
+   *
+   * @param {PerspectiveCamera} camera - A camera.
+   */
 
-	adoptCameraSettings(camera) {
+  adoptCameraSettings(camera) {
 
-		this.uniforms.cameraNear.value = camera.near;
-		this.uniforms.cameraFar.value = camera.far;
-		this.uniforms.aspect.value = camera.aspect;
+    this.uniforms.cameraNear.value = camera.near;
+    this.uniforms.cameraFar.value = camera.far;
+    this.uniforms.aspect.value = camera.aspect;
 
-	}
+  }
 
 }
 /* harmony export (immutable) */ __webpack_exports__["a"] = BokehMaterial;
@@ -13439,118 +13438,118 @@ const vertex = "varying vec2 vUv;\r\n\r\nvoid main() {\r\n\r\n\tvUv = uv;\r\n\tg
 
 class Bokeh2Material extends __WEBPACK_IMPORTED_MODULE_0_three__["ShaderMaterial"] {
 
-	/**
-	 * Constructs a new bokeh2 material.
-	 *
-	 * @param {PerspectiveCamera} [camera] - The main camera.
-	 * @param {Object} [options] - Additional options.
-	 * @param {Vector2} [options.texelSize] - The absolute screen texel size.
-	 * @param {Boolean} [options.showFocus=false] - Whether the focus point should be highlighted.
-	 * @param {Boolean} [options.manualDoF=false] - Enables manual depth of field blur.
-	 * @param {Boolean} [options.vignette=false] - Enables a vignette effect.
-	 * @param {Boolean} [options.pentagon=false] - Enable to use a pentagonal shape to scale gathered texels.
-	 * @param {Boolean} [options.shaderFocus=true] - Disable if you compute your own focalDepth (in metres!).
-	 * @param {Boolean} [options.noise=true] - Disable if you don't want noise patterns for dithering.
-	 */
+  /**
+   * Constructs a new bokeh2 material.
+   *
+   * @param {PerspectiveCamera} [camera] - The main camera.
+   * @param {Object} [options] - Additional options.
+   * @param {Vector2} [options.texelSize] - The absolute screen texel size.
+   * @param {Boolean} [options.showFocus=false] - Whether the focus point should be highlighted.
+   * @param {Boolean} [options.manualDoF=false] - Enables manual depth of field blur.
+   * @param {Boolean} [options.vignette=false] - Enables a vignette effect.
+   * @param {Boolean} [options.pentagon=false] - Enable to use a pentagonal shape to scale gathered texels.
+   * @param {Boolean} [options.shaderFocus=true] - Disable if you compute your own focalDepth (in metres!).
+   * @param {Boolean} [options.noise=true] - Disable if you don't want noise patterns for dithering.
+   */
 
-	constructor(camera = null, options = {}) {
+  constructor(camera = null, options = {}) {
 
-		if(options.rings === undefined) { options.rings = 3; }
-		if(options.samples === undefined) { options.samples = 2; }
-		if(options.showFocus === undefined) { options.showFocus = false; }
-		if(options.showFocus === undefined) { options.showFocus = false; }
-		if(options.manualDoF === undefined) { options.manualDoF = false; }
-		if(options.vignette === undefined) { options.vignette = false; }
-		if(options.pentagon === undefined) { options.pentagon = false; }
-		if(options.shaderFocus === undefined) { options.shaderFocus = true; }
-		if(options.noise === undefined) { options.noise = true; }
+    if(options.rings === undefined) { options.rings = 3; }
+    if(options.samples === undefined) { options.samples = 2; }
+    if(options.showFocus === undefined) { options.showFocus = false; }
+    if(options.showFocus === undefined) { options.showFocus = false; }
+    if(options.manualDoF === undefined) { options.manualDoF = false; }
+    if(options.vignette === undefined) { options.vignette = false; }
+    if(options.pentagon === undefined) { options.pentagon = false; }
+    if(options.shaderFocus === undefined) { options.shaderFocus = true; }
+    if(options.noise === undefined) { options.noise = true; }
 
-		super({
+    super({
 
-			type: "Bokeh2Material",
+      type: "Bokeh2Material",
 
-			defines: {
+      defines: {
 
-				RINGS_INT: options.rings.toFixed(0),
-				RINGS_FLOAT: options.rings.toFixed(1),
-				SAMPLES_INT: options.samples.toFixed(0),
-				SAMPLES_FLOAT: options.samples.toFixed(1)
+        RINGS_INT: options.rings.toFixed(0),
+        RINGS_FLOAT: options.rings.toFixed(1),
+        SAMPLES_INT: options.samples.toFixed(0),
+        SAMPLES_FLOAT: options.samples.toFixed(1)
 
-			},
+      },
 
-			uniforms: {
+      uniforms: {
 
-				tDiffuse: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
-				tDepth: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
+        tDiffuse: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
+        tDepth: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
 
-				texelSize: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](new __WEBPACK_IMPORTED_MODULE_0_three__["Vector2"]()),
-				halfTexelSize: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](new __WEBPACK_IMPORTED_MODULE_0_three__["Vector2"]()),
+        texelSize: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](new __WEBPACK_IMPORTED_MODULE_0_three__["Vector2"]()),
+        halfTexelSize: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](new __WEBPACK_IMPORTED_MODULE_0_three__["Vector2"]()),
 
-				cameraNear: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.1),
-				cameraFar: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](2000),
+        cameraNear: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.1),
+        cameraFar: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](2000),
 
-				focalLength: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](24.0),
-				focalStop: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.9),
+        focalLength: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](24.0),
+        focalStop: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.9),
 
-				maxBlur: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](1.0),
-				luminanceThreshold: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.5),
-				luminanceGain: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](2.0),
-				bias: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.5),
-				fringe: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.7),
-				ditherStrength: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.0001),
+        maxBlur: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](1.0),
+        luminanceThreshold: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.5),
+        luminanceGain: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](2.0),
+        bias: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.5),
+        fringe: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.7),
+        ditherStrength: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.0001),
 
-				focusCoords: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](new __WEBPACK_IMPORTED_MODULE_0_three__["Vector2"](0.5, 0.5)),
-				focalDepth: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](1.0)
+        focusCoords: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](new __WEBPACK_IMPORTED_MODULE_0_three__["Vector2"](0.5, 0.5)),
+        focalDepth: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](1.0)
 
-			},
+      },
 
-			fragmentShader: fragment,
-			vertexShader: vertex,
+      fragmentShader: fragment,
+      vertexShader: vertex,
 
-			depthWrite: false,
-			depthTest: false
+      depthWrite: false,
+      depthTest: false
 
-		});
+    });
 
-		if(options.showFocus) { this.defines.SHOW_FOCUS = "1"; }
-		if(options.manualDoF) { this.defines.MANUAL_DOF = "1"; }
-		if(options.vignette) { this.defines.VIGNETTE = "1"; }
-		if(options.pentagon) { this.defines.PENTAGON = "1"; }
-		if(options.shaderFocus) { this.defines.SHADER_FOCUS = "1"; }
-		if(options.noise) { this.defines.NOISE = "1"; }
+    if(options.showFocus) { this.defines.SHOW_FOCUS = "1"; }
+    if(options.manualDoF) { this.defines.MANUAL_DOF = "1"; }
+    if(options.vignette) { this.defines.VIGNETTE = "1"; }
+    if(options.pentagon) { this.defines.PENTAGON = "1"; }
+    if(options.shaderFocus) { this.defines.SHADER_FOCUS = "1"; }
+    if(options.noise) { this.defines.NOISE = "1"; }
 
-		if(options.texelSize !== undefined) { this.setTexelSize(options.texelSize.x, options.texelSize.y); }
-		if(camera !== null) { this.adoptCameraSettings(camera); }
+    if(options.texelSize !== undefined) { this.setTexelSize(options.texelSize.x, options.texelSize.y); }
+    if(camera !== null) { this.adoptCameraSettings(camera); }
 
-	}
+  }
 
-	/**
-	 * Sets the texel size.
-	 *
-	 * @param {Number} x - The texel width.
-	 * @param {Number} y - The texel height.
-	 */
+  /**
+   * Sets the texel size.
+   *
+   * @param {Number} x - The texel width.
+   * @param {Number} y - The texel height.
+   */
 
-	setTexelSize(x, y) {
+  setTexelSize(x, y) {
 
-		this.uniforms.texelSize.value.set(x, y);
-		this.uniforms.halfTexelSize.value.set(x, y).multiplyScalar(0.5);
+    this.uniforms.texelSize.value.set(x, y);
+    this.uniforms.halfTexelSize.value.set(x, y).multiplyScalar(0.5);
 
-	}
+  }
 
-	/**
-	 * Adopts the near and far plane and the focal length of the given camera.
-	 *
-	 * @param {PerspectiveCamera} camera - The main camera.
-	 */
+  /**
+   * Adopts the near and far plane and the focal length of the given camera.
+   *
+   * @param {PerspectiveCamera} camera - The main camera.
+   */
 
-	adoptCameraSettings(camera) {
+  adoptCameraSettings(camera) {
 
-		this.uniforms.cameraNear.value = camera.near;
-		this.uniforms.cameraFar.value = camera.far;
-		this.uniforms.focalLength.value = camera.getFocalLength(); // unit: mm.
+    this.uniforms.cameraNear.value = camera.near;
+    this.uniforms.cameraFar.value = camera.far;
+    this.uniforms.focalLength.value = camera.getFocalLength(); // unit: mm.
 
-	}
+  }
 
 }
 /* harmony export (immutable) */ __webpack_exports__["a"] = Bokeh2Material;
@@ -13581,39 +13580,39 @@ const vertex = "varying vec2 vUv;\r\n\r\nvoid main() {\r\n\r\n\tvUv = uv;\r\n\tg
 
 class CombineMaterial extends __WEBPACK_IMPORTED_MODULE_0_three__["ShaderMaterial"] {
 
-	/**
-	 * Constructs a new combine material.
-	 *
-	 * @param {Boolean} [screenMode=false] - Whether the screen blend mode should be used.
-	 */
+  /**
+   * Constructs a new combine material.
+   *
+   * @param {Boolean} [screenMode=false] - Whether the screen blend mode should be used.
+   */
 
-	constructor(screenMode = false) {
+  constructor(screenMode = false) {
 
-		super({
+    super({
 
-			type: "CombineMaterial",
+      type: "CombineMaterial",
 
-			uniforms: {
+      uniforms: {
 
-				texture1: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
-				texture2: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
+        texture1: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
+        texture2: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
 
-				opacity1: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](1.0),
-				opacity2: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](1.0)
+        opacity1: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](1.0),
+        opacity2: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](1.0)
 
-			},
+      },
 
-			fragmentShader: fragment,
-			vertexShader: vertex,
+      fragmentShader: fragment,
+      vertexShader: vertex,
 
-			depthWrite: false,
-			depthTest: false
+      depthWrite: false,
+      depthTest: false
 
-		});
+    });
 
-		if(screenMode) { this.defines.SCREEN_MODE = "1"; }
+    if(screenMode) { this.defines.SCREEN_MODE = "1"; }
 
-	}
+  }
 
 }
 /* harmony export (immutable) */ __webpack_exports__["a"] = CombineMaterial;
@@ -13646,69 +13645,69 @@ const vertex = "uniform vec2 texelSize;\r\nuniform vec2 halfTexelSize;\r\nunifor
 
 class ConvolutionMaterial extends __WEBPACK_IMPORTED_MODULE_0_three__["ShaderMaterial"] {
 
-	/**
-	 * Constructs a new convolution material.
-	 *
-	 * @param {Vector2} [texelSize] - The absolute screen texel size.
-	 */
+  /**
+   * Constructs a new convolution material.
+   *
+   * @param {Vector2} [texelSize] - The absolute screen texel size.
+   */
 
-	constructor(texelSize = new __WEBPACK_IMPORTED_MODULE_0_three__["Vector2"]()) {
+  constructor(texelSize = new __WEBPACK_IMPORTED_MODULE_0_three__["Vector2"]()) {
 
-		super({
+    super({
 
-			type: "ConvolutionMaterial",
+      type: "ConvolutionMaterial",
 
-			uniforms: {
+      uniforms: {
 
-				tDiffuse: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
-				texelSize: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](new __WEBPACK_IMPORTED_MODULE_0_three__["Vector2"]()),
-				halfTexelSize: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](new __WEBPACK_IMPORTED_MODULE_0_three__["Vector2"]()),
-				kernel: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.0)
+        tDiffuse: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
+        texelSize: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](new __WEBPACK_IMPORTED_MODULE_0_three__["Vector2"]()),
+        halfTexelSize: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](new __WEBPACK_IMPORTED_MODULE_0_three__["Vector2"]()),
+        kernel: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.0)
 
-			},
+      },
 
-			fragmentShader: fragment,
-			vertexShader: vertex,
+      fragmentShader: fragment,
+      vertexShader: vertex,
 
-			depthWrite: false,
-			depthTest: false
+      depthWrite: false,
+      depthTest: false
 
-		});
+    });
 
-		this.setTexelSize(texelSize.x, texelSize.y);
+    this.setTexelSize(texelSize.x, texelSize.y);
 
-		/**
-		 * The current kernel size.
-		 *
-		 * @type {KernelSize}
-		 * @default KernelSize.LARGE
-		 */
+    /**
+     * The current kernel size.
+     *
+     * @type {KernelSize}
+     * @default KernelSize.LARGE
+     */
 
-		this.kernelSize = KernelSize.LARGE;
+    this.kernelSize = KernelSize.LARGE;
 
-	}
+  }
 
-	/**
-	 * Returns the kernel.
-	 *
-	 * @return {Float32Array} The kernel.
-	 */
+  /**
+   * Returns the kernel.
+   *
+   * @return {Float32Array} The kernel.
+   */
 
-	getKernel() { return kernelPresets[this.kernelSize]; }
+  getKernel() { return kernelPresets[this.kernelSize]; }
 
-	/**
-	 * Sets the texel size.
-	 *
-	 * @param {Number} x - The texel width.
-	 * @param {Number} y - The texel height.
-	 */
+  /**
+   * Sets the texel size.
+   *
+   * @param {Number} x - The texel width.
+   * @param {Number} y - The texel height.
+   */
 
-	setTexelSize(x, y) {
+  setTexelSize(x, y) {
 
-		this.uniforms.texelSize.value.set(x, y);
-		this.uniforms.halfTexelSize.value.set(x, y).multiplyScalar(0.5);
+    this.uniforms.texelSize.value.set(x, y);
+    this.uniforms.halfTexelSize.value.set(x, y).multiplyScalar(0.5);
 
-	}
+  }
 
 }
 /* harmony export (immutable) */ __webpack_exports__["a"] = ConvolutionMaterial;
@@ -13722,12 +13721,12 @@ class ConvolutionMaterial extends __WEBPACK_IMPORTED_MODULE_0_three__["ShaderMat
  */
 
 const kernelPresets = [
-	new Float32Array([0.0, 0.0]),
-	new Float32Array([0.0, 1.0, 1.0]),
-	new Float32Array([0.0, 1.0, 1.0, 2.0]),
-	new Float32Array([0.0, 1.0, 2.0, 2.0, 3.0]),
-	new Float32Array([0.0, 1.0, 2.0, 3.0, 4.0, 4.0, 5.0]),
-	new Float32Array([0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 7.0, 8.0, 9.0, 10.0])
+  new Float32Array([0.0, 0.0]),
+  new Float32Array([0.0, 1.0, 1.0]),
+  new Float32Array([0.0, 1.0, 1.0, 2.0]),
+  new Float32Array([0.0, 1.0, 2.0, 2.0, 3.0]),
+  new Float32Array([0.0, 1.0, 2.0, 3.0, 4.0, 4.0, 5.0]),
+  new Float32Array([0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 7.0, 8.0, 9.0, 10.0])
 ];
 
 /**
@@ -13744,12 +13743,12 @@ const kernelPresets = [
 
 const KernelSize = {
 
-	VERY_SMALL: 0,
-	SMALL: 1,
-	MEDIUM: 2,
-	LARGE: 3,
-	VERY_LARGE: 4,
-	HUGE: 5
+  VERY_SMALL: 0,
+  SMALL: 1,
+  MEDIUM: 2,
+  LARGE: 3,
+  VERY_LARGE: 4,
+  HUGE: 5
 
 };
 /* harmony export (immutable) */ __webpack_exports__["b"] = KernelSize;
@@ -13774,32 +13773,32 @@ const vertex = "varying vec2 vUv;\r\n\r\nvoid main() {\r\n\r\n\tvUv = uv;\r\n\tg
 
 class CopyMaterial extends __WEBPACK_IMPORTED_MODULE_0_three__["ShaderMaterial"] {
 
-	/**
-	 * Constructs a new copy material.
-	 */
+  /**
+   * Constructs a new copy material.
+   */
 
-	constructor() {
+  constructor() {
 
-		super({
+    super({
 
-			type: "CopyMaterial",
+      type: "CopyMaterial",
 
-			uniforms: {
+      uniforms: {
 
-				tDiffuse: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
-				opacity: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](1.0)
+        tDiffuse: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
+        opacity: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](1.0)
 
-			},
+      },
 
-			fragmentShader: fragment,
-			vertexShader: vertex,
+      fragmentShader: fragment,
+      vertexShader: vertex,
 
-			depthWrite: false,
-			depthTest: false
+      depthWrite: false,
+      depthTest: false
 
-		});
+    });
 
-	}
+  }
 
 }
 /* harmony export (immutable) */ __webpack_exports__["a"] = CopyMaterial;
@@ -13824,51 +13823,51 @@ const vertex = "varying vec2 vUv;\r\n\r\nvoid main() {\r\n\r\n\tvUv = uv;\r\n\tg
 
 class DepthMaterial extends __WEBPACK_IMPORTED_MODULE_0_three__["ShaderMaterial"] {
 
-	/**
-	 * Constructs a new depth material.
-	 *
-	 * @param {PerspectiveCamera} [camera] - A camera.
-	 */
+  /**
+   * Constructs a new depth material.
+   *
+   * @param {PerspectiveCamera} [camera] - A camera.
+   */
 
-	constructor(camera = null) {
+  constructor(camera = null) {
 
-		super({
+    super({
 
-			type: "DepthMaterial",
+      type: "DepthMaterial",
 
-			uniforms: {
+      uniforms: {
 
-				cameraNear: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.1),
-				cameraFar: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](2000),
+        cameraNear: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.1),
+        cameraFar: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](2000),
 
-				tDepth: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null)
+        tDepth: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null)
 
-			},
+      },
 
-			fragmentShader: fragment,
-			vertexShader: vertex,
+      fragmentShader: fragment,
+      vertexShader: vertex,
 
-			depthWrite: false,
-			depthTest: false
+      depthWrite: false,
+      depthTest: false
 
-		});
+    });
 
-		if(camera !== null) { this.adoptCameraSettings(camera); }
+    if(camera !== null) { this.adoptCameraSettings(camera); }
 
-	}
+  }
 
-	/**
-	 * Adopts the settings of the given camera.
-	 *
-	 * @param {PerspectiveCamera} camera - A camera.
-	 */
+  /**
+   * Adopts the settings of the given camera.
+   *
+   * @param {PerspectiveCamera} camera - A camera.
+   */
 
-	adoptCameraSettings(camera) {
+  adoptCameraSettings(camera) {
 
-		this.uniforms.cameraNear.value = camera.near;
-		this.uniforms.cameraFar.value = camera.far;
+    this.uniforms.cameraNear.value = camera.near;
+    this.uniforms.cameraFar.value = camera.far;
 
-	}
+  }
 
 }
 /* harmony export (immutable) */ __webpack_exports__["a"] = DepthMaterial;
@@ -13893,41 +13892,41 @@ const vertex = "uniform vec4 offsetRepeat;\r\n\r\nvarying vec2 vUv;\r\nvarying v
 
 class DotScreenMaterial extends __WEBPACK_IMPORTED_MODULE_0_three__["ShaderMaterial"] {
 
-	/**
-	 * Constructs a new dot screen material.
-	 *
-	 * @param {Boolean} [average=false] - Whether the shader should output the colour average (black and white).
-	 */
+  /**
+   * Constructs a new dot screen material.
+   *
+   * @param {Boolean} [average=false] - Whether the shader should output the colour average (black and white).
+   */
 
-	constructor(average = false) {
+  constructor(average = false) {
 
-		super({
+    super({
 
-			type: "DotScreenMaterial",
+      type: "DotScreenMaterial",
 
-			uniforms: {
+      uniforms: {
 
-				tDiffuse: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
+        tDiffuse: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
 
-				angle: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](1.57),
-				scale: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](1.0),
-				intensity: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](1.0),
+        angle: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](1.57),
+        scale: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](1.0),
+        intensity: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](1.0),
 
-				offsetRepeat: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](new __WEBPACK_IMPORTED_MODULE_0_three__["Vector4"](0.5, 0.5, 1.0, 1.0))
+        offsetRepeat: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](new __WEBPACK_IMPORTED_MODULE_0_three__["Vector4"](0.5, 0.5, 1.0, 1.0))
 
-			},
+      },
 
-			fragmentShader: fragment,
-			vertexShader: vertex,
+      fragmentShader: fragment,
+      vertexShader: vertex,
 
-			depthWrite: false,
-			depthTest: false
+      depthWrite: false,
+      depthTest: false
 
-		});
+    });
 
-		if(average) { this.defines.AVERAGE = "1"; }
+    if(average) { this.defines.AVERAGE = "1"; }
 
-	}
+  }
 
 }
 /* harmony export (immutable) */ __webpack_exports__["a"] = DotScreenMaterial;
@@ -13970,83 +13969,83 @@ const vertex = "varying vec2 vUv;\r\n\r\nvoid main() {\r\n\r\n\tvUv = uv;\r\n\tg
 
 class FilmMaterial extends __WEBPACK_IMPORTED_MODULE_0_three__["ShaderMaterial"] {
 
-	/**
-	 * Constructs a new film material.
-	 *
-	 * @param {Object} [options] - The options. Disabled effects will not be included in the final shader and have no negative impact on performance.
-	 * @param {Boolean} [options.greyscale=false] - Enable greyscale effect. Greyscale and sepia are mutually exclusive.
-	 * @param {Boolean} [options.sepia=false] - Enable sepia effect. Greyscale and sepia are mutually exclusive.
-	 * @param {Boolean} [options.vignette=false] - Apply vignette effect.
-	 * @param {Boolean} [options.eskil=false] - Use Eskil's vignette approach. The default looks dusty while Eskil looks burned out.
-	 * @param {Boolean} [options.screenMode=true] - Whether the screen blend mode should be used for noise and scanlines. Both of these effects are computed independently.
-	 * @param {Boolean} [options.noise=true] - Show noise-based film grain.
-	 * @param {Boolean} [options.scanlines=true] - Show scanlines.
-	 * @param {Number} [options.noiseIntensity=0.5] - The noise intensity. 0.0 to 1.0.
-	 * @param {Number} [options.scanlineIntensity=0.05] - The scanline intensity. 0.0 to 1.0.
-	 * @param {Number} [options.greyscaleIntensity=1.0] - The intensity of the greyscale effect.
-	 * @param {Number} [options.sepiaIntensity=1.0] - The intensity of the sepia effect.
-	 * @param {Number} [options.vignetteOffset=1.0] - The offset of the vignette effect.
-	 * @param {Number} [options.vignetteDarkness=1.0] - The darkness of the vignette effect.
-	 */
+  /**
+   * Constructs a new film material.
+   *
+   * @param {Object} [options] - The options. Disabled effects will not be included in the final shader and have no negative impact on performance.
+   * @param {Boolean} [options.greyscale=false] - Enable greyscale effect. Greyscale and sepia are mutually exclusive.
+   * @param {Boolean} [options.sepia=false] - Enable sepia effect. Greyscale and sepia are mutually exclusive.
+   * @param {Boolean} [options.vignette=false] - Apply vignette effect.
+   * @param {Boolean} [options.eskil=false] - Use Eskil's vignette approach. The default looks dusty while Eskil looks burned out.
+   * @param {Boolean} [options.screenMode=true] - Whether the screen blend mode should be used for noise and scanlines. Both of these effects are computed independently.
+   * @param {Boolean} [options.noise=true] - Show noise-based film grain.
+   * @param {Boolean} [options.scanlines=true] - Show scanlines.
+   * @param {Number} [options.noiseIntensity=0.5] - The noise intensity. 0.0 to 1.0.
+   * @param {Number} [options.scanlineIntensity=0.05] - The scanline intensity. 0.0 to 1.0.
+   * @param {Number} [options.greyscaleIntensity=1.0] - The intensity of the greyscale effect.
+   * @param {Number} [options.sepiaIntensity=1.0] - The intensity of the sepia effect.
+   * @param {Number} [options.vignetteOffset=1.0] - The offset of the vignette effect.
+   * @param {Number} [options.vignetteDarkness=1.0] - The darkness of the vignette effect.
+   */
 
-	constructor(options = {}) {
+  constructor(options = {}) {
 
-		if(options.screenMode === undefined) { options.screenMode = true; }
-		if(options.noise === undefined) { options.noise = true; }
-		if(options.scanlines === undefined) { options.scanlines = true; }
+    if(options.screenMode === undefined) { options.screenMode = true; }
+    if(options.noise === undefined) { options.noise = true; }
+    if(options.scanlines === undefined) { options.scanlines = true; }
 
-		if(options.greyscale === undefined) { options.greyscale = false; }
-		if(options.sepia === undefined) { options.sepia = false; }
-		if(options.vignette === undefined) { options.vignette = false; }
-		if(options.eskil === undefined) { options.eskil = false; }
+    if(options.greyscale === undefined) { options.greyscale = false; }
+    if(options.sepia === undefined) { options.sepia = false; }
+    if(options.vignette === undefined) { options.vignette = false; }
+    if(options.eskil === undefined) { options.eskil = false; }
 
-		if(options.noiseIntensity === undefined) { options.noiseIntensity = 0.5; }
-		if(options.scanlineIntensity === undefined) { options.scanlineIntensity = 0.05; }
-		if(options.greyscaleIntensity === undefined) { options.greyscaleIntensity = 1.0; }
-		if(options.sepiaIntensity === undefined) { options.sepiaIntensity = 1.0; }
+    if(options.noiseIntensity === undefined) { options.noiseIntensity = 0.5; }
+    if(options.scanlineIntensity === undefined) { options.scanlineIntensity = 0.05; }
+    if(options.greyscaleIntensity === undefined) { options.greyscaleIntensity = 1.0; }
+    if(options.sepiaIntensity === undefined) { options.sepiaIntensity = 1.0; }
 
-		if(options.vignetteOffset === undefined) { options.vignetteOffset = 1.0; }
-		if(options.vignetteDarkness === undefined) { options.vignetteDarkness = 1.0; }
+    if(options.vignetteOffset === undefined) { options.vignetteOffset = 1.0; }
+    if(options.vignetteDarkness === undefined) { options.vignetteDarkness = 1.0; }
 
-		super({
+    super({
 
-			type: "FilmMaterial",
+      type: "FilmMaterial",
 
-			uniforms: {
+      uniforms: {
 
-				tDiffuse: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
-				time: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.0),
+        tDiffuse: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
+        time: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.0),
 
-				noiseIntensity: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](options.noiseIntensity),
-				scanlineIntensity: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](options.scanlineIntensity),
-				scanlineCount: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.0),
+        noiseIntensity: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](options.noiseIntensity),
+        scanlineIntensity: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](options.scanlineIntensity),
+        scanlineCount: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.0),
 
-				greyscaleIntensity: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](options.greyscaleIntensity),
-				sepiaIntensity: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](options.sepiaIntensity),
+        greyscaleIntensity: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](options.greyscaleIntensity),
+        sepiaIntensity: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](options.sepiaIntensity),
 
-				vignetteOffset: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](options.vignetteOffset),
-				vignetteDarkness: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](options.vignetteDarkness)
+        vignetteOffset: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](options.vignetteOffset),
+        vignetteDarkness: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](options.vignetteDarkness)
 
-			},
+      },
 
-			fragmentShader: fragment,
-			vertexShader: vertex,
+      fragmentShader: fragment,
+      vertexShader: vertex,
 
-			depthWrite: false,
-			depthTest: false
+      depthWrite: false,
+      depthTest: false
 
-		});
+    });
 
-		if(options.greyscale) { this.defines.GREYSCALE = "1"; }
-		if(options.sepia) { this.defines.SEPIA = "1"; }
-		if(options.vignette) { this.defines.VIGNETTE = "1"; }
-		if(options.eskil) { this.defines.ESKIL = "1"; }
+    if(options.greyscale) { this.defines.GREYSCALE = "1"; }
+    if(options.sepia) { this.defines.SEPIA = "1"; }
+    if(options.vignette) { this.defines.VIGNETTE = "1"; }
+    if(options.eskil) { this.defines.ESKIL = "1"; }
 
-		if(options.screenMode) { this.defines.SCREEN_MODE = "1"; }
-		if(options.noise) { this.defines.NOISE = "1"; }
-		if(options.scanlines) { this.defines.SCANLINES = "1"; }
+    if(options.screenMode) { this.defines.SCREEN_MODE = "1"; }
+    if(options.noise) { this.defines.NOISE = "1"; }
+    if(options.scanlines) { this.defines.SCANLINES = "1"; }
 
-	}
+  }
 
 }
 /* harmony export (immutable) */ __webpack_exports__["a"] = FilmMaterial;
@@ -14074,43 +14073,43 @@ const vertex = "varying vec2 vUv;\r\n\r\nvoid main() {\r\n\r\n\tvUv = uv;\r\n\tg
 
 class GlitchMaterial extends __WEBPACK_IMPORTED_MODULE_0_three__["ShaderMaterial"] {
 
-	/**
-	 * Constructs a new glitch material.
-	 */
+  /**
+   * Constructs a new glitch material.
+   */
 
-	constructor() {
+  constructor() {
 
-		super({
+    super({
 
-			type: "GlitchMaterial",
+      type: "GlitchMaterial",
 
-			uniforms: {
+      uniforms: {
 
-				tDiffuse: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
-				tPerturb: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
+        tDiffuse: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
+        tPerturb: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
 
-				active: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](1),
+        active: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](1),
 
-				amount: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.8),
-				angle: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.02),
-				seed: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.02),
-				seedX: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.02),
-				seedY: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.02),
-				distortionX: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.5),
-				distortionY: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.6),
-				colS: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.05)
+        amount: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.8),
+        angle: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.02),
+        seed: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.02),
+        seedX: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.02),
+        seedY: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.02),
+        distortionX: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.5),
+        distortionY: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.6),
+        colS: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.05)
 
-			},
+      },
 
-			fragmentShader: fragment,
-			vertexShader: vertex,
+      fragmentShader: fragment,
+      vertexShader: vertex,
 
-			depthWrite: false,
-			depthTest: false
+      depthWrite: false,
+      depthTest: false
 
-		});
+    });
 
-	}
+  }
 
 }
 /* harmony export (immutable) */ __webpack_exports__["a"] = GlitchMaterial;
@@ -14145,45 +14144,45 @@ const vertex = "varying vec2 vUv;\r\n\r\nvoid main() {\r\n\r\n\tvUv = uv;\r\n\tg
 
 class GodRaysMaterial extends __WEBPACK_IMPORTED_MODULE_0_three__["ShaderMaterial"] {
 
-	/**
-	 * Constructs a new god rays material.
-	 */
+  /**
+   * Constructs a new god rays material.
+   */
 
-	constructor() {
+  constructor() {
 
-		super({
+    super({
 
-			type: "GodRaysMaterial",
+      type: "GodRaysMaterial",
 
-			defines: {
+      defines: {
 
-				NUM_SAMPLES_FLOAT: "60.0",
-				NUM_SAMPLES_INT: "60"
+        NUM_SAMPLES_FLOAT: "60.0",
+        NUM_SAMPLES_INT: "60"
 
-			},
+      },
 
-			uniforms: {
+      uniforms: {
 
-				tDiffuse: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
-				lightPosition: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
+        tDiffuse: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
+        lightPosition: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
 
-				exposure: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.6),
-				decay: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.93),
-				density: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.96),
-				weight: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.4),
-				clampMax: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](1.0)
+        exposure: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.6),
+        decay: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.93),
+        density: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.96),
+        weight: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.4),
+        clampMax: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](1.0)
 
-			},
+      },
 
-			fragmentShader: fragment,
-			vertexShader: vertex,
+      fragmentShader: fragment,
+      vertexShader: vertex,
 
-			depthWrite: false,
-			depthTest: false
+      depthWrite: false,
+      depthTest: false
 
-		});
+    });
 
-	}
+  }
 
 }
 /* harmony export (immutable) */ __webpack_exports__["a"] = GodRaysMaterial;
@@ -14217,36 +14216,36 @@ const vertex = "varying vec2 vUv;\r\n\r\nvoid main() {\r\n\r\n\tvUv = uv;\r\n\tg
 
 class LuminosityMaterial extends __WEBPACK_IMPORTED_MODULE_0_three__["ShaderMaterial"] {
 
-	/**
-	 * Constructs a new luminosity material.
-	 *
-	 * @param {Boolean} [color=false] - Defines whether the shader should output colours scaled with their luminance value.
-	 * @param {Vector2} [range] - If provided, the shader will mask out texels that aren't in the specified luminance range.
-	 */
+  /**
+   * Constructs a new luminosity material.
+   *
+   * @param {Boolean} [color=false] - Defines whether the shader should output colours scaled with their luminance value.
+   * @param {Vector2} [range] - If provided, the shader will mask out texels that aren't in the specified luminance range.
+   */
 
-	constructor(color = false, range = null) {
+  constructor(color = false, range = null) {
 
-		super({
+    super({
 
-			type: "LuminosityMaterial",
+      type: "LuminosityMaterial",
 
-			uniforms: {
+      uniforms: {
 
-				tDiffuse: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
-				distinction: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](1.0),
-				range: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"]((range !== null) ? range : new __WEBPACK_IMPORTED_MODULE_0_three__["Vector2"]())
+        tDiffuse: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
+        distinction: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](1.0),
+        range: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"]((range !== null) ? range : new __WEBPACK_IMPORTED_MODULE_0_three__["Vector2"]())
 
-			},
+      },
 
-			fragmentShader: fragment,
-			vertexShader: vertex
+      fragmentShader: fragment,
+      vertexShader: vertex
 
-		});
+    });
 
-		if(color) { this.defines.COLOR = "1"; }
-		if(range !== null) { this.defines.RANGE = "1"; }
+    if(color) { this.defines.COLOR = "1"; }
+    if(range !== null) { this.defines.RANGE = "1"; }
 
-	}
+  }
 
 }
 /* harmony export (immutable) */ __webpack_exports__["a"] = LuminosityMaterial;
@@ -14274,74 +14273,74 @@ const vertex = "varying vec2 vUv;\r\n\r\nvoid main() {\r\n\r\n\tvUv = uv;\r\n\tg
 
 class PixelationMaterial extends __WEBPACK_IMPORTED_MODULE_0_three__["ShaderMaterial"] {
 
-	/**
-	 * Constructs a new pixelation material.
-	 */
+  /**
+   * Constructs a new pixelation material.
+   */
 
-	constructor() {
+  constructor() {
 
-		super({
+    super({
 
-			type: "PixelationMaterial",
+      type: "PixelationMaterial",
 
-			uniforms: {
+      uniforms: {
 
-				tDiffuse: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
-				granularity: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](1.0),
-				resolution: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](new __WEBPACK_IMPORTED_MODULE_0_three__["Vector2"](1.0, 1.0)),
-				dx: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](1.0),
-				dy: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](1.0)
+        tDiffuse: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
+        granularity: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](1.0),
+        resolution: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](new __WEBPACK_IMPORTED_MODULE_0_three__["Vector2"](1.0, 1.0)),
+        dx: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](1.0),
+        dy: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](1.0)
 
-			},
+      },
 
-			fragmentShader: fragment,
-			vertexShader: vertex,
+      fragmentShader: fragment,
+      vertexShader: vertex,
 
-			depthWrite: false,
-			depthTest: false
+      depthWrite: false,
+      depthTest: false
 
-		});
+    });
 
-	}
+  }
 
-	/**
-	 * The pixel granularity.
-	 *
-	 * @type {Number}
-	 */
+  /**
+   * The pixel granularity.
+   *
+   * @type {Number}
+   */
 
-	get granularity() { return this.uniforms.granularity.value; }
+  get granularity() { return this.uniforms.granularity.value; }
 
-	/**
-	 * A higher value yields coarser visuals.
-	 *
-	 * @type {Number}
-	 */
+  /**
+   * A higher value yields coarser visuals.
+   *
+   * @type {Number}
+   */
 
-	set granularity(x) {
+  set granularity(x) {
 
-		const uniforms = this.uniforms;
-		const resolution = uniforms.resolution.value;
+    const uniforms = this.uniforms;
+    const resolution = uniforms.resolution.value;
 
-		uniforms.granularity.value = x;
-		uniforms.dx.value = x / resolution.x;
-		uniforms.dy.value = x / resolution.y;
+    uniforms.granularity.value = x;
+    uniforms.dx.value = x / resolution.x;
+    uniforms.dy.value = x / resolution.y;
 
-	}
+  }
 
-	/**
-	 * Sets the resolution.
-	 *
-	 * @param {Number} width - The width.
-	 * @param {Number} height - The height.
-	 */
+  /**
+   * Sets the resolution.
+   *
+   * @param {Number} width - The width.
+   * @param {Number} height - The height.
+   */
 
-	setResolution(width, height) {
+  setResolution(width, height) {
 
-		this.uniforms.resolution.value.set(width, height);
-		this.granularity = this.granularity;
+    this.uniforms.resolution.value.set(width, height);
+    this.granularity = this.granularity;
 
-	}
+  }
 
 }
 /* harmony export (immutable) */ __webpack_exports__["a"] = PixelationMaterial;
@@ -14369,49 +14368,49 @@ const vertex = "uniform float size;\r\nuniform float scale;\r\nuniform float cam
 
 class ShockWaveMaterial extends __WEBPACK_IMPORTED_MODULE_0_three__["ShaderMaterial"] {
 
-	/**
-	 * Constructs a new shock wave material.
-	 *
-	 * @param {Object} [options] - The options.
-	 * @param {Number} [options.waveSize=0.2] - The wave size.
-	 * @param {Number} [options.amplitude=0.05] - The distortion amplitude.
-	 */
+  /**
+   * Constructs a new shock wave material.
+   *
+   * @param {Object} [options] - The options.
+   * @param {Number} [options.waveSize=0.2] - The wave size.
+   * @param {Number} [options.amplitude=0.05] - The distortion amplitude.
+   */
 
-	constructor(options = {}) {
+  constructor(options = {}) {
 
-		if(options.maxRadius === undefined) { options.maxRadius = 1.0; }
-		if(options.waveSize === undefined) { options.waveSize = 0.2; }
-		if(options.amplitude === undefined) { options.amplitude = 0.05; }
+    if(options.maxRadius === undefined) { options.maxRadius = 1.0; }
+    if(options.waveSize === undefined) { options.waveSize = 0.2; }
+    if(options.amplitude === undefined) { options.amplitude = 0.05; }
 
-		super({
+    super({
 
-			type: "ShockWaveMaterial",
+      type: "ShockWaveMaterial",
 
-			uniforms: {
+      uniforms: {
 
-				tDiffuse: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
+        tDiffuse: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
 
-				center: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](new __WEBPACK_IMPORTED_MODULE_0_three__["Vector2"](0.5, 0.5)),
-				aspect: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](1.0),
-				cameraDistance: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](1.0),
+        center: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](new __WEBPACK_IMPORTED_MODULE_0_three__["Vector2"](0.5, 0.5)),
+        aspect: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](1.0),
+        cameraDistance: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](1.0),
 
-				size: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](1.0),
-				radius: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](-options.waveSize),
-				maxRadius: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](options.maxRadius),
-				waveSize: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](options.waveSize),
-				amplitude: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](options.amplitude)
+        size: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](1.0),
+        radius: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](-options.waveSize),
+        maxRadius: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](options.maxRadius),
+        waveSize: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](options.waveSize),
+        amplitude: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](options.amplitude)
 
-			},
+      },
 
-			fragmentShader: fragment,
-			vertexShader: vertex,
+      fragmentShader: fragment,
+      vertexShader: vertex,
 
-			depthWrite: false,
-			depthTest: false
+      depthWrite: false,
+      depthTest: false
 
-		});
+    });
 
-	}
+  }
 
 }
 /* harmony export (immutable) */ __webpack_exports__["a"] = ShockWaveMaterial;
@@ -14438,35 +14437,35 @@ const vertex = "uniform vec2 texelSize;\r\n\r\nvarying vec2 vUv;\r\nvarying vec4
 
 class SMAABlendMaterial extends __WEBPACK_IMPORTED_MODULE_0_three__["ShaderMaterial"] {
 
-	/**
-	 * Constructs a new SMAA blend material.
-	 *
-	 * @param {Vector2} [texelSize] - The absolute screen texel size.
-	 */
+  /**
+   * Constructs a new SMAA blend material.
+   *
+   * @param {Vector2} [texelSize] - The absolute screen texel size.
+   */
 
-	constructor(texelSize = new __WEBPACK_IMPORTED_MODULE_0_three__["Vector2"]()) {
+  constructor(texelSize = new __WEBPACK_IMPORTED_MODULE_0_three__["Vector2"]()) {
 
-		super({
+    super({
 
-			type: "SMAABlendMaterial",
+      type: "SMAABlendMaterial",
 
-			uniforms: {
+      uniforms: {
 
-				tDiffuse: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
-				tWeights: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
-				texelSize: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](texelSize)
+        tDiffuse: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
+        tWeights: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
+        texelSize: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](texelSize)
 
-			},
+      },
 
-			fragmentShader: fragment,
-			vertexShader: vertex,
+      fragmentShader: fragment,
+      vertexShader: vertex,
 
-			depthWrite: false,
-			depthTest: false
+      depthWrite: false,
+      depthTest: false
 
-		});
+    });
 
-	}
+  }
 
 }
 /* harmony export (immutable) */ __webpack_exports__["a"] = SMAABlendMaterial;
@@ -14493,40 +14492,40 @@ const vertex = "uniform vec2 texelSize;\r\n\r\nvarying vec2 vUv;\r\nvarying vec4
 
 class SMAAColorEdgesMaterial extends __WEBPACK_IMPORTED_MODULE_0_three__["ShaderMaterial"] {
 
-	/**
-	 * Constructs a new SMAA color edges material.
-	 *
-	 * @param {Vector2} [texelSize] - The absolute screen texel size.
-	 */
+  /**
+   * Constructs a new SMAA color edges material.
+   *
+   * @param {Vector2} [texelSize] - The absolute screen texel size.
+   */
 
-	constructor(texelSize = new __WEBPACK_IMPORTED_MODULE_0_three__["Vector2"]()) {
+  constructor(texelSize = new __WEBPACK_IMPORTED_MODULE_0_three__["Vector2"]()) {
 
-		super({
+    super({
 
-			type: "SMAAColorEdgesMaterial",
+      type: "SMAAColorEdgesMaterial",
 
-			defines: {
+      defines: {
 
-				EDGE_THRESHOLD: "0.1"
+        EDGE_THRESHOLD: "0.1"
 
-			},
+      },
 
-			uniforms: {
+      uniforms: {
 
-				tDiffuse: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
-				texelSize: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](texelSize)
+        tDiffuse: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
+        texelSize: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](texelSize)
 
-			},
+      },
 
-			fragmentShader: fragment,
-			vertexShader: vertex,
+      fragmentShader: fragment,
+      vertexShader: vertex,
 
-			depthWrite: false,
-			depthTest: false
+      depthWrite: false,
+      depthTest: false
 
-		});
+    });
 
-	}
+  }
 
 }
 /* harmony export (immutable) */ __webpack_exports__["a"] = SMAAColorEdgesMaterial;
@@ -14558,64 +14557,64 @@ const vertex = "uniform vec2 texelSize;\r\n\r\nvarying vec2 vUv;\r\nvarying vec4
 
 class SMAAWeightsMaterial extends __WEBPACK_IMPORTED_MODULE_0_three__["ShaderMaterial"] {
 
-	/**
-	 * Constructs a new SMAA weights material.
-	 *
-	 * @param {Vector2} [texelSize] - The absolute screen texel size.
-	 */
+  /**
+   * Constructs a new SMAA weights material.
+   *
+   * @param {Vector2} [texelSize] - The absolute screen texel size.
+   */
 
-	constructor(texelSize = new __WEBPACK_IMPORTED_MODULE_0_three__["Vector2"]()) {
+  constructor(texelSize = new __WEBPACK_IMPORTED_MODULE_0_three__["Vector2"]()) {
 
-		super({
+    super({
 
-			type: "SMAAWeightsMaterial",
+      type: "SMAAWeightsMaterial",
 
-			defines: {
+      defines: {
 
-				SMAA_MAX_SEARCH_STEPS_INT: "8",
-				SMAA_MAX_SEARCH_STEPS_FLOAT: "8.0",
+        SMAA_MAX_SEARCH_STEPS_INT: "8",
+        SMAA_MAX_SEARCH_STEPS_FLOAT: "8.0",
 
-				SMAA_AREATEX_MAX_DISTANCE: "16.0",
+        SMAA_AREATEX_MAX_DISTANCE: "16.0",
 
-				SMAA_AREATEX_PIXEL_SIZE: "(1.0 / vec2(160.0, 560.0))",
-				SMAA_AREATEX_SUBTEX_SIZE: "(1.0 / 7.0)"
+        SMAA_AREATEX_PIXEL_SIZE: "(1.0 / vec2(160.0, 560.0))",
+        SMAA_AREATEX_SUBTEX_SIZE: "(1.0 / 7.0)"
 
-			},
+      },
 
-			uniforms: {
+      uniforms: {
 
-				tDiffuse: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
-				tArea: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
-				tSearch: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
-				texelSize: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](texelSize)
+        tDiffuse: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
+        tArea: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
+        tSearch: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
+        texelSize: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](texelSize)
 
-			},
+      },
 
-			fragmentShader: fragment,
-			vertexShader: vertex,
+      fragmentShader: fragment,
+      vertexShader: vertex,
 
-			depthWrite: false,
-			depthTest: false
+      depthWrite: false,
+      depthTest: false
 
-		});
+    });
 
-		/**
-		 * The area pattern recognition image. Encoded as base64.
-		 *
-		 * @type {String}
-		 */
+    /**
+     * The area pattern recognition image. Encoded as base64.
+     *
+     * @type {String}
+     */
 
-		this.areaImage = __WEBPACK_IMPORTED_MODULE_1__images_smaa_area_image_js__["a" /* default */];
+    this.areaImage = __WEBPACK_IMPORTED_MODULE_1__images_smaa_area_image_js__["a" /* default */];
 
-		/**
-		 * The search image. Encoded as base64.
-		 *
-		 * @type {String}
-		 */
+    /**
+     * The search image. Encoded as base64.
+     *
+     * @type {String}
+     */
 
-		this.searchImage = __WEBPACK_IMPORTED_MODULE_2__images_smaa_search_image_js__["a" /* default */];
+    this.searchImage = __WEBPACK_IMPORTED_MODULE_2__images_smaa_search_image_js__["a" /* default */];
 
-	}
+  }
 
 }
 /* harmony export (immutable) */ __webpack_exports__["a"] = SMAAWeightsMaterial;
@@ -14659,35 +14658,35 @@ const vertex = "varying vec2 vUv;\r\n\r\nvoid main() {\r\n\r\n\tvUv = uv;\r\n\tg
 
 class ToneMappingMaterial extends __WEBPACK_IMPORTED_MODULE_0_three__["ShaderMaterial"] {
 
-	/**
-	 * Constructs a new tone mapping material.
-	 */
+  /**
+   * Constructs a new tone mapping material.
+   */
 
-	constructor() {
+  constructor() {
 
-		super({
+    super({
 
-			type: "ToneMappingMaterial",
+      type: "ToneMappingMaterial",
 
-			uniforms: {
+      uniforms: {
 
-				tDiffuse: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
-				luminanceMap: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
-				averageLuminance: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](1.0),
-				maxLuminance: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](16.0),
-				middleGrey: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.6)
+        tDiffuse: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
+        luminanceMap: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](null),
+        averageLuminance: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](1.0),
+        maxLuminance: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](16.0),
+        middleGrey: new __WEBPACK_IMPORTED_MODULE_0_three__["Uniform"](0.6)
 
-			},
+      },
 
-			fragmentShader: fragment,
-			vertexShader: vertex,
+      fragmentShader: fragment,
+      vertexShader: vertex,
 
-			depthWrite: false,
-			depthTest: false
+      depthWrite: false,
+      depthTest: false
 
-		});
+    });
 
-	}
+  }
 
 }
 /* harmony export (immutable) */ __webpack_exports__["a"] = ToneMappingMaterial;
@@ -14712,74 +14711,74 @@ class ToneMappingMaterial extends __WEBPACK_IMPORTED_MODULE_0_three__["ShaderMat
 
 class BokehPass extends __WEBPACK_IMPORTED_MODULE_1__pass_js__["a" /* Pass */] {
 
-	/**
-	 * Constructs a new bokeh pass.
-	 *
-	 * @param {PerspectiveCamera} camera - The main camera. Used to obtain the aspect ratio and the near and far plane settings.
-	 * @param {Object} [options] - Additional parameters.
-	 * @param {Number} [options.focus=1.0] - Focus distance.
-	 * @param {Number} [options.aperture=0.025] - Camera aperture scale. Bigger values for shallower depth of field.
-	 * @param {Number} [options.maxBlur=1.0] - Maximum blur strength.
-	 */
+  /**
+   * Constructs a new bokeh pass.
+   *
+   * @param {PerspectiveCamera} camera - The main camera. Used to obtain the aspect ratio and the near and far plane settings.
+   * @param {Object} [options] - Additional parameters.
+   * @param {Number} [options.focus=1.0] - Focus distance.
+   * @param {Number} [options.aperture=0.025] - Camera aperture scale. Bigger values for shallower depth of field.
+   * @param {Number} [options.maxBlur=1.0] - Maximum blur strength.
+   */
 
-	constructor(camera, options = {}) {
+  constructor(camera, options = {}) {
 
-		super();
+    super();
 
-		/**
-		 * The name of this pass.
-		 */
+    /**
+     * The name of this pass.
+     */
 
-		this.name = "BokehPass";
+    this.name = "BokehPass";
 
-		/**
-		 * This pass renders to the write buffer.
-		 */
+    /**
+     * This pass renders to the write buffer.
+     */
 
-		this.needsSwap = true;
+    this.needsSwap = true;
 
-		/**
-		 * A bokeh shader material.
-		 *
-		 * @type {BokehMaterial}
-		 * @private
-		 */
+    /**
+     * A bokeh shader material.
+     *
+     * @type {BokehMaterial}
+     * @private
+     */
 
-		this.bokehMaterial = new __WEBPACK_IMPORTED_MODULE_0__materials__["c" /* BokehMaterial */](camera, options);
+    this.bokehMaterial = new __WEBPACK_IMPORTED_MODULE_0__materials__["c" /* BokehMaterial */](camera, options);
 
-		this.quad.material = this.bokehMaterial;
+    this.quad.material = this.bokehMaterial;
 
-	}
+  }
 
-	/**
-	 * Renders the effect.
-	 *
-	 * @param {WebGLRenderer} renderer - The renderer.
-	 * @param {WebGLRenderTarget} readBuffer - The read buffer.
-	 * @param {WebGLRenderTarget} writeBuffer - The write buffer.
-	 */
+  /**
+   * Renders the effect.
+   *
+   * @param {WebGLRenderer} renderer - The renderer.
+   * @param {WebGLRenderTarget} readBuffer - The read buffer.
+   * @param {WebGLRenderTarget} writeBuffer - The write buffer.
+   */
 
-	render(renderer, readBuffer, writeBuffer) {
+  render(renderer, readBuffer, writeBuffer) {
 
-		this.bokehMaterial.uniforms.tDiffuse.value = readBuffer.texture;
-		this.bokehMaterial.uniforms.tDepth.value = readBuffer.depthTexture;
+    this.bokehMaterial.uniforms.tDiffuse.value = readBuffer.texture;
+    this.bokehMaterial.uniforms.tDepth.value = readBuffer.depthTexture;
 
-		renderer.render(this.scene, this.camera, this.renderToScreen ? null : writeBuffer);
+    renderer.render(this.scene, this.camera, this.renderToScreen ? null : writeBuffer);
 
-	}
+  }
 
-	/**
-	 * Updates this pass with the renderer's size.
-	 *
-	 * @param {Number} width - The width.
-	 * @param {Number} height - The height.
-	 */
+  /**
+   * Updates this pass with the renderer's size.
+   *
+   * @param {Number} width - The width.
+   * @param {Number} height - The height.
+   */
 
-	setSize(width, height) {
+  setSize(width, height) {
 
-		this.bokehMaterial.uniforms.aspect.value = width / height;
+    this.bokehMaterial.uniforms.aspect.value = width / height;
 
-	}
+  }
 
 }
 /* unused harmony export BokehPass */
@@ -14806,79 +14805,79 @@ class BokehPass extends __WEBPACK_IMPORTED_MODULE_1__pass_js__["a" /* Pass */] {
 
 class Bokeh2Pass extends __WEBPACK_IMPORTED_MODULE_1__pass_js__["a" /* Pass */] {
 
-	/**
-	 * Constructs a new bokeh2 pass.
-	 *
-	 * @param {PerspectiveCamera} camera - The main camera. Used to obtain the focal length and the near and far plane settings.
-	 * @param {Object} [options] - Additional parameters.
-	 * @param {Number} [options.rings=3] - The amount of blur rings.
-	 * @param {Number} [options.samples=4] - The amount of samples per ring.
-	 * @param {Boolean} [options.showFocus=false] - Whether the focus point should be highlighted.
-	 * @param {Boolean} [options.manualDoF=false] - Enables manual depth of field blur.
-	 * @param {Boolean} [options.vignette=false] - Enables a vignette effect.
-	 * @param {Boolean} [options.pentagon=false] - Enable to use a pentagonal shape to scale gathered texels.
-	 * @param {Boolean} [options.shaderFocus=true] - Disable if you compute your own focalDepth (in metres!).
-	 * @param {Boolean} [options.noise=true] - Disable if you don't want noise patterns for dithering.
-	 */
+  /**
+   * Constructs a new bokeh2 pass.
+   *
+   * @param {PerspectiveCamera} camera - The main camera. Used to obtain the focal length and the near and far plane settings.
+   * @param {Object} [options] - Additional parameters.
+   * @param {Number} [options.rings=3] - The amount of blur rings.
+   * @param {Number} [options.samples=4] - The amount of samples per ring.
+   * @param {Boolean} [options.showFocus=false] - Whether the focus point should be highlighted.
+   * @param {Boolean} [options.manualDoF=false] - Enables manual depth of field blur.
+   * @param {Boolean} [options.vignette=false] - Enables a vignette effect.
+   * @param {Boolean} [options.pentagon=false] - Enable to use a pentagonal shape to scale gathered texels.
+   * @param {Boolean} [options.shaderFocus=true] - Disable if you compute your own focalDepth (in metres!).
+   * @param {Boolean} [options.noise=true] - Disable if you don't want noise patterns for dithering.
+   */
 
-	constructor(camera, options = {}) {
+  constructor(camera, options = {}) {
 
-		super();
+    super();
 
-		/**
-		 * The name of this pass.
-		 */
+    /**
+     * The name of this pass.
+     */
 
-		this.name = "Bokeh2Pass";
+    this.name = "Bokeh2Pass";
 
-		/**
-		 * This pass renders to the write buffer.
-		 */
+    /**
+     * This pass renders to the write buffer.
+     */
 
-		this.needsSwap = true;
+    this.needsSwap = true;
 
-		/**
-		 * A bokeh shader material.
-		 *
-		 * @type {BokehMaterial}
-		 * @private
-		 */
+    /**
+     * A bokeh shader material.
+     *
+     * @type {BokehMaterial}
+     * @private
+     */
 
-		this.bokehMaterial = new __WEBPACK_IMPORTED_MODULE_0__materials__["b" /* Bokeh2Material */](camera, options);
+    this.bokehMaterial = new __WEBPACK_IMPORTED_MODULE_0__materials__["b" /* Bokeh2Material */](camera, options);
 
-		this.quad.material = this.bokehMaterial;
+    this.quad.material = this.bokehMaterial;
 
-	}
+  }
 
-	/**
-	 * Renders the effect.
-	 *
-	 * @param {WebGLRenderer} renderer - The renderer.
-	 * @param {WebGLRenderTarget} readBuffer - The read buffer.
-	 * @param {WebGLRenderTarget} writeBuffer - The write buffer.
-	 */
+  /**
+   * Renders the effect.
+   *
+   * @param {WebGLRenderer} renderer - The renderer.
+   * @param {WebGLRenderTarget} readBuffer - The read buffer.
+   * @param {WebGLRenderTarget} writeBuffer - The write buffer.
+   */
 
-	render(renderer, readBuffer, writeBuffer) {
+  render(renderer, readBuffer, writeBuffer) {
 
-		this.bokehMaterial.uniforms.tDiffuse.value = readBuffer.texture;
-		this.bokehMaterial.uniforms.tDepth.value = readBuffer.depthTexture;
+    this.bokehMaterial.uniforms.tDiffuse.value = readBuffer.texture;
+    this.bokehMaterial.uniforms.tDepth.value = readBuffer.depthTexture;
 
-		renderer.render(this.scene, this.camera, this.renderToScreen ? null : writeBuffer);
+    renderer.render(this.scene, this.camera, this.renderToScreen ? null : writeBuffer);
 
-	}
+  }
 
-	/**
-	 * Updates this pass with the renderer's size.
-	 *
-	 * @param {Number} width - The width.
-	 * @param {Number} height - The height.
-	 */
+  /**
+   * Updates this pass with the renderer's size.
+   *
+   * @param {Number} width - The width.
+   * @param {Number} height - The height.
+   */
 
-	setSize(width, height) {
+  setSize(width, height) {
 
-		this.bokehMaterial.setTexelSize(1.0 / width, 1.0 / height);
+    this.bokehMaterial.setTexelSize(1.0 / width, 1.0 / height);
 
-	}
+  }
 
 }
 /* unused harmony export Bokeh2Pass */
@@ -14899,33 +14898,33 @@ class Bokeh2Pass extends __WEBPACK_IMPORTED_MODULE_1__pass_js__["a" /* Pass */] 
 
 class ClearMaskPass extends __WEBPACK_IMPORTED_MODULE_0__pass_js__["a" /* Pass */] {
 
-	/**
-	 * Constructs a new clear mask pass.
-	 */
+  /**
+   * Constructs a new clear mask pass.
+   */
 
-	constructor() {
+  constructor() {
 
-		super(null, null, null);
+    super(null, null, null);
 
-		/**
-		 * The name of this pass.
-		 */
+    /**
+     * The name of this pass.
+     */
 
-		this.name = "ClearMaskPass";
+    this.name = "ClearMaskPass";
 
-	}
+  }
 
-	/**
-	 * Disables the stencil test.
-	 *
-	 * @param {WebGLRenderer} renderer - The renderer.
-	 */
+  /**
+   * Disables the stencil test.
+   *
+   * @param {WebGLRenderer} renderer - The renderer.
+   */
 
-	render(renderer) {
+  render(renderer) {
 
-		renderer.state.buffers.stencil.setTest(false);
+    renderer.state.buffers.stencil.setTest(false);
 
-	}
+  }
 
 }
 /* harmony export (immutable) */ __webpack_exports__["a"] = ClearMaskPass;
@@ -14948,81 +14947,81 @@ class ClearMaskPass extends __WEBPACK_IMPORTED_MODULE_0__pass_js__["a" /* Pass *
 
 class DotScreenPass extends __WEBPACK_IMPORTED_MODULE_1__pass_js__["a" /* Pass */] {
 
-	/**
-	 * Constructs a new dot screen pass.
-	 *
-	 * @param {Object} [options] - The options.
-	 * @param {Number} [options.angle=1.57] - The angle of the pattern.
-	 * @param {Number} [options.scale=1.0] - The scale of the overall effect.
-	 * @param {Number} [options.intensity=1.0] - The intensity of the effect.
-	 * @param {Boolean} [options.average=false] - Whether the shader should output a colour average (black and white).
-	 */
+  /**
+   * Constructs a new dot screen pass.
+   *
+   * @param {Object} [options] - The options.
+   * @param {Number} [options.angle=1.57] - The angle of the pattern.
+   * @param {Number} [options.scale=1.0] - The scale of the overall effect.
+   * @param {Number} [options.intensity=1.0] - The intensity of the effect.
+   * @param {Boolean} [options.average=false] - Whether the shader should output a colour average (black and white).
+   */
 
-	constructor(options = {}) {
+  constructor(options = {}) {
 
-		super();
+    super();
 
-		/**
-		 * The name of this pass.
-		 */
+    /**
+     * The name of this pass.
+     */
 
-		this.name = "DotScreenPass";
+    this.name = "DotScreenPass";
 
-		/**
-		 * This pass renders to the write buffer.
-		 */
+    /**
+     * This pass renders to the write buffer.
+     */
 
-		this.needsSwap = true;
+    this.needsSwap = true;
 
-		/**
-		 * A dot screen shader material.
-		 *
-		 * @type {DotScreenMaterial}
-		 * @private
-		 */
+    /**
+     * A dot screen shader material.
+     *
+     * @type {DotScreenMaterial}
+     * @private
+     */
 
-		this.material = new __WEBPACK_IMPORTED_MODULE_0__materials__["h" /* DotScreenMaterial */](options.average);
+    this.material = new __WEBPACK_IMPORTED_MODULE_0__materials__["h" /* DotScreenMaterial */](options.average);
 
-		if(options.angle !== undefined) { this.material.uniforms.angle.value = options.angle; }
-		if(options.scale !== undefined) { this.material.uniforms.scale.value = options.scale; }
-		if(options.intensity !== undefined) { this.material.uniforms.intensity.value = options.intensity; }
+    if(options.angle !== undefined) { this.material.uniforms.angle.value = options.angle; }
+    if(options.scale !== undefined) { this.material.uniforms.scale.value = options.scale; }
+    if(options.intensity !== undefined) { this.material.uniforms.intensity.value = options.intensity; }
 
-		this.quad.material = this.material;
+    this.quad.material = this.material;
 
-	}
+  }
 
-	/**
-	 * Renders the effect.
-	 *
-	 * @param {WebGLRenderer} renderer - The renderer.
-	 * @param {WebGLRenderTarget} readBuffer - The read buffer.
-	 * @param {WebGLRenderTarget} writeBuffer - The write buffer.
-	 */
+  /**
+   * Renders the effect.
+   *
+   * @param {WebGLRenderer} renderer - The renderer.
+   * @param {WebGLRenderTarget} readBuffer - The read buffer.
+   * @param {WebGLRenderTarget} writeBuffer - The write buffer.
+   */
 
-	render(renderer, readBuffer, writeBuffer) {
+  render(renderer, readBuffer, writeBuffer) {
 
-		this.material.uniforms.tDiffuse.value = readBuffer.texture;
+    this.material.uniforms.tDiffuse.value = readBuffer.texture;
 
-		renderer.render(this.scene, this.camera, this.renderToScreen ? null : writeBuffer);
+    renderer.render(this.scene, this.camera, this.renderToScreen ? null : writeBuffer);
 
-	}
+  }
 
-	/**
-	 * Updates this pass with the renderer's size.
-	 *
-	 * @param {Number} width - The width.
-	 * @param {Number} heght - The height.
-	 */
+  /**
+   * Updates this pass with the renderer's size.
+   *
+   * @param {Number} width - The width.
+   * @param {Number} heght - The height.
+   */
 
-	setSize(width, height) {
+  setSize(width, height) {
 
-		width = Math.max(1, width);
-		height = Math.max(1, height);
+    width = Math.max(1, width);
+    height = Math.max(1, height);
 
-		this.material.uniforms.offsetRepeat.value.z = width;
-		this.material.uniforms.offsetRepeat.value.w = height;
+    this.material.uniforms.offsetRepeat.value.z = width;
+    this.material.uniforms.offsetRepeat.value.w = height;
 
-	}
+  }
 
 }
 /* unused harmony export DotScreenPass */
@@ -15049,56 +15048,56 @@ class DotScreenPass extends __WEBPACK_IMPORTED_MODULE_1__pass_js__["a" /* Pass *
 
 class DepthPass extends __WEBPACK_IMPORTED_MODULE_1__pass_js__["a" /* Pass */] {
 
-	/**
-	 * Constructs a new depth pass.
-	 *
-	 * @param {PerspectiveCamera} camera - The main camera. Used to obtain the near and far plane settings.
-	 */
+  /**
+   * Constructs a new depth pass.
+   *
+   * @param {PerspectiveCamera} camera - The main camera. Used to obtain the near and far plane settings.
+   */
 
-	constructor(camera) {
+  constructor(camera) {
 
-		super();
+    super();
 
-		/**
-		 * The name of this pass.
-		 */
+    /**
+     * The name of this pass.
+     */
 
-		this.name = "DepthPass";
+    this.name = "DepthPass";
 
-		/**
-		 * This pass renders to the write buffer.
-		 */
+    /**
+     * This pass renders to the write buffer.
+     */
 
-		this.needsSwap = true;
+    this.needsSwap = true;
 
-		/**
-		 * A depth shader material.
-		 *
-		 * @type {DepthMaterial}
-		 * @private
-		 */
+    /**
+     * A depth shader material.
+     *
+     * @type {DepthMaterial}
+     * @private
+     */
 
-		this.depthMaterial = new __WEBPACK_IMPORTED_MODULE_0__materials__["g" /* DepthMaterial */](camera);
+    this.depthMaterial = new __WEBPACK_IMPORTED_MODULE_0__materials__["g" /* DepthMaterial */](camera);
 
-		this.quad.material = this.depthMaterial;
+    this.quad.material = this.depthMaterial;
 
-	}
+  }
 
-	/**
-	 * Renders the effect.
-	 *
-	 * @param {WebGLRenderer} renderer - The renderer.
-	 * @param {WebGLRenderTarget} readBuffer - The read buffer.
-	 * @param {WebGLRenderTarget} writeBuffer - The write buffer.
-	 */
+  /**
+   * Renders the effect.
+   *
+   * @param {WebGLRenderer} renderer - The renderer.
+   * @param {WebGLRenderTarget} readBuffer - The read buffer.
+   * @param {WebGLRenderTarget} writeBuffer - The write buffer.
+   */
 
-	render(renderer, readBuffer, writeBuffer) {
+  render(renderer, readBuffer, writeBuffer) {
 
-		this.depthMaterial.uniforms.tDepth.value = readBuffer.depthTexture;
+    this.depthMaterial.uniforms.tDepth.value = readBuffer.depthTexture;
 
-		renderer.render(this.scene, this.camera, this.renderToScreen ? null : writeBuffer);
+    renderer.render(this.scene, this.camera, this.renderToScreen ? null : writeBuffer);
 
-	}
+  }
 
 }
 /* unused harmony export DepthPass */
@@ -15123,97 +15122,97 @@ class DepthPass extends __WEBPACK_IMPORTED_MODULE_1__pass_js__["a" /* Pass */] {
 
 class FilmPass extends __WEBPACK_IMPORTED_MODULE_1__pass_js__["a" /* Pass */] {
 
-	/**
-	 * Constructs a new film pass.
-	 *
-	 * @param {Object} [options] - The options. Disabled effects have no negative impact on performance.
-	 * @param {Boolean} [options.greyscale=false] - Enable greyscale effect. Greyscale and sepia are mutually exclusive.
-	 * @param {Boolean} [options.sepia=false] - Enable sepia effect. Greyscale and sepia are mutually exclusive.
-	 * @param {Boolean} [options.vignette=false] - Apply vignette effect.
-	 * @param {Boolean} [options.eskil=false] - Use Eskil's vignette approach. The default looks dusty while Eskil looks more burned out.
-	 * @param {Boolean} [options.screenMode=true] - Whether the screen blend mode should be used for noise and scanlines.
-	 * @param {Boolean} [options.scanlines=true] - Show scanlines.
-	 * @param {Boolean} [options.noise=true] - Show noise-based film grain.
-	 * @param {Number} [options.noiseIntensity=0.5] - The noise intensity. 0.0 to 1.0.
-	 * @param {Number} [options.scanlineIntensity=0.05] - The scanline intensity. 0.0 to 1.0.
-	 * @param {Number} [options.scanlineDensity=1.0] - The number of scanlines in percent, relative to the screen height.
-	 * @param {Number} [options.greyscaleIntensity=1.0] - The intensity of the greyscale effect.
-	 * @param {Number} [options.sepiaIntensity=1.0] - The intensity of the sepia effect.
-	 * @param {Number} [options.vignetteOffset=1.0] - The offset of the vignette effect.
-	 * @param {Number} [options.vignetteDarkness=1.0] - The darkness of the vignette effect.
-	 */
+  /**
+   * Constructs a new film pass.
+   *
+   * @param {Object} [options] - The options. Disabled effects have no negative impact on performance.
+   * @param {Boolean} [options.greyscale=false] - Enable greyscale effect. Greyscale and sepia are mutually exclusive.
+   * @param {Boolean} [options.sepia=false] - Enable sepia effect. Greyscale and sepia are mutually exclusive.
+   * @param {Boolean} [options.vignette=false] - Apply vignette effect.
+   * @param {Boolean} [options.eskil=false] - Use Eskil's vignette approach. The default looks dusty while Eskil looks more burned out.
+   * @param {Boolean} [options.screenMode=true] - Whether the screen blend mode should be used for noise and scanlines.
+   * @param {Boolean} [options.scanlines=true] - Show scanlines.
+   * @param {Boolean} [options.noise=true] - Show noise-based film grain.
+   * @param {Number} [options.noiseIntensity=0.5] - The noise intensity. 0.0 to 1.0.
+   * @param {Number} [options.scanlineIntensity=0.05] - The scanline intensity. 0.0 to 1.0.
+   * @param {Number} [options.scanlineDensity=1.0] - The number of scanlines in percent, relative to the screen height.
+   * @param {Number} [options.greyscaleIntensity=1.0] - The intensity of the greyscale effect.
+   * @param {Number} [options.sepiaIntensity=1.0] - The intensity of the sepia effect.
+   * @param {Number} [options.vignetteOffset=1.0] - The offset of the vignette effect.
+   * @param {Number} [options.vignetteDarkness=1.0] - The darkness of the vignette effect.
+   */
 
-	constructor(options = {}) {
+  constructor(options = {}) {
 
-		super();
+    super();
 
-		/**
-		 * The name of this pass.
-		 */
+    /**
+     * The name of this pass.
+     */
 
-		this.name = "FilmPass";
+    this.name = "FilmPass";
 
-		/**
-		 * This pass renders to the write buffer.
-		 */
+    /**
+     * This pass renders to the write buffer.
+     */
 
-		this.needsSwap = true;
+    this.needsSwap = true;
 
-		/**
-		 * Film shader material.
-		 *
-		 * @type {FilmMaterial}
-		 * @private
-		 */
+    /**
+     * Film shader material.
+     *
+     * @type {FilmMaterial}
+     * @private
+     */
 
-		this.material = new __WEBPACK_IMPORTED_MODULE_0__materials__["i" /* FilmMaterial */](options);
+    this.material = new __WEBPACK_IMPORTED_MODULE_0__materials__["i" /* FilmMaterial */](options);
 
-		this.quad.material = this.material;
+    this.quad.material = this.material;
 
-		/**
-		 * The amount of scanlines in percent, relative to the screen height.
-		 *
-		 * You need to call {@link EffectComposer#setSize} after changing this
-		 * value.
-		 *
-		 * @type {Number}
-		 * @default 1.25
-		 */
+    /**
+     * The amount of scanlines in percent, relative to the screen height.
+     *
+     * You need to call {@link EffectComposer#setSize} after changing this
+     * value.
+     *
+     * @type {Number}
+     * @default 1.25
+     */
 
-		this.scanlineDensity = (options.scanlineDensity === undefined) ? 1.25 : options.scanlineDensity;
+    this.scanlineDensity = (options.scanlineDensity === undefined) ? 1.25 : options.scanlineDensity;
 
-	}
+  }
 
-	/**
-	 * Renders the effect.
-	 *
-	 * @param {WebGLRenderer} renderer - The renderer.
-	 * @param {WebGLRenderTarget} readBuffer - The read buffer.
-	 * @param {WebGLRenderTarget} writeBuffer - The write buffer.
-	 * @param {Number} delta - The render delta time.
-	 */
+  /**
+   * Renders the effect.
+   *
+   * @param {WebGLRenderer} renderer - The renderer.
+   * @param {WebGLRenderTarget} readBuffer - The read buffer.
+   * @param {WebGLRenderTarget} writeBuffer - The write buffer.
+   * @param {Number} delta - The render delta time.
+   */
 
-	render(renderer, readBuffer, writeBuffer, delta) {
+  render(renderer, readBuffer, writeBuffer, delta) {
 
-		this.material.uniforms.tDiffuse.value = readBuffer.texture;
-		this.material.uniforms.time.value += delta;
+    this.material.uniforms.tDiffuse.value = readBuffer.texture;
+    this.material.uniforms.time.value += delta;
 
-		renderer.render(this.scene, this.camera, this.renderToScreen ? null : writeBuffer);
+    renderer.render(this.scene, this.camera, this.renderToScreen ? null : writeBuffer);
 
-	}
+  }
 
-	/**
-	 * Adjusts the scanline count using the renderer's height.
-	 *
-	 * @param {Number} width - The width.
-	 * @param {Number} height - The height.
-	 */
+  /**
+   * Adjusts the scanline count using the renderer's height.
+   *
+   * @param {Number} width - The width.
+   * @param {Number} height - The height.
+   */
 
-	setSize(width, height) {
+  setSize(width, height) {
 
-		this.material.uniforms.scanlineCount.value = Math.round(height * this.scanlineDensity);
+    this.material.uniforms.scanlineCount.value = Math.round(height * this.scanlineDensity);
 
-	}
+  }
 
 }
 /* unused harmony export FilmPass */
@@ -15245,7 +15244,7 @@ class FilmPass extends __WEBPACK_IMPORTED_MODULE_1__pass_js__["a" /* Pass */] {
 
 function randomInt(low, high) {
 
-	return low + Math.floor(Math.random() * (high - low + 1));
+  return low + Math.floor(Math.random() * (high - low + 1));
 
 }
 
@@ -15261,7 +15260,7 @@ function randomInt(low, high) {
 
 function randomFloat(low, high) {
 
-	return low + Math.random() * (high - low);
+  return low + Math.random() * (high - low);
 
 }
 
@@ -15271,200 +15270,200 @@ function randomFloat(low, high) {
 
 class GlitchPass extends __WEBPACK_IMPORTED_MODULE_2__pass_js__["a" /* Pass */] {
 
-	/**
-	 * Constructs a new glitch pass.
-	 *
-	 * @param {Object} [options] - The options.
-	 * @param {Texture} [options.perturbMap] - A perturbation map. If none is provided, a noise texture will be created.
-	 * @param {Number} [options.dtSize=64] - The size of the generated noise map. Will be ignored if a perturbation map is provided.
-	 */
+  /**
+   * Constructs a new glitch pass.
+   *
+   * @param {Object} [options] - The options.
+   * @param {Texture} [options.perturbMap] - A perturbation map. If none is provided, a noise texture will be created.
+   * @param {Number} [options.dtSize=64] - The size of the generated noise map. Will be ignored if a perturbation map is provided.
+   */
 
-	constructor(options = {}) {
+  constructor(options = {}) {
 
-		super();
+    super();
 
-		/**
-		 * The name of this pass.
-		 */
+    /**
+     * The name of this pass.
+     */
 
-		this.name = "GlitchPass";
+    this.name = "GlitchPass";
 
-		/**
-		 * This pass renders to the write buffer.
-		 */
+    /**
+     * This pass renders to the write buffer.
+     */
 
-		this.needsSwap = true;
+    this.needsSwap = true;
 
-		/**
-		 * Glitch shader material.
-		 *
-		 * @type {GlitchMaterial}
-		 * @private
-		 */
+    /**
+     * Glitch shader material.
+     *
+     * @type {GlitchMaterial}
+     * @private
+     */
 
-		this.material = new __WEBPACK_IMPORTED_MODULE_1__materials__["j" /* GlitchMaterial */]();
+    this.material = new __WEBPACK_IMPORTED_MODULE_1__materials__["j" /* GlitchMaterial */]();
 
-		this.quad.material = this.material;
+    this.quad.material = this.material;
 
-		/**
-		 * A perturbation map.
-		 *
-		 * @type {Texture}
-		 * @private
-		 */
+    /**
+     * A perturbation map.
+     *
+     * @type {Texture}
+     * @private
+     */
 
-		this.texture = null;
+    this.texture = null;
 
-		this.perturbMap = (options.perturbMap !== undefined) ? options.perturbMap : this.generatePerturbMap(options.dtSize);
-		this.perturbMap.name = "Glitch.Perturbation";
-		this.perturbMap.generateMipmaps = false;
+    this.perturbMap = (options.perturbMap !== undefined) ? options.perturbMap : this.generatePerturbMap(options.dtSize);
+    this.perturbMap.name = "Glitch.Perturbation";
+    this.perturbMap.generateMipmaps = false;
 
-		/**
-		 * The effect mode.
-		 *
-		 * @type {GlitchMode}
-		 * @default GlitchMode.SPORADIC
-		 */
+    /**
+     * The effect mode.
+     *
+     * @type {GlitchMode}
+     * @default GlitchMode.SPORADIC
+     */
 
-		this.mode = GlitchMode.SPORADIC;
+    this.mode = GlitchMode.SPORADIC;
 
-		/**
-		 * Counter for glitch activation and deactivation.
-		 *
-		 * @type {Number}
-		 * @private
-		 */
+    /**
+     * Counter for glitch activation and deactivation.
+     *
+     * @type {Number}
+     * @private
+     */
 
-		this.counter = 0;
+    this.counter = 0;
 
-		/**
-		 * A random break point for the sporadic glitch activation.
-		 *
-		 * @type {Number}
-		 * @private
-		 */
+    /**
+     * A random break point for the sporadic glitch activation.
+     *
+     * @type {Number}
+     * @private
+     */
 
-		this.breakPoint = randomInt(120, 240);
+    this.breakPoint = randomInt(120, 240);
 
-	}
+  }
 
-	/**
-	 * The current perturbation map.
-	 *
-	 * @type {Texture}
-	 */
+  /**
+   * The current perturbation map.
+   *
+   * @type {Texture}
+   */
 
-	get perturbMap() { return this.texture; }
+  get perturbMap() { return this.texture; }
 
-	/**
-	 * Assigning a new perturbation map does not destroy the current one!
-	 *
-	 * @type {Texture}
-	 */
+  /**
+   * Assigning a new perturbation map does not destroy the current one!
+   *
+   * @type {Texture}
+   */
 
-	set perturbMap(x) {
+  set perturbMap(x) {
 
-		this.texture = x;
-		this.material.uniforms.tPerturb.value = x;
+    this.texture = x;
+    this.material.uniforms.tPerturb.value = x;
 
-	}
+  }
 
-	/**
-	 * Destroys the current perturbation map and replaces it with a new one.
-	 *
-	 * @param {Number} [size=64] - The texture size.
-	 * @return {DataTexture} The perturbation texture.
-	 */
+  /**
+   * Destroys the current perturbation map and replaces it with a new one.
+   *
+   * @param {Number} [size=64] - The texture size.
+   * @return {DataTexture} The perturbation texture.
+   */
 
-	generatePerturbMap(size = 64) {
+  generatePerturbMap(size = 64) {
 
-		const pixels = size * size;
-		const data = new Float32Array(pixels * 3);
+    const pixels = size * size;
+    const data = new Float32Array(pixels * 3);
 
-		let dt = this.perturbMap;
-		let i, x;
+    let dt = this.perturbMap;
+    let i, x;
 
-		for(i = 0; i < pixels; ++i) {
+    for(i = 0; i < pixels; ++i) {
 
-			x = Math.random();
+      x = Math.random();
 
-			data[i * 3] = x;
-			data[i * 3 + 1] = x;
-			data[i * 3 + 2] = x;
+      data[i * 3] = x;
+      data[i * 3 + 1] = x;
+      data[i * 3 + 2] = x;
 
-		}
+    }
 
-		if(dt !== null) {
+    if(dt !== null) {
 
-			dt.dispose();
+      dt.dispose();
 
-		}
+    }
 
-		dt = new __WEBPACK_IMPORTED_MODULE_0_three__["DataTexture"](data, size, size, __WEBPACK_IMPORTED_MODULE_0_three__["RGBFormat"], __WEBPACK_IMPORTED_MODULE_0_three__["FloatType"]);
-		dt.needsUpdate = true;
+    dt = new __WEBPACK_IMPORTED_MODULE_0_three__["DataTexture"](data, size, size, __WEBPACK_IMPORTED_MODULE_0_three__["RGBFormat"], __WEBPACK_IMPORTED_MODULE_0_three__["FloatType"]);
+    dt.needsUpdate = true;
 
-		this.perturbMap = dt;
+    this.perturbMap = dt;
 
-		return dt;
+    return dt;
 
-	}
+  }
 
-	/**
-	 * Renders the effect.
-	 *
-	 * @param {WebGLRenderer} renderer - The renderer.
-	 * @param {WebGLRenderTarget} readBuffer - The read buffer.
-	 * @param {WebGLRenderTarget} writeBuffer - The write buffer.
-	 */
+  /**
+   * Renders the effect.
+   *
+   * @param {WebGLRenderer} renderer - The renderer.
+   * @param {WebGLRenderTarget} readBuffer - The read buffer.
+   * @param {WebGLRenderTarget} writeBuffer - The write buffer.
+   */
 
-	render(renderer, readBuffer, writeBuffer) {
+  render(renderer, readBuffer, writeBuffer) {
 
-		const mode = this.mode;
-		const counter = this.counter;
-		const breakPoint = this.breakPoint;
-		const uniforms = this.material.uniforms;
+    const mode = this.mode;
+    const counter = this.counter;
+    const breakPoint = this.breakPoint;
+    const uniforms = this.material.uniforms;
 
-		uniforms.tDiffuse.value = readBuffer.texture;
-		uniforms.seed.value = Math.random();
-		uniforms.active.value = true;
+    uniforms.tDiffuse.value = readBuffer.texture;
+    uniforms.seed.value = Math.random();
+    uniforms.active.value = true;
 
-		if(counter % breakPoint === 0 || mode === GlitchMode.CONSTANT_WILD) {
+    if(counter % breakPoint === 0 || mode === GlitchMode.CONSTANT_WILD) {
 
-			uniforms.amount.value = Math.random() / 30.0;
-			uniforms.angle.value = randomFloat(-Math.PI, Math.PI);
-			uniforms.seedX.value = randomFloat(-1.0, 1.0);
-			uniforms.seedY.value = randomFloat(-1.0, 1.0);
-			uniforms.distortionX.value = randomFloat(0.0, 1.0);
-			uniforms.distortionY.value = randomFloat(0.0, 1.0);
+      uniforms.amount.value = Math.random() / 30.0;
+      uniforms.angle.value = randomFloat(-Math.PI, Math.PI);
+      uniforms.seedX.value = randomFloat(-1.0, 1.0);
+      uniforms.seedY.value = randomFloat(-1.0, 1.0);
+      uniforms.distortionX.value = randomFloat(0.0, 1.0);
+      uniforms.distortionY.value = randomFloat(0.0, 1.0);
 
-			this.breakPoint = randomInt(120, 240);
-			this.counter = 0;
+      this.breakPoint = randomInt(120, 240);
+      this.counter = 0;
 
-		} else {
+    } else {
 
-			if(counter % breakPoint < breakPoint / 5 || mode === GlitchMode.CONSTANT_MILD) {
+      if(counter % breakPoint < breakPoint / 5 || mode === GlitchMode.CONSTANT_MILD) {
 
-				uniforms.amount.value = Math.random() / 90.0;
-				uniforms.angle.value = randomFloat(-Math.PI, Math.PI);
-				uniforms.distortionX.value = randomFloat(0.0, 1.0);
-				uniforms.distortionY.value = randomFloat(0.0, 1.0);
-				uniforms.seedX.value = randomFloat(-0.3, 0.3);
-				uniforms.seedY.value = randomFloat(-0.3, 0.3);
+        uniforms.amount.value = Math.random() / 90.0;
+        uniforms.angle.value = randomFloat(-Math.PI, Math.PI);
+        uniforms.distortionX.value = randomFloat(0.0, 1.0);
+        uniforms.distortionY.value = randomFloat(0.0, 1.0);
+        uniforms.seedX.value = randomFloat(-0.3, 0.3);
+        uniforms.seedY.value = randomFloat(-0.3, 0.3);
 
-			} else {
+      } else {
 
-				// Sporadic.
-				uniforms.active.value = false;
+        // Sporadic.
+        uniforms.active.value = false;
 
-			}
+      }
 
-		}
+    }
 
-		++this.counter;
+    ++this.counter;
 
-		renderer.render(this.scene, this.camera, this.renderToScreen ? null : writeBuffer);
+    renderer.render(this.scene, this.camera, this.renderToScreen ? null : writeBuffer);
 
-	}
+  }
 
 }
 /* unused harmony export GlitchPass */
@@ -15481,9 +15480,9 @@ class GlitchPass extends __WEBPACK_IMPORTED_MODULE_2__pass_js__["a" /* Pass */] 
 
 const GlitchMode = {
 
-	SPORADIC: 0,
-	CONSTANT_MILD: 1,
-	CONSTANT_WILD: 2
+  SPORADIC: 0,
+  CONSTANT_MILD: 1,
+  CONSTANT_WILD: 2
 
 };
 /* unused harmony export GlitchMode */
@@ -15521,7 +15520,7 @@ const GlitchMode = {
 
 function clamp(value, min, max) {
 
-	return Math.max(min, Math.min(max, value));
+  return Math.max(min, Math.min(max, value));
 
 }
 
@@ -15531,390 +15530,390 @@ function clamp(value, min, max) {
 
 class GodRaysPass extends __WEBPACK_IMPORTED_MODULE_4__pass_js__["a" /* Pass */] {
 
-	/**
-	 * Constructs a new god rays pass.
-	 *
-	 * @param {Scene} scene - The main scene.
-	 * @param {Camera} camera - The main camera.
-	 * @param {Object3D} lightSource - The main light source.
-	 * @param {Object} [options] - The options.
-	 * @param {Number} [options.density=0.96] - The density of the light rays.
-	 * @param {Number} [options.decay=0.93] - An illumination decay factor.
-	 * @param {Number} [options.weight=0.4] - A light ray weight factor.
-	 * @param {Number} [options.exposure=0.6] - A constant attenuation coefficient.
-	 * @param {Number} [options.clampMax=1.0] - An upper bound for the saturation of the overall effect.
-	 * @param {Number} [options.intensity=1.0] - A constant factor for additive blending.
-	 * @param {Number} [options.resolutionScale=0.5] - The render texture resolution scale, relative to the screen render size.
-	 * @param {Number} [options.kernelSize=KernelSize.LARGE] - The blur kernel size.
-	 * @param {Number} [options.samples=60] - The number of samples per pixel.
-	 * @param {Number} [options.screenMode=true] - Whether the screen blend mode should be used for combining the god rays texture with the scene colors.
-	 */
-
-	constructor(scene, camera, lightSource, options = {}) {
-
-		super();
-
-		/**
-		 * The name of this pass.
-		 */
-
-		this.name = "GodRaysPass";
-
-		/**
-		 * This pass renders to the write buffer.
-		 */
-
-		this.needsSwap = true;
-
-		/**
-		 * A scene that only contains the light source.
-		 *
-		 * @type {Scene}
-		 * @private
-		 */
-
-		this.lightScene = new __WEBPACK_IMPORTED_MODULE_0_three__["Scene"]();
-
-		/**
-		 * The main scene.
-		 *
-		 * @type {Scene}
-		 * @private
-		 */
-
-		this.mainScene = scene;
-
-		/**
-		 * The main camera.
-		 *
-		 * @type {Camera}
-		 * @private
-		 */
-
-		this.mainCamera = camera;
-
-		/**
-		 * A pass that only renders the light source.
-		 *
-		 * @type {RenderPass}
-		 * @private
-		 */
-
-		this.renderPassLight = new __WEBPACK_IMPORTED_MODULE_2__render_js__["a" /* RenderPass */](this.lightScene, this.mainCamera);
-
-		/**
-		 * A pass that renders the masked scene over the light.
-		 *
-		 * @type {RenderPass}
-		 * @private
-		 */
-
-		this.renderPassMask = new __WEBPACK_IMPORTED_MODULE_2__render_js__["a" /* RenderPass */](this.mainScene, this.mainCamera, {
-			overrideMaterial: new __WEBPACK_IMPORTED_MODULE_0_three__["MeshBasicMaterial"]({ color: 0x000000 }),
-			clearColor: new __WEBPACK_IMPORTED_MODULE_0_three__["Color"](0x000000)
-		});
-
-		this.renderPassMask.clear = false;
-
-		/**
-		 * A blur pass.
-		 *
-		 * @type {BlurPass}
-		 * @private
-		 */
-
-		this.blurPass = new __WEBPACK_IMPORTED_MODULE_3__blur_js__["a" /* BlurPass */](options);
-
-		/**
-		 * A render target.
-		 *
-		 * @type {WebGLRenderTarget}
-		 * @private
-		 */
-
-		this.renderTargetX = new __WEBPACK_IMPORTED_MODULE_0_three__["WebGLRenderTarget"](1, 1, {
-			minFilter: __WEBPACK_IMPORTED_MODULE_0_three__["LinearFilter"],
-			magFilter: __WEBPACK_IMPORTED_MODULE_0_three__["LinearFilter"],
-			stencilBuffer: false,
-			depthBuffer: false
-		});
-
-		this.renderTargetX.texture.name = "GodRays.TargetX";
-		this.renderTargetX.texture.generateMipmaps = false;
-
-		/**
-		 * A second render target.
-		 *
-		 * @type {WebGLRenderTarget}
-		 * @private
-		 */
-
-		this.renderTargetY = this.renderTargetX.clone();
-
-		this.renderTargetY.texture.name = "GodRays.TargetY";
-
-		/**
-		 * A render target for the masked light scene.
-		 *
-		 * @type {WebGLRenderTarget}
-		 * @private
-		 */
-
-		this.renderTargetMask = new __WEBPACK_IMPORTED_MODULE_0_three__["WebGLRenderTarget"](1, 1, {
-			minFilter: __WEBPACK_IMPORTED_MODULE_0_three__["LinearFilter"],
-			magFilter: __WEBPACK_IMPORTED_MODULE_0_three__["LinearFilter"]
-		});
-
-		this.renderTargetMask.texture.name = "GodRays.Mask";
-		this.renderTargetMask.texture.generateMipmaps = false;
-
-		/**
-		 * The light source.
-		 *
-		 * @type {Object3D}
-		 */
-
-		this.lightSource = lightSource;
-
-		/**
-		 * The light position in screen space.
-		 *
-		 * @type {Vector3}
-		 * @private
-		 */
-
-		this.screenPosition = new __WEBPACK_IMPORTED_MODULE_0_three__["Vector3"]();
-
-		/**
-		 * A god rays shader material.
-		 *
-		 * @type {GodRaysMaterial}
-		 * @private
-		 */
+  /**
+   * Constructs a new god rays pass.
+   *
+   * @param {Scene} scene - The main scene.
+   * @param {Camera} camera - The main camera.
+   * @param {Object3D} lightSource - The main light source.
+   * @param {Object} [options] - The options.
+   * @param {Number} [options.density=0.96] - The density of the light rays.
+   * @param {Number} [options.decay=0.93] - An illumination decay factor.
+   * @param {Number} [options.weight=0.4] - A light ray weight factor.
+   * @param {Number} [options.exposure=0.6] - A constant attenuation coefficient.
+   * @param {Number} [options.clampMax=1.0] - An upper bound for the saturation of the overall effect.
+   * @param {Number} [options.intensity=1.0] - A constant factor for additive blending.
+   * @param {Number} [options.resolutionScale=0.5] - The render texture resolution scale, relative to the screen render size.
+   * @param {Number} [options.kernelSize=KernelSize.LARGE] - The blur kernel size.
+   * @param {Number} [options.samples=60] - The number of samples per pixel.
+   * @param {Number} [options.screenMode=true] - Whether the screen blend mode should be used for combining the god rays texture with the scene colors.
+   */
+
+  constructor(scene, camera, lightSource, options = {}) {
+
+    super();
+
+    /**
+     * The name of this pass.
+     */
+
+    this.name = "GodRaysPass";
+
+    /**
+     * This pass renders to the write buffer.
+     */
+
+    this.needsSwap = true;
+
+    /**
+     * A scene that only contains the light source.
+     *
+     * @type {Scene}
+     * @private
+     */
+
+    this.lightScene = new __WEBPACK_IMPORTED_MODULE_0_three__["Scene"]();
+
+    /**
+     * The main scene.
+     *
+     * @type {Scene}
+     * @private
+     */
+
+    this.mainScene = scene;
+
+    /**
+     * The main camera.
+     *
+     * @type {Camera}
+     * @private
+     */
+
+    this.mainCamera = camera;
+
+    /**
+     * A pass that only renders the light source.
+     *
+     * @type {RenderPass}
+     * @private
+     */
+
+    this.renderPassLight = new __WEBPACK_IMPORTED_MODULE_2__render_js__["a" /* RenderPass */](this.lightScene, this.mainCamera);
+
+    /**
+     * A pass that renders the masked scene over the light.
+     *
+     * @type {RenderPass}
+     * @private
+     */
+
+    this.renderPassMask = new __WEBPACK_IMPORTED_MODULE_2__render_js__["a" /* RenderPass */](this.mainScene, this.mainCamera, {
+      overrideMaterial: new __WEBPACK_IMPORTED_MODULE_0_three__["MeshBasicMaterial"]({ color: 0x000000 }),
+      clearColor: new __WEBPACK_IMPORTED_MODULE_0_three__["Color"](0x000000)
+    });
+
+    this.renderPassMask.clear = false;
+
+    /**
+     * A blur pass.
+     *
+     * @type {BlurPass}
+     * @private
+     */
+
+    this.blurPass = new __WEBPACK_IMPORTED_MODULE_3__blur_js__["a" /* BlurPass */](options);
+
+    /**
+     * A render target.
+     *
+     * @type {WebGLRenderTarget}
+     * @private
+     */
+
+    this.renderTargetX = new __WEBPACK_IMPORTED_MODULE_0_three__["WebGLRenderTarget"](1, 1, {
+      minFilter: __WEBPACK_IMPORTED_MODULE_0_three__["LinearFilter"],
+      magFilter: __WEBPACK_IMPORTED_MODULE_0_three__["LinearFilter"],
+      stencilBuffer: false,
+      depthBuffer: false
+    });
+
+    this.renderTargetX.texture.name = "GodRays.TargetX";
+    this.renderTargetX.texture.generateMipmaps = false;
+
+    /**
+     * A second render target.
+     *
+     * @type {WebGLRenderTarget}
+     * @private
+     */
+
+    this.renderTargetY = this.renderTargetX.clone();
+
+    this.renderTargetY.texture.name = "GodRays.TargetY";
+
+    /**
+     * A render target for the masked light scene.
+     *
+     * @type {WebGLRenderTarget}
+     * @private
+     */
+
+    this.renderTargetMask = new __WEBPACK_IMPORTED_MODULE_0_three__["WebGLRenderTarget"](1, 1, {
+      minFilter: __WEBPACK_IMPORTED_MODULE_0_three__["LinearFilter"],
+      magFilter: __WEBPACK_IMPORTED_MODULE_0_three__["LinearFilter"]
+    });
+
+    this.renderTargetMask.texture.name = "GodRays.Mask";
+    this.renderTargetMask.texture.generateMipmaps = false;
+
+    /**
+     * The light source.
+     *
+     * @type {Object3D}
+     */
+
+    this.lightSource = lightSource;
+
+    /**
+     * The light position in screen space.
+     *
+     * @type {Vector3}
+     * @private
+     */
+
+    this.screenPosition = new __WEBPACK_IMPORTED_MODULE_0_three__["Vector3"]();
+
+    /**
+     * A god rays shader material.
+     *
+     * @type {GodRaysMaterial}
+     * @private
+     */
 
-		this.godRaysMaterial = new __WEBPACK_IMPORTED_MODULE_1__materials__["k" /* GodRaysMaterial */]();
-		this.godRaysMaterial.uniforms.lightPosition.value = this.screenPosition;
-
-		if(options.exposure !== undefined) { this.godRaysMaterial.uniforms.exposure.value = options.exposure; }
-		if(options.density !== undefined) { this.godRaysMaterial.uniforms.density.value = options.density; }
-		if(options.decay !== undefined) { this.godRaysMaterial.uniforms.decay.value = options.decay; }
-		if(options.weight !== undefined) { this.godRaysMaterial.uniforms.weight.value = options.weight; }
-		if(options.clampMax !== undefined) { this.godRaysMaterial.uniforms.clampMax.value = options.clampMax; }
-
-		this.samples = options.samples;
-
-		/**
-		 * A combine shader material.
-		 *
-		 * @type {CombineMaterial}
-		 * @private
-		 */
-
-		this.combineMaterial = new __WEBPACK_IMPORTED_MODULE_1__materials__["d" /* CombineMaterial */]((options.screenMode !== undefined) ? options.screenMode : true);
-
-		this.intensity = options.intensity;
-
-	}
-
-	/**
-	 * The resolution scale.
-	 *
-	 * @type {Number}
-	 * @default 0.5
-	 */
-
-	get resolutionScale() { return this.blurPass.resolutionScale; }
-
-	/**
-	 * You need to call {@link EffectComposer#setSize} after changing this value.
-	 *
-	 * @type {Number}
-	 */
-
-	set resolutionScale(x = 0.5) { this.blurPass.resolutionScale = x; }
-
-	/**
-	 * The blur kernel size.
-	 *
-	 * @type {KernelSize}
-	 * @default KernelSize.LARGE
-	 */
-
-	get kernelSize() { return this.blurPass.kernelSize; }
-
-	/**
-	 * @type {KernelSize}
-	 */
-
-	set kernelSize(x = __WEBPACK_IMPORTED_MODULE_1__materials__["l" /* KernelSize */].LARGE) { this.blurPass.kernelSize = x; }
-
-	/**
-	 * The overall intensity of the effect.
-	 *
-	 * @type {Number}
-	 * @default 1.0
-	 */
-
-	get intensity() { return this.combineMaterial.uniforms.opacity2.value; }
-
-	/**
-	 * @type {Number}
-	 */
-
-	set intensity(x = 1.0) { this.combineMaterial.uniforms.opacity2.value = x; }
-
-	/**
-	 * The number of samples per pixel.
-	 *
-	 * @type {Number}
-	 * @default 60
-	 */
-
-	get samples() { return Number.parseInt(this.godRaysMaterial.defines.NUM_SAMPLES_INT); }
-
-	/**
-	 * This value must be carefully chosen. A higher value directly increases the
-	 * GPU load.
-	 *
-	 * @type {Number}
-	 */
-
-	set samples(x = 60) {
-
-		x = Math.floor(x);
-
-		this.godRaysMaterial.defines.NUM_SAMPLES_FLOAT = x.toFixed(1);
-		this.godRaysMaterial.defines.NUM_SAMPLES_INT = x.toFixed(0);
-		this.godRaysMaterial.needsUpdate = true;
-
-	}
-
-	/**
-	 * Renders the scene.
-	 *
-	 * The god rays pass has four phases:
-	 *
-	 * Mask Phase:
-	 *  First, the light source is rendered. Then the scene is rendered into the
-	 *  same buffer using a mask override material with depth test enabled.
-	 *
-	 * Preliminary Blur Phase:
-	 *  The masked scene is blurred.
-	 *
-	 * God Rays Phase:
-	 *  The blurred scene is blurred again, but this time along radial lines
-	 *  towards the light source.
-	 *
-	 * Composite Phase:
-	 *  The final result is combined with the read buffer.
-	 *
-	 * @param {WebGLRenderer} renderer - The renderer.
-	 * @param {WebGLRenderTarget} readBuffer - The read buffer.
-	 * @param {WebGLRenderTarget} writeBuffer - The write buffer.
-	 */
-
-	render(renderer, readBuffer, writeBuffer) {
+    this.godRaysMaterial = new __WEBPACK_IMPORTED_MODULE_1__materials__["k" /* GodRaysMaterial */]();
+    this.godRaysMaterial.uniforms.lightPosition.value = this.screenPosition;
+
+    if(options.exposure !== undefined) { this.godRaysMaterial.uniforms.exposure.value = options.exposure; }
+    if(options.density !== undefined) { this.godRaysMaterial.uniforms.density.value = options.density; }
+    if(options.decay !== undefined) { this.godRaysMaterial.uniforms.decay.value = options.decay; }
+    if(options.weight !== undefined) { this.godRaysMaterial.uniforms.weight.value = options.weight; }
+    if(options.clampMax !== undefined) { this.godRaysMaterial.uniforms.clampMax.value = options.clampMax; }
+
+    this.samples = options.samples;
+
+    /**
+     * A combine shader material.
+     *
+     * @type {CombineMaterial}
+     * @private
+     */
+
+    this.combineMaterial = new __WEBPACK_IMPORTED_MODULE_1__materials__["d" /* CombineMaterial */]((options.screenMode !== undefined) ? options.screenMode : true);
+
+    this.intensity = options.intensity;
+
+  }
+
+  /**
+   * The resolution scale.
+   *
+   * @type {Number}
+   * @default 0.5
+   */
+
+  get resolutionScale() { return this.blurPass.resolutionScale; }
+
+  /**
+   * You need to call {@link EffectComposer#setSize} after changing this value.
+   *
+   * @type {Number}
+   */
+
+  set resolutionScale(x = 0.5) { this.blurPass.resolutionScale = x; }
+
+  /**
+   * The blur kernel size.
+   *
+   * @type {KernelSize}
+   * @default KernelSize.LARGE
+   */
+
+  get kernelSize() { return this.blurPass.kernelSize; }
+
+  /**
+   * @type {KernelSize}
+   */
+
+  set kernelSize(x = __WEBPACK_IMPORTED_MODULE_1__materials__["l" /* KernelSize */].LARGE) { this.blurPass.kernelSize = x; }
+
+  /**
+   * The overall intensity of the effect.
+   *
+   * @type {Number}
+   * @default 1.0
+   */
+
+  get intensity() { return this.combineMaterial.uniforms.opacity2.value; }
+
+  /**
+   * @type {Number}
+   */
+
+  set intensity(x = 1.0) { this.combineMaterial.uniforms.opacity2.value = x; }
+
+  /**
+   * The number of samples per pixel.
+   *
+   * @type {Number}
+   * @default 60
+   */
+
+  get samples() { return Number.parseInt(this.godRaysMaterial.defines.NUM_SAMPLES_INT); }
+
+  /**
+   * This value must be carefully chosen. A higher value directly increases the
+   * GPU load.
+   *
+   * @type {Number}
+   */
+
+  set samples(x = 60) {
+
+    x = Math.floor(x);
+
+    this.godRaysMaterial.defines.NUM_SAMPLES_FLOAT = x.toFixed(1);
+    this.godRaysMaterial.defines.NUM_SAMPLES_INT = x.toFixed(0);
+    this.godRaysMaterial.needsUpdate = true;
+
+  }
+
+  /**
+   * Renders the scene.
+   *
+   * The god rays pass has four phases:
+   *
+   * Mask Phase:
+   *  First, the light source is rendered. Then the scene is rendered into the
+   *  same buffer using a mask override material with depth test enabled.
+   *
+   * Preliminary Blur Phase:
+   *  The masked scene is blurred.
+   *
+   * God Rays Phase:
+   *  The blurred scene is blurred again, but this time along radial lines
+   *  towards the light source.
+   *
+   * Composite Phase:
+   *  The final result is combined with the read buffer.
+   *
+   * @param {WebGLRenderer} renderer - The renderer.
+   * @param {WebGLRenderTarget} readBuffer - The read buffer.
+   * @param {WebGLRenderTarget} writeBuffer - The write buffer.
+   */
+
+  render(renderer, readBuffer, writeBuffer) {
 
-		const quad = this.quad;
-		const scene = this.scene;
-		const camera = this.camera;
-		const mainScene = this.mainScene;
+    const quad = this.quad;
+    const scene = this.scene;
+    const camera = this.camera;
+    const mainScene = this.mainScene;
 
-		const lightSource = this.lightSource;
-		const screenPosition = this.screenPosition;
+    const lightSource = this.lightSource;
+    const screenPosition = this.screenPosition;
 
-		const godRaysMaterial = this.godRaysMaterial;
-		const combineMaterial = this.combineMaterial;
+    const godRaysMaterial = this.godRaysMaterial;
+    const combineMaterial = this.combineMaterial;
 
-		const renderTargetMask = this.renderTargetMask;
-		const renderTargetX = this.renderTargetX;
-		const renderTargetY = this.renderTargetY;
+    const renderTargetMask = this.renderTargetMask;
+    const renderTargetX = this.renderTargetX;
+    const renderTargetY = this.renderTargetY;
 
-		let background, parent;
+    let background, parent;
 
-		// Compute the screen light position and translate it to [0, 1].
-		screenPosition.copy(lightSource.position).project(this.mainCamera);
-		screenPosition.x = clamp((screenPosition.x + 1.0) * 0.5, 0.0, 1.0);
-		screenPosition.y = clamp((screenPosition.y + 1.0) * 0.5, 0.0, 1.0);
+    // Compute the screen light position and translate it to [0, 1].
+    screenPosition.copy(lightSource.position).project(this.mainCamera);
+    screenPosition.x = clamp((screenPosition.x + 1.0) * 0.5, 0.0, 1.0);
+    screenPosition.y = clamp((screenPosition.y + 1.0) * 0.5, 0.0, 1.0);
 
-		// Render the masked scene.
-		parent = lightSource.parent;
-		background = mainScene.background;
-		mainScene.background = null;
-		this.lightScene.add(lightSource);
+    // Render the masked scene.
+    parent = lightSource.parent;
+    background = mainScene.background;
+    mainScene.background = null;
+    this.lightScene.add(lightSource);
 
-		this.renderPassLight.render(renderer, renderTargetMask);
-		this.renderPassMask.render(renderer, renderTargetMask);
+    this.renderPassLight.render(renderer, renderTargetMask);
+    this.renderPassMask.render(renderer, renderTargetMask);
 
-		if(parent !== null) {
+    if(parent !== null) {
 
-			parent.add(lightSource);
+      parent.add(lightSource);
 
-		}
+    }
 
-		mainScene.background = background;
+    mainScene.background = background;
 
-		// Convolution phase.
-		this.blurPass.render(renderer, renderTargetMask, renderTargetX);
+    // Convolution phase.
+    this.blurPass.render(renderer, renderTargetMask, renderTargetX);
 
-		// God rays pass.
-		quad.material = godRaysMaterial;
-		godRaysMaterial.uniforms.tDiffuse.value = renderTargetX.texture;
-		renderer.render(scene, camera, renderTargetY);
+    // God rays pass.
+    quad.material = godRaysMaterial;
+    godRaysMaterial.uniforms.tDiffuse.value = renderTargetX.texture;
+    renderer.render(scene, camera, renderTargetY);
 
-		// Final pass - composite god rays onto colours.
-		quad.material = combineMaterial;
-		combineMaterial.uniforms.texture1.value = readBuffer.texture;
-		combineMaterial.uniforms.texture2.value = renderTargetY.texture;
+    // Final pass - composite god rays onto colours.
+    quad.material = combineMaterial;
+    combineMaterial.uniforms.texture1.value = readBuffer.texture;
+    combineMaterial.uniforms.texture2.value = renderTargetY.texture;
 
-		renderer.render(scene, camera, this.renderToScreen ? null : writeBuffer);
+    renderer.render(scene, camera, this.renderToScreen ? null : writeBuffer);
 
-	}
+  }
 
-	/**
-	 * Adjusts the format of the render targets.
-	 *
-	 * @param {WebGLRenderer} renderer - The renderer.
-	 * @param {Boolean} alpha - Whether the renderer uses the alpha channel or not.
-	 */
+  /**
+   * Adjusts the format of the render targets.
+   *
+   * @param {WebGLRenderer} renderer - The renderer.
+   * @param {Boolean} alpha - Whether the renderer uses the alpha channel or not.
+   */
 
-	initialise(renderer, alpha) {
+  initialise(renderer, alpha) {
 
-		this.renderPassLight.initialise(renderer, alpha);
-		this.renderPassMask.initialise(renderer, alpha);
-		this.blurPass.initialise(renderer, alpha);
+    this.renderPassLight.initialise(renderer, alpha);
+    this.renderPassMask.initialise(renderer, alpha);
+    this.blurPass.initialise(renderer, alpha);
 
-		if(!alpha) {
+    if(!alpha) {
 
-			this.renderTargetMask.texture.format = __WEBPACK_IMPORTED_MODULE_0_three__["RGBFormat"];
-			this.renderTargetX.texture.format = __WEBPACK_IMPORTED_MODULE_0_three__["RGBFormat"];
-			this.renderTargetY.texture.format = __WEBPACK_IMPORTED_MODULE_0_three__["RGBFormat"];
+      this.renderTargetMask.texture.format = __WEBPACK_IMPORTED_MODULE_0_three__["RGBFormat"];
+      this.renderTargetX.texture.format = __WEBPACK_IMPORTED_MODULE_0_three__["RGBFormat"];
+      this.renderTargetY.texture.format = __WEBPACK_IMPORTED_MODULE_0_three__["RGBFormat"];
 
-		}
+    }
 
-	}
+  }
 
-	/**
-	 * Updates this pass with the renderer's size.
-	 *
-	 * @param {Number} width - The width.
-	 * @param {Number} height - The height.
-	 */
+  /**
+   * Updates this pass with the renderer's size.
+   *
+   * @param {Number} width - The width.
+   * @param {Number} height - The height.
+   */
 
-	setSize(width, height) {
+  setSize(width, height) {
 
-		this.renderPassLight.setSize(width, height);
-		this.renderPassMask.setSize(width, height);
-		this.blurPass.setSize(width, height);
+    this.renderPassLight.setSize(width, height);
+    this.renderPassMask.setSize(width, height);
+    this.blurPass.setSize(width, height);
 
-		width = this.blurPass.width;
-		height = this.blurPass.height;
+    width = this.blurPass.width;
+    height = this.blurPass.height;
 
-		this.renderTargetMask.setSize(width, height);
-		this.renderTargetX.setSize(width, height);
-		this.renderTargetY.setSize(width, height);
+    this.renderTargetMask.setSize(width, height);
+    this.renderTargetX.setSize(width, height);
+    this.renderTargetY.setSize(width, height);
 
-	}
+  }
 
 }
 /* unused harmony export GodRaysPass */
@@ -15935,100 +15934,100 @@ class GodRaysPass extends __WEBPACK_IMPORTED_MODULE_4__pass_js__["a" /* Pass */]
 
 class MaskPass extends __WEBPACK_IMPORTED_MODULE_0__pass_js__["a" /* Pass */] {
 
-	/**
-	 * Constructs a new mask pass.
-	 *
-	 * @param {Scene} scene - The scene to render.
-	 * @param {Camera} camera - The camera to use.
-	 */
+  /**
+   * Constructs a new mask pass.
+   *
+   * @param {Scene} scene - The scene to render.
+   * @param {Camera} camera - The camera to use.
+   */
 
-	constructor(scene, camera) {
+  constructor(scene, camera) {
 
-		super(scene, camera, null);
+    super(scene, camera, null);
 
-		/**
-		 * The name of this pass.
-		 */
+    /**
+     * The name of this pass.
+     */
 
-		this.name = "MaskPass";
+    this.name = "MaskPass";
 
-		/**
-		 * Inverse flag.
-		 *
-		 * @type {Boolean}
-		 * @default false
-		 */
+    /**
+     * Inverse flag.
+     *
+     * @type {Boolean}
+     * @default false
+     */
 
-		this.inverse = false;
+    this.inverse = false;
 
-		/**
-		 * Stencil buffer clear flag.
-		 *
-		 * @type {Boolean}
-		 * @default true
-		 */
+    /**
+     * Stencil buffer clear flag.
+     *
+     * @type {Boolean}
+     * @default true
+     */
 
-		this.clearStencil = true;
+    this.clearStencil = true;
 
-	}
+  }
 
-	/**
-	 * Creates a stencil bit mask.
-	 *
-	 * @param {WebGLRenderer} renderer - The renderer.
-	 * @param {WebGLRenderTarget} readBuffer - The read buffer.
-	 * @param {WebGLRenderTarget} writeBuffer - The write buffer.
-	 */
+  /**
+   * Creates a stencil bit mask.
+   *
+   * @param {WebGLRenderer} renderer - The renderer.
+   * @param {WebGLRenderTarget} readBuffer - The read buffer.
+   * @param {WebGLRenderTarget} writeBuffer - The write buffer.
+   */
 
-	render(renderer, readBuffer, writeBuffer) {
+  render(renderer, readBuffer, writeBuffer) {
 
-		const context = renderer.context;
-		const state = renderer.state;
+    const context = renderer.context;
+    const state = renderer.state;
 
-		const scene = this.scene;
-		const camera = this.camera;
+    const scene = this.scene;
+    const camera = this.camera;
 
-		const writeValue = this.inverse ? 0 : 1;
-		const clearValue = 1 - writeValue;
+    const writeValue = this.inverse ? 0 : 1;
+    const clearValue = 1 - writeValue;
 
-		// Don't update color or depth.
-		state.buffers.color.setMask(false);
-		state.buffers.depth.setMask(false);
+    // Don't update color or depth.
+    state.buffers.color.setMask(false);
+    state.buffers.depth.setMask(false);
 
-		// Lock the buffers.
-		state.buffers.color.setLocked(true);
-		state.buffers.depth.setLocked(true);
+    // Lock the buffers.
+    state.buffers.color.setLocked(true);
+    state.buffers.depth.setLocked(true);
 
-		// Configure the stencil.
-		state.buffers.stencil.setTest(true);
-		state.buffers.stencil.setOp(context.REPLACE, context.REPLACE, context.REPLACE);
-		state.buffers.stencil.setFunc(context.ALWAYS, writeValue, 0xffffffff);
-		state.buffers.stencil.setClear(clearValue);
+    // Configure the stencil.
+    state.buffers.stencil.setTest(true);
+    state.buffers.stencil.setOp(context.REPLACE, context.REPLACE, context.REPLACE);
+    state.buffers.stencil.setFunc(context.ALWAYS, writeValue, 0xffffffff);
+    state.buffers.stencil.setClear(clearValue);
 
-		// Clear the stencil.
-		if(this.clearStencil) {
+    // Clear the stencil.
+    if(this.clearStencil) {
 
-			renderer.setRenderTarget(readBuffer);
-			renderer.clearStencil();
+      renderer.setRenderTarget(readBuffer);
+      renderer.clearStencil();
 
-			renderer.setRenderTarget(writeBuffer);
-			renderer.clearStencil();
+      renderer.setRenderTarget(writeBuffer);
+      renderer.clearStencil();
 
-		}
+    }
 
-		// Draw the mask into both buffers.
-		renderer.render(scene, camera, readBuffer);
-		renderer.render(scene, camera, writeBuffer);
+    // Draw the mask into both buffers.
+    renderer.render(scene, camera, readBuffer);
+    renderer.render(scene, camera, writeBuffer);
 
-		// Unlock the buffers.
-		state.buffers.color.setLocked(false);
-		state.buffers.depth.setLocked(false);
+    // Unlock the buffers.
+    state.buffers.color.setLocked(false);
+    state.buffers.depth.setLocked(false);
 
-		// Only render where the stencil is set to 1.
-		state.buffers.stencil.setFunc(context.EQUAL, 1, 0xffffffff);
-		state.buffers.stencil.setOp(context.KEEP, context.KEEP, context.KEEP);
+    // Only render where the stencil is set to 1.
+    state.buffers.stencil.setFunc(context.EQUAL, 1, 0xffffffff);
+    state.buffers.stencil.setOp(context.KEEP, context.KEEP, context.KEEP);
 
-	}
+  }
 
 }
 /* harmony export (immutable) */ __webpack_exports__["a"] = MaskPass;
@@ -16051,100 +16050,100 @@ class MaskPass extends __WEBPACK_IMPORTED_MODULE_0__pass_js__["a" /* Pass */] {
 
 class PixelationPass extends __WEBPACK_IMPORTED_MODULE_1__pass_js__["a" /* Pass */] {
 
-	/**
-	 * Constructs a new pixelation pass.
-	 *
-	 * @param {Number} [granularity=30.0] - The intensity of the effect.
-	 */
+  /**
+   * Constructs a new pixelation pass.
+   *
+   * @param {Number} [granularity=30.0] - The intensity of the effect.
+   */
 
-	constructor(granularity = 30.0) {
+  constructor(granularity = 30.0) {
 
-		super();
+    super();
 
-		/**
-		 * The name of this pass.
-		 */
+    /**
+     * The name of this pass.
+     */
 
-		this.name = "PixelationPass";
+    this.name = "PixelationPass";
 
-		/**
-		 * This pass renders to the write buffer.
-		 */
+    /**
+     * This pass renders to the write buffer.
+     */
 
-		this.needsSwap = true;
+    this.needsSwap = true;
 
-		/**
-		 * A pixelation shader material.
-		 *
-		 * @type {PixelationMaterial}
-		 * @private
-		 */
+    /**
+     * A pixelation shader material.
+     *
+     * @type {PixelationMaterial}
+     * @private
+     */
 
-		this.pixelationMaterial = new __WEBPACK_IMPORTED_MODULE_0__materials__["n" /* PixelationMaterial */]();
+    this.pixelationMaterial = new __WEBPACK_IMPORTED_MODULE_0__materials__["n" /* PixelationMaterial */]();
 
-		this.granularity = granularity;
+    this.granularity = granularity;
 
-		this.quad.material = this.pixelationMaterial;
+    this.quad.material = this.pixelationMaterial;
 
-	}
+  }
 
-	/**
-	 * The pixel granularity.
-	 *
-	 * @type {Number}
-	 * @default 30.0
-	 */
+  /**
+   * The pixel granularity.
+   *
+   * @type {Number}
+   * @default 30.0
+   */
 
-	get granularity() { return this.pixelationMaterial.granularity; }
+  get granularity() { return this.pixelationMaterial.granularity; }
 
-	/**
-	 * A higher value yields coarser visuals.
-	 *
-	 * @type {Number}
-	 */
+  /**
+   * A higher value yields coarser visuals.
+   *
+   * @type {Number}
+   */
 
-	set granularity(x = 30) {
+  set granularity(x = 30) {
 
-		x = Math.floor(x);
+    x = Math.floor(x);
 
-		if(x % 2 > 0) {
+    if(x % 2 > 0) {
 
-			x += 1;
+      x += 1;
 
-		}
+    }
 
-		this.pixelationMaterial.granularity = x;
+    this.pixelationMaterial.granularity = x;
 
-	}
+  }
 
-	/**
-	 * Renders the effect.
-	 *
-	 * @param {WebGLRenderer} renderer - The renderer.
-	 * @param {WebGLRenderTarget} readBuffer - The read buffer.
-	 * @param {WebGLRenderTarget} writeBuffer - The write buffer.
-	 */
+  /**
+   * Renders the effect.
+   *
+   * @param {WebGLRenderer} renderer - The renderer.
+   * @param {WebGLRenderTarget} readBuffer - The read buffer.
+   * @param {WebGLRenderTarget} writeBuffer - The write buffer.
+   */
 
-	render(renderer, readBuffer, writeBuffer) {
+  render(renderer, readBuffer, writeBuffer) {
 
-		this.pixelationMaterial.uniforms.tDiffuse.value = readBuffer.texture;
+    this.pixelationMaterial.uniforms.tDiffuse.value = readBuffer.texture;
 
-		renderer.render(this.scene, this.camera, this.renderToScreen ? null : writeBuffer);
+    renderer.render(this.scene, this.camera, this.renderToScreen ? null : writeBuffer);
 
-	}
+  }
 
-	/**
-	 * Updates this pass with the renderer's size.
-	 *
-	 * @param {Number} width - The width.
-	 * @param {Number} height - The height.
-	 */
+  /**
+   * Updates this pass with the renderer's size.
+   *
+   * @param {Number} width - The width.
+   * @param {Number} height - The height.
+   */
 
-	setSize(width, height) {
+  setSize(width, height) {
 
-		this.pixelationMaterial.setResolution(width, height);
+    this.pixelationMaterial.setResolution(width, height);
 
-	}
+  }
 
 }
 /* unused harmony export PixelationPass */
@@ -16170,113 +16169,113 @@ class PixelationPass extends __WEBPACK_IMPORTED_MODULE_1__pass_js__["a" /* Pass 
 
 class SavePass extends __WEBPACK_IMPORTED_MODULE_2__pass_js__["a" /* Pass */] {
 
-	/**
-	 * Constructs a new save pass.
-	 *
-	 * @param {WebGLRenderTarget} [renderTarget] - The render target to use for saving the read buffer.
-	 * @param {Boolean} [resize=true] - Whether the render target should adjust to the size of the read/write buffer.
-	 */
+  /**
+   * Constructs a new save pass.
+   *
+   * @param {WebGLRenderTarget} [renderTarget] - The render target to use for saving the read buffer.
+   * @param {Boolean} [resize=true] - Whether the render target should adjust to the size of the read/write buffer.
+   */
 
-	constructor(renderTarget, resize = true) {
+  constructor(renderTarget, resize = true) {
 
-		super();
+    super();
 
-		/**
-		 * The name of this pass.
-		 */
+    /**
+     * The name of this pass.
+     */
 
-		this.name = "SavePass";
+    this.name = "SavePass";
 
-		/**
-		 * Copy shader material.
-		 *
-		 * @type {CopyMaterial}
-		 * @private
-		 */
+    /**
+     * Copy shader material.
+     *
+     * @type {CopyMaterial}
+     * @private
+     */
 
-		this.material = new __WEBPACK_IMPORTED_MODULE_1__materials__["f" /* CopyMaterial */]();
+    this.material = new __WEBPACK_IMPORTED_MODULE_1__materials__["f" /* CopyMaterial */]();
 
-		this.quad.material = this.material;
+    this.quad.material = this.material;
 
-		/**
-		 * The render target.
-		 *
-		 * @type {WebGLRenderTarget}
-		 */
+    /**
+     * The render target.
+     *
+     * @type {WebGLRenderTarget}
+     */
 
-		this.renderTarget = (renderTarget !== undefined) ? renderTarget : new __WEBPACK_IMPORTED_MODULE_0_three__["WebGLRenderTarget"](1, 1, {
-			minFilter: __WEBPACK_IMPORTED_MODULE_0_three__["LinearFilter"],
-			magFilter: __WEBPACK_IMPORTED_MODULE_0_three__["LinearFilter"],
-			stencilBuffer: false,
-			depthBuffer: false
-		});
+    this.renderTarget = (renderTarget !== undefined) ? renderTarget : new __WEBPACK_IMPORTED_MODULE_0_three__["WebGLRenderTarget"](1, 1, {
+      minFilter: __WEBPACK_IMPORTED_MODULE_0_three__["LinearFilter"],
+      magFilter: __WEBPACK_IMPORTED_MODULE_0_three__["LinearFilter"],
+      stencilBuffer: false,
+      depthBuffer: false
+    });
 
-		this.renderTarget.texture.name = "Save.Target";
-		this.renderTarget.texture.generateMipmaps = false;
+    this.renderTarget.texture.name = "Save.Target";
+    this.renderTarget.texture.generateMipmaps = false;
 
-		/**
-		 * Indicates whether the render target should be resized when the size of
-		 * the composer's read/write buffer changes.
-		 *
-		 * @type {Boolean}
-		 * @default true
-		 */
+    /**
+     * Indicates whether the render target should be resized when the size of
+     * the composer's read/write buffer changes.
+     *
+     * @type {Boolean}
+     * @default true
+     */
 
-		this.resize = resize;
+    this.resize = resize;
 
-	}
+  }
 
-	/**
-	 * Saves the read buffer.
-	 *
-	 * @param {WebGLRenderer} renderer - The renderer.
-	 * @param {WebGLRenderTarget} readBuffer - The read buffer.
-	 */
+  /**
+   * Saves the read buffer.
+   *
+   * @param {WebGLRenderer} renderer - The renderer.
+   * @param {WebGLRenderTarget} readBuffer - The read buffer.
+   */
 
-	render(renderer, readBuffer) {
+  render(renderer, readBuffer) {
 
-		this.material.uniforms.tDiffuse.value = readBuffer.texture;
+    this.material.uniforms.tDiffuse.value = readBuffer.texture;
 
-		renderer.render(this.scene, this.camera, this.renderTarget);
+    renderer.render(this.scene, this.camera, this.renderTarget);
 
-	}
+  }
 
-	/**
-	 * Adjusts the format of the render target.
-	 *
-	 * @param {WebGLRenderer} renderer - The renderer.
-	 * @param {Boolean} alpha - Whether the renderer uses the alpha channel or not.
-	 */
+  /**
+   * Adjusts the format of the render target.
+   *
+   * @param {WebGLRenderer} renderer - The renderer.
+   * @param {Boolean} alpha - Whether the renderer uses the alpha channel or not.
+   */
 
-	initialise(renderer, alpha) {
+  initialise(renderer, alpha) {
 
-		if(!alpha) {
+    if(!alpha) {
 
-			this.renderTarget.texture.format = __WEBPACK_IMPORTED_MODULE_0_three__["RGBFormat"];
+      this.renderTarget.texture.format = __WEBPACK_IMPORTED_MODULE_0_three__["RGBFormat"];
 
-		}
+    }
 
-	}
+  }
 
-	/**
-	 * Updates this pass with the renderer's size.
-	 *
-	 * @param {Number} width - The width.
-	 * @param {Number} height - The height.
-	 */
+  /**
+   * Updates this pass with the renderer's size.
+   *
+   * @param {Number} width - The width.
+   * @param {Number} height - The height.
+   */
 
-	setSize(width, height) {
+  setSize(width, height) {
 
-		if(this.resize) {
+    if(this.resize) {
 
-			width = Math.max(1, width);
-			height = Math.max(1, height);
+      width = Math.max(1, width);
+      height = Math.max(1, height);
 
-			this.renderTarget.setSize(width, height);
+      this.renderTarget.setSize(width, height);
 
-		}
+    }
 
-	}
+  }
 
 }
 /* unused harmony export SavePass */
@@ -16299,69 +16298,69 @@ class SavePass extends __WEBPACK_IMPORTED_MODULE_2__pass_js__["a" /* Pass */] {
 
 class ShaderPass extends __WEBPACK_IMPORTED_MODULE_0__pass_js__["a" /* Pass */] {
 
-	/**
-	 * Constructs a new shader pass.
-	 *
-	 * @param {ShaderMaterial} material - The shader material to use.
-	 * @param {String} [textureID="tDiffuse"] - The texture uniform identifier.
-	 */
+  /**
+   * Constructs a new shader pass.
+   *
+   * @param {ShaderMaterial} material - The shader material to use.
+   * @param {String} [textureID="tDiffuse"] - The texture uniform identifier.
+   */
 
-	constructor(material, textureID = "tDiffuse") {
+  constructor(material, textureID = "tDiffuse") {
 
-		super();
+    super();
 
-		/**
-		 * The name of this pass.
-		 */
+    /**
+     * The name of this pass.
+     */
 
-		this.name = "ShaderPass";
+    this.name = "ShaderPass";
 
-		/**
-		 * This pass renders to the write buffer.
-		 */
+    /**
+     * This pass renders to the write buffer.
+     */
 
-		this.needsSwap = true;
+    this.needsSwap = true;
 
-		/**
-		 * The shader material to use for rendering.
-		 *
-		 * @type {ShaderMaterial}
-		 */
+    /**
+     * The shader material to use for rendering.
+     *
+     * @type {ShaderMaterial}
+     */
 
-		this.material = material;
+    this.material = material;
 
-		this.quad.material = this.material;
+    this.quad.material = this.material;
 
-		/**
-		 * The name of the color sampler uniform of the given material.
-		 *
-		 * @type {String}
-		 * @default "tDiffuse"
-		 */
+    /**
+     * The name of the color sampler uniform of the given material.
+     *
+     * @type {String}
+     * @default "tDiffuse"
+     */
 
-		this.textureID = textureID;
+    this.textureID = textureID;
 
-	}
+  }
 
-	/**
-	 * Renders the effect.
-	 *
-	 * @param {WebGLRenderer} renderer - The renderer.
-	 * @param {WebGLRenderTarget} readBuffer - The read buffer.
-	 * @param {WebGLRenderTarget} writeBuffer - The write buffer.
-	 */
+  /**
+   * Renders the effect.
+   *
+   * @param {WebGLRenderer} renderer - The renderer.
+   * @param {WebGLRenderTarget} readBuffer - The read buffer.
+   * @param {WebGLRenderTarget} writeBuffer - The write buffer.
+   */
 
-	render(renderer, readBuffer, writeBuffer) {
+  render(renderer, readBuffer, writeBuffer) {
 
-		if(this.material.uniforms[this.textureID] !== undefined) {
+    if(this.material.uniforms[this.textureID] !== undefined) {
 
-			this.material.uniforms[this.textureID].value = readBuffer.texture;
+      this.material.uniforms[this.textureID].value = readBuffer.texture;
 
-		}
+    }
 
-		renderer.render(this.scene, this.camera, this.renderToScreen ? null : writeBuffer);
+    renderer.render(this.scene, this.camera, this.renderToScreen ? null : writeBuffer);
 
-	}
+  }
 
 }
 /* harmony export (immutable) */ __webpack_exports__["a"] = ShaderPass;
@@ -16420,195 +16419,195 @@ const ab = new __WEBPACK_IMPORTED_MODULE_0_three__["Vector3"]();
 
 class ShockWavePass extends __WEBPACK_IMPORTED_MODULE_2__pass_js__["a" /* Pass */] {
 
-	/**
-	 * Constructs a new shock wave pass.
-	 *
-	 * @param {Camera} camera - The main camera.
-	 * @param {Vector3} [epicenter] - The world position of the shock wave epicenter.
-	 * @param {Object} [options] - The options.
-	 * @param {Number} [options.speed=1.0] - The animation speed.
-	 * @param {Number} [options.maxRadius=1.0] - The extent of the shock wave.
-	 * @param {Number} [options.waveSize=0.2] - The wave size.
-	 * @param {Number} [options.amplitude=0.05] - The distortion amplitude.
-	 */
+  /**
+   * Constructs a new shock wave pass.
+   *
+   * @param {Camera} camera - The main camera.
+   * @param {Vector3} [epicenter] - The world position of the shock wave epicenter.
+   * @param {Object} [options] - The options.
+   * @param {Number} [options.speed=1.0] - The animation speed.
+   * @param {Number} [options.maxRadius=1.0] - The extent of the shock wave.
+   * @param {Number} [options.waveSize=0.2] - The wave size.
+   * @param {Number} [options.amplitude=0.05] - The distortion amplitude.
+   */
 
-	constructor(camera, epicenter = new __WEBPACK_IMPORTED_MODULE_0_three__["Vector3"](), options = {}) {
+  constructor(camera, epicenter = new __WEBPACK_IMPORTED_MODULE_0_three__["Vector3"](), options = {}) {
 
-		super();
+    super();
 
-		/**
-		 * The name of this pass.
-		 */
+    /**
+     * The name of this pass.
+     */
 
-		this.name = "ShockWavePass";
+    this.name = "ShockWavePass";
 
-		/**
-		 * This pass renders to the write buffer.
-		 */
+    /**
+     * This pass renders to the write buffer.
+     */
 
-		this.needsSwap = true;
+    this.needsSwap = true;
 
-		/**
-		 * The main camera.
-		 *
-		 * @type {Object3D}
-		 */
+    /**
+     * The main camera.
+     *
+     * @type {Object3D}
+     */
 
-		this.mainCamera = camera;
+    this.mainCamera = camera;
 
-		/**
-		 * The epicenter.
-		 *
-		 * @type {Vector3}
-		 * @example shockWavePass.epicenter = myMesh.position;
-		 */
+    /**
+     * The epicenter.
+     *
+     * @type {Vector3}
+     * @example shockWavePass.epicenter = myMesh.position;
+     */
 
-		this.epicenter = epicenter;
+    this.epicenter = epicenter;
 
-		/**
-		 * The object position in screen space.
-		 *
-		 * @type {Vector3}
-		 * @private
-		 */
+    /**
+     * The object position in screen space.
+     *
+     * @type {Vector3}
+     * @private
+     */
 
-		this.screenPosition = new __WEBPACK_IMPORTED_MODULE_0_three__["Vector3"]();
+    this.screenPosition = new __WEBPACK_IMPORTED_MODULE_0_three__["Vector3"]();
 
-		/**
-		 * The speed of the shock wave animation.
-		 *
-		 * @type {Number}
-		 * @default 2.0
-		 */
+    /**
+     * The speed of the shock wave animation.
+     *
+     * @type {Number}
+     * @default 2.0
+     */
 
-		this.speed = (options.speed !== undefined) ? options.speed : 2.0;
+    this.speed = (options.speed !== undefined) ? options.speed : 2.0;
 
-		/**
-		 * A time accumulator.
-		 *
-		 * @type {Number}
-		 * @private
-		 */
+    /**
+     * A time accumulator.
+     *
+     * @type {Number}
+     * @private
+     */
 
-		this.time = 0.0;
+    this.time = 0.0;
 
-		/**
-		 * Indicates whether the shock wave animation is active.
-		 *
-		 * @type {Boolean}
-		 * @private
-		 */
+    /**
+     * Indicates whether the shock wave animation is active.
+     *
+     * @type {Boolean}
+     * @private
+     */
 
-		this.active = false;
+    this.active = false;
 
-		/**
-		 * A shock wave shader material.
-		 *
-		 * @type {ShockWaveMaterial}
-		 * @private
-		 */
+    /**
+     * A shock wave shader material.
+     *
+     * @type {ShockWaveMaterial}
+     * @private
+     */
 
-		this.shockWaveMaterial = new __WEBPACK_IMPORTED_MODULE_1__materials__["r" /* ShockWaveMaterial */](options);
+    this.shockWaveMaterial = new __WEBPACK_IMPORTED_MODULE_1__materials__["r" /* ShockWaveMaterial */](options);
 
-		this.shockWaveMaterial.uniforms.center.value = this.screenPosition;
+    this.shockWaveMaterial.uniforms.center.value = this.screenPosition;
 
-		/**
-		 * A copy shader material.
-		 *
-		 * @type {CopyMaterial}
-		 * @private
-		 */
+    /**
+     * A copy shader material.
+     *
+     * @type {CopyMaterial}
+     * @private
+     */
 
-		this.copyMaterial = new __WEBPACK_IMPORTED_MODULE_1__materials__["f" /* CopyMaterial */]();
+    this.copyMaterial = new __WEBPACK_IMPORTED_MODULE_1__materials__["f" /* CopyMaterial */]();
 
-	}
+  }
 
-	/**
-	 * Emits the shock wave.
-	 */
+  /**
+   * Emits the shock wave.
+   */
 
-	explode() {
+  explode() {
 
-		this.time = 0.0;
-		this.active = true;
+    this.time = 0.0;
+    this.active = true;
 
-	}
+  }
 
-	/**
-	 * Renders the effect.
-	 *
-	 * @param {WebGLRenderer} renderer - The renderer.
-	 * @param {WebGLRenderTarget} readBuffer - The read buffer.
-	 * @param {WebGLRenderTarget} writeBuffer - The write buffer.
-	 * @param {Number} delta - The render delta time.
-	 */
+  /**
+   * Renders the effect.
+   *
+   * @param {WebGLRenderer} renderer - The renderer.
+   * @param {WebGLRenderTarget} readBuffer - The read buffer.
+   * @param {WebGLRenderTarget} writeBuffer - The write buffer.
+   * @param {Number} delta - The render delta time.
+   */
 
-	render(renderer, readBuffer, writeBuffer, delta) {
+  render(renderer, readBuffer, writeBuffer, delta) {
 
-		const epicenter = this.epicenter;
-		const mainCamera = this.mainCamera;
-		const screenPosition = this.screenPosition;
+    const epicenter = this.epicenter;
+    const mainCamera = this.mainCamera;
+    const screenPosition = this.screenPosition;
 
-		const shockWaveMaterial = this.shockWaveMaterial;
-		const uniforms = shockWaveMaterial.uniforms;
-		const center = uniforms.center;
-		const radius = uniforms.radius;
-		const maxRadius = uniforms.maxRadius;
-		const waveSize = uniforms.waveSize;
+    const shockWaveMaterial = this.shockWaveMaterial;
+    const uniforms = shockWaveMaterial.uniforms;
+    const center = uniforms.center;
+    const radius = uniforms.radius;
+    const maxRadius = uniforms.maxRadius;
+    const waveSize = uniforms.waveSize;
 
-		this.copyMaterial.uniforms.tDiffuse.value = readBuffer.texture;
-		this.quad.material = this.copyMaterial;
+    this.copyMaterial.uniforms.tDiffuse.value = readBuffer.texture;
+    this.quad.material = this.copyMaterial;
 
-		if(this.active) {
+    if(this.active) {
 
-			// Calculate direction vectors.
-			mainCamera.getWorldDirection(v);
-			ab.copy(mainCamera.position).sub(epicenter);
+      // Calculate direction vectors.
+      mainCamera.getWorldDirection(v);
+      ab.copy(mainCamera.position).sub(epicenter);
 
-			// Don't render the effect if the object is behind the camera.
-			if(v.angleTo(ab) > HALF_PI) {
+      // Don't render the effect if the object is behind the camera.
+      if(v.angleTo(ab) > HALF_PI) {
 
-				// Scale the effect based on distance to the object.
-				uniforms.cameraDistance.value = mainCamera.position.distanceTo(epicenter);
+        // Scale the effect based on distance to the object.
+        uniforms.cameraDistance.value = mainCamera.position.distanceTo(epicenter);
 
-				// Calculate the screen position of the epicenter.
-				screenPosition.copy(epicenter).project(mainCamera);
-				center.value.x = (screenPosition.x + 1.0) * 0.5;
-				center.value.y = (screenPosition.y + 1.0) * 0.5;
+        // Calculate the screen position of the epicenter.
+        screenPosition.copy(epicenter).project(mainCamera);
+        center.value.x = (screenPosition.x + 1.0) * 0.5;
+        center.value.y = (screenPosition.y + 1.0) * 0.5;
 
-				uniforms.tDiffuse.value = readBuffer.texture;
-				this.quad.material = shockWaveMaterial;
+        uniforms.tDiffuse.value = readBuffer.texture;
+        this.quad.material = shockWaveMaterial;
 
-			}
+      }
 
-			// Update the shock wave radius based on time.
-			this.time += delta;
-			radius.value = this.time * this.speed - waveSize.value;
+      // Update the shock wave radius based on time.
+      this.time += delta;
+      radius.value = this.time * this.speed - waveSize.value;
 
-			if(radius.value >= (maxRadius.value + waveSize.value) * 2) {
+      if(radius.value >= (maxRadius.value + waveSize.value) * 2) {
 
-				this.active = false;
+        this.active = false;
 
-			}
+      }
 
-		}
+    }
 
-		renderer.render(this.scene, this.camera, this.renderToScreen ? null : writeBuffer);
+    renderer.render(this.scene, this.camera, this.renderToScreen ? null : writeBuffer);
 
-	}
+  }
 
-	/**
-	 * Updates this pass with the renderer's size.
-	 *
-	 * @param {Number} width - The width.
-	 * @param {Number} height - The height.
-	 */
+  /**
+   * Updates this pass with the renderer's size.
+   *
+   * @param {Number} width - The width.
+   * @param {Number} height - The height.
+   */
 
-	setSize(width, height) {
+  setSize(width, height) {
 
-		this.shockWaveMaterial.uniforms.aspect.value = width / height;
+    this.shockWaveMaterial.uniforms.aspect.value = width / height;
 
-	}
+  }
 
 }
 /* unused harmony export ShockWavePass */
@@ -16638,164 +16637,164 @@ class ShockWavePass extends __WEBPACK_IMPORTED_MODULE_2__pass_js__["a" /* Pass *
 
 class SMAAPass extends __WEBPACK_IMPORTED_MODULE_2__pass_js__["a" /* Pass */] {
 
-	/**
-	 * Constructs a new SMAA pass.
-	 *
-	 * @param {Image} Image - This pass requires an Image class to create internal textures. Provide window.Image in a browser environment.
-	 */
+  /**
+   * Constructs a new SMAA pass.
+   *
+   * @param {Image} Image - This pass requires an Image class to create internal textures. Provide window.Image in a browser environment.
+   */
 
-	constructor(Image) {
+  constructor(Image) {
 
-		super();
+    super();
 
-		/**
-		 * The name of this pass.
-		 */
+    /**
+     * The name of this pass.
+     */
 
-		this.name = "SMAAPass";
+    this.name = "SMAAPass";
 
-		/**
-		 * This pass renders to the write buffer.
-		 */
+    /**
+     * This pass renders to the write buffer.
+     */
 
-		this.needsSwap = true;
+    this.needsSwap = true;
 
-		/**
-		 * A render target for the color edge detection.
-		 *
-		 * @type {WebGLRenderTarget}
-		 * @private
-		 */
+    /**
+     * A render target for the color edge detection.
+     *
+     * @type {WebGLRenderTarget}
+     * @private
+     */
 
-		this.renderTargetColorEdges = new __WEBPACK_IMPORTED_MODULE_0_three__["WebGLRenderTarget"](1, 1, {
-			minFilter: __WEBPACK_IMPORTED_MODULE_0_three__["LinearFilter"],
-			format: __WEBPACK_IMPORTED_MODULE_0_three__["RGBFormat"],
-			stencilBuffer: false,
-			depthBuffer: false
-		});
+    this.renderTargetColorEdges = new __WEBPACK_IMPORTED_MODULE_0_three__["WebGLRenderTarget"](1, 1, {
+      minFilter: __WEBPACK_IMPORTED_MODULE_0_three__["LinearFilter"],
+      format: __WEBPACK_IMPORTED_MODULE_0_three__["RGBFormat"],
+      stencilBuffer: false,
+      depthBuffer: false
+    });
 
-		this.renderTargetColorEdges.texture.name = "SMAA.ColorEdges";
-		this.renderTargetColorEdges.texture.generateMipmaps = false;
+    this.renderTargetColorEdges.texture.name = "SMAA.ColorEdges";
+    this.renderTargetColorEdges.texture.generateMipmaps = false;
 
-		/**
-		 * A render target for the SMAA weights.
-		 *
-		 * @type {WebGLRenderTarget}
-		 * @private
-		 */
+    /**
+     * A render target for the SMAA weights.
+     *
+     * @type {WebGLRenderTarget}
+     * @private
+     */
 
-		this.renderTargetWeights = this.renderTargetColorEdges.clone();
+    this.renderTargetWeights = this.renderTargetColorEdges.clone();
 
-		this.renderTargetWeights.texture.name = "SMAA.Weights";
-		this.renderTargetWeights.texture.format = __WEBPACK_IMPORTED_MODULE_0_three__["RGBAFormat"];
+    this.renderTargetWeights.texture.name = "SMAA.Weights";
+    this.renderTargetWeights.texture.format = __WEBPACK_IMPORTED_MODULE_0_three__["RGBAFormat"];
 
-		/**
-		 * SMAA color edge detection shader material.
-		 *
-		 * @type {SMAAColorEdgesMaterial}
-		 * @private
-		 */
+    /**
+     * SMAA color edge detection shader material.
+     *
+     * @type {SMAAColorEdgesMaterial}
+     * @private
+     */
 
-		this.colorEdgesMaterial = new __WEBPACK_IMPORTED_MODULE_1__materials__["p" /* SMAAColorEdgesMaterial */]();
+    this.colorEdgesMaterial = new __WEBPACK_IMPORTED_MODULE_1__materials__["p" /* SMAAColorEdgesMaterial */]();
 
-		/**
-		 * SMAA weights shader material.
-		 *
-		 * @type {SMAAWeightsMaterial}
-		 * @private
-		 */
+    /**
+     * SMAA weights shader material.
+     *
+     * @type {SMAAWeightsMaterial}
+     * @private
+     */
 
-		this.weightsMaterial = new __WEBPACK_IMPORTED_MODULE_1__materials__["q" /* SMAAWeightsMaterial */]();
+    this.weightsMaterial = new __WEBPACK_IMPORTED_MODULE_1__materials__["q" /* SMAAWeightsMaterial */]();
 
-		const areaImage = new Image();
-		areaImage.src = this.weightsMaterial.areaImage;
+    const areaImage = new Image();
+    areaImage.src = this.weightsMaterial.areaImage;
 
-		const areaTexture = new __WEBPACK_IMPORTED_MODULE_0_three__["Texture"]();
-		areaTexture.image = areaImage;
-		areaTexture.name = "SMAA.Area";
-		areaTexture.minFilter = __WEBPACK_IMPORTED_MODULE_0_three__["LinearFilter"];
-		areaTexture.format = __WEBPACK_IMPORTED_MODULE_0_three__["RGBFormat"];
-		areaTexture.generateMipmaps = false;
-		areaTexture.needsUpdate = true;
-		areaTexture.flipY = false;
+    const areaTexture = new __WEBPACK_IMPORTED_MODULE_0_three__["Texture"]();
+    areaTexture.image = areaImage;
+    areaTexture.name = "SMAA.Area";
+    areaTexture.minFilter = __WEBPACK_IMPORTED_MODULE_0_three__["LinearFilter"];
+    areaTexture.format = __WEBPACK_IMPORTED_MODULE_0_three__["RGBFormat"];
+    areaTexture.generateMipmaps = false;
+    areaTexture.needsUpdate = true;
+    areaTexture.flipY = false;
 
-		const searchImage = new Image();
-		searchImage.src = this.weightsMaterial.searchImage;
+    const searchImage = new Image();
+    searchImage.src = this.weightsMaterial.searchImage;
 
-		const searchTexture = new __WEBPACK_IMPORTED_MODULE_0_three__["Texture"]();
-		searchTexture.image = searchImage;
-		searchTexture.name = "SMAA.Search";
-		searchTexture.magFilter = __WEBPACK_IMPORTED_MODULE_0_three__["NearestFilter"];
-		searchTexture.minFilter = __WEBPACK_IMPORTED_MODULE_0_three__["NearestFilter"];
-		searchTexture.generateMipmaps = false;
-		searchTexture.needsUpdate = true;
-		searchTexture.flipY = false;
+    const searchTexture = new __WEBPACK_IMPORTED_MODULE_0_three__["Texture"]();
+    searchTexture.image = searchImage;
+    searchTexture.name = "SMAA.Search";
+    searchTexture.magFilter = __WEBPACK_IMPORTED_MODULE_0_three__["NearestFilter"];
+    searchTexture.minFilter = __WEBPACK_IMPORTED_MODULE_0_three__["NearestFilter"];
+    searchTexture.generateMipmaps = false;
+    searchTexture.needsUpdate = true;
+    searchTexture.flipY = false;
 
-		this.weightsMaterial.uniforms.tDiffuse.value = this.renderTargetColorEdges.texture;
-		this.weightsMaterial.uniforms.tArea.value = areaTexture;
-		this.weightsMaterial.uniforms.tSearch.value = searchTexture;
+    this.weightsMaterial.uniforms.tDiffuse.value = this.renderTargetColorEdges.texture;
+    this.weightsMaterial.uniforms.tArea.value = areaTexture;
+    this.weightsMaterial.uniforms.tSearch.value = searchTexture;
 
-		/**
-		 * SMAA blend shader material.
-		 *
-		 * @type {SMAABlendMaterial}
-		 * @private
-		 */
+    /**
+     * SMAA blend shader material.
+     *
+     * @type {SMAABlendMaterial}
+     * @private
+     */
 
-		this.blendMaterial = new __WEBPACK_IMPORTED_MODULE_1__materials__["o" /* SMAABlendMaterial */]();
+    this.blendMaterial = new __WEBPACK_IMPORTED_MODULE_1__materials__["o" /* SMAABlendMaterial */]();
 
-		this.blendMaterial.uniforms.tWeights.value = this.renderTargetWeights.texture;
+    this.blendMaterial.uniforms.tWeights.value = this.renderTargetWeights.texture;
 
-		this.quad.material = this.blendMaterial;
+    this.quad.material = this.blendMaterial;
 
-	}
+  }
 
-	/**
-	 * Antialiases the scene.
-	 *
-	 * @param {WebGLRenderer} renderer - The renderer.
-	 * @param {WebGLRenderTarget} readBuffer - The read buffer.
-	 * @param {WebGLRenderTarget} writeBuffer - The write buffer.
-	 */
+  /**
+   * Antialiases the scene.
+   *
+   * @param {WebGLRenderer} renderer - The renderer.
+   * @param {WebGLRenderTarget} readBuffer - The read buffer.
+   * @param {WebGLRenderTarget} writeBuffer - The write buffer.
+   */
 
-	render(renderer, readBuffer, writeBuffer) {
+  render(renderer, readBuffer, writeBuffer) {
 
-		// Detect color edges.
-		this.quad.material = this.colorEdgesMaterial;
-		this.colorEdgesMaterial.uniforms.tDiffuse.value = readBuffer.texture;
-		renderer.render(this.scene, this.camera, this.renderTargetColorEdges, true);
+    // Detect color edges.
+    this.quad.material = this.colorEdgesMaterial;
+    this.colorEdgesMaterial.uniforms.tDiffuse.value = readBuffer.texture;
+    renderer.render(this.scene, this.camera, this.renderTargetColorEdges, true);
 
-		// Compute edge weights.
-		this.quad.material = this.weightsMaterial;
-		renderer.render(this.scene, this.camera, this.renderTargetWeights, false);
+    // Compute edge weights.
+    this.quad.material = this.weightsMaterial;
+    renderer.render(this.scene, this.camera, this.renderTargetWeights, false);
 
-		// Apply the antialiasing filter to the colors.
-		this.quad.material = this.blendMaterial;
-		this.blendMaterial.uniforms.tDiffuse.value = readBuffer.texture;
+    // Apply the antialiasing filter to the colors.
+    this.quad.material = this.blendMaterial;
+    this.blendMaterial.uniforms.tDiffuse.value = readBuffer.texture;
 
-		renderer.render(this.scene, this.camera, this.renderToScreen ? null : writeBuffer);
+    renderer.render(this.scene, this.camera, this.renderToScreen ? null : writeBuffer);
 
-	}
+  }
 
-	/**
-	 * Updates this pass with the renderer's size.
-	 *
-	 * @param {Number} width - The width.
-	 * @param {Number} height - The height.
-	 */
+  /**
+   * Updates this pass with the renderer's size.
+   *
+   * @param {Number} width - The width.
+   * @param {Number} height - The height.
+   */
 
-	setSize(width, height) {
+  setSize(width, height) {
 
-		this.renderTargetColorEdges.setSize(width, height);
-		this.renderTargetWeights.setSize(width, height);
+    this.renderTargetColorEdges.setSize(width, height);
+    this.renderTargetWeights.setSize(width, height);
 
-		this.colorEdgesMaterial.uniforms.texelSize.value.copy(
-			this.weightsMaterial.uniforms.texelSize.value.copy(
-				this.blendMaterial.uniforms.texelSize.value.set(
-					1.0 / width, 1.0 / height
-		)));
+    this.colorEdgesMaterial.uniforms.texelSize.value.copy(
+      this.weightsMaterial.uniforms.texelSize.value.copy(
+        this.blendMaterial.uniforms.texelSize.value.set(
+          1.0 / width, 1.0 / height
+    )));
 
-	}
+  }
 
 }
 /* unused harmony export SMAAPass */
@@ -16821,82 +16820,82 @@ class SMAAPass extends __WEBPACK_IMPORTED_MODULE_2__pass_js__["a" /* Pass */] {
 
 class TexturePass extends __WEBPACK_IMPORTED_MODULE_2__pass_js__["a" /* Pass */] {
 
-	/**
-	 * Constructs a new texture pass.
-	 *
-	 * @param {Texture} texture - The texture.
-	 * @param {Number} [opacity=1.0] - The texture opacity.
-	 */
+  /**
+   * Constructs a new texture pass.
+   *
+   * @param {Texture} texture - The texture.
+   * @param {Number} [opacity=1.0] - The texture opacity.
+   */
 
-	constructor(texture, opacity = 1.0) {
+  constructor(texture, opacity = 1.0) {
 
-		super();
+    super();
 
-		/**
-		 * The name of this pass.
-		 */
+    /**
+     * The name of this pass.
+     */
 
-		this.name = "TexturePass";
+    this.name = "TexturePass";
 
-		/**
-		 * A copy shader material used for rendering to texture.
-		 *
-		 * @type {CopyMaterial}
-		 * @private
-		 */
+    /**
+     * A copy shader material used for rendering to texture.
+     *
+     * @type {CopyMaterial}
+     * @private
+     */
 
-		this.copyMaterial = new __WEBPACK_IMPORTED_MODULE_1__materials__["f" /* CopyMaterial */]();
-		this.copyMaterial.blending = __WEBPACK_IMPORTED_MODULE_0_three__["AdditiveBlending"];
-		this.copyMaterial.transparent = true;
+    this.copyMaterial = new __WEBPACK_IMPORTED_MODULE_1__materials__["f" /* CopyMaterial */]();
+    this.copyMaterial.blending = __WEBPACK_IMPORTED_MODULE_0_three__["AdditiveBlending"];
+    this.copyMaterial.transparent = true;
 
-		this.texture = texture;
-		this.opacity = opacity;
+    this.texture = texture;
+    this.opacity = opacity;
 
-		this.quad.material = this.copyMaterial;
+    this.quad.material = this.copyMaterial;
 
-	}
+  }
 
-	/**
-	 * The texture.
-	 *
-	 * @type {Texture}
-	 */
+  /**
+   * The texture.
+   *
+   * @type {Texture}
+   */
 
-	get texture() { return this.copyMaterial.uniforms.tDiffuse.value; }
+  get texture() { return this.copyMaterial.uniforms.tDiffuse.value; }
 
-	/**
-	 * @type {Texture}
-	 */
+  /**
+   * @type {Texture}
+   */
 
-	set texture(x) { this.copyMaterial.uniforms.tDiffuse.value = x; }
+  set texture(x) { this.copyMaterial.uniforms.tDiffuse.value = x; }
 
-	/**
-	 * The opacity.
-	 *
-	 * @type {Number}
-	 * @default 1.0
-	 */
+  /**
+   * The opacity.
+   *
+   * @type {Number}
+   * @default 1.0
+   */
 
-	get opacity() { return this.copyMaterial.uniforms.opacity.value; }
+  get opacity() { return this.copyMaterial.uniforms.opacity.value; }
 
-	/**
-	 * @type {Number}
-	 */
+  /**
+   * @type {Number}
+   */
 
-	set opacity(x = 1.0) { this.copyMaterial.uniforms.opacity.value = x; }
+  set opacity(x = 1.0) { this.copyMaterial.uniforms.opacity.value = x; }
 
-	/**
-	 * Renders the effect.
-	 *
-	 * @param {WebGLRenderer} renderer - The renderer.
-	 * @param {WebGLRenderTarget} readBuffer - The read buffer.
-	 */
+  /**
+   * Renders the effect.
+   *
+   * @param {WebGLRenderer} renderer - The renderer.
+   * @param {WebGLRenderTarget} readBuffer - The read buffer.
+   */
 
-	render(renderer, readBuffer) {
+  render(renderer, readBuffer) {
 
-		renderer.render(this.scene, this.camera, this.renderToScreen ? null : readBuffer);
+    renderer.render(this.scene, this.camera, this.renderToScreen ? null : readBuffer);
 
-	}
+  }
 
 }
 /* unused harmony export TexturePass */
@@ -16943,244 +16942,244 @@ function ceil2(n) { return Math.pow(2, Math.max(0, Math.ceil(Math.log2(n)))); }
 
 class ToneMappingPass extends __WEBPACK_IMPORTED_MODULE_2__pass_js__["a" /* Pass */] {
 
-	/**
-	 * Constructs a new tone mapping pass.
-	 *
-	 * @param {Object} [options] - The options.
-	 * @param {Boolean} [options.adaptive=true] - Whether the tone mapping should use an adaptive luminance map.
-	 * @param {Number} [options.resolution=256] - The render texture resolution.
-	 * @param {Number} [options.distinction=1.0] - A luminance distinction factor.
-	 */
+  /**
+   * Constructs a new tone mapping pass.
+   *
+   * @param {Object} [options] - The options.
+   * @param {Boolean} [options.adaptive=true] - Whether the tone mapping should use an adaptive luminance map.
+   * @param {Number} [options.resolution=256] - The render texture resolution.
+   * @param {Number} [options.distinction=1.0] - A luminance distinction factor.
+   */
 
-	constructor(options = {}) {
+  constructor(options = {}) {
 
-		super();
+    super();
 
-		/**
-		 * The name of this pass.
-		 */
+    /**
+     * The name of this pass.
+     */
 
-		this.name = "ToneMappingPass";
+    this.name = "ToneMappingPass";
 
-		/**
-		 * This pass renders to the write buffer.
-		 */
+    /**
+     * This pass renders to the write buffer.
+     */
 
-		this.needsSwap = true;
+    this.needsSwap = true;
 
-		/**
-		 * The render target for the current luminosity.
-		 *
-		 * @type {WebGLRenderTarget}
-		 * @private
-		 * @todo Use RED format in WebGL 2.0.
-		 */
+    /**
+     * The render target for the current luminosity.
+     *
+     * @type {WebGLRenderTarget}
+     * @private
+     * @todo Use RED format in WebGL 2.0.
+     */
 
-		this.renderTargetLuminosity = new __WEBPACK_IMPORTED_MODULE_0_three__["WebGLRenderTarget"](1, 1, {
-			minFilter: __WEBPACK_IMPORTED_MODULE_0_three__["LinearMipMapLinearFilter"],
-			magFilter: __WEBPACK_IMPORTED_MODULE_0_three__["LinearFilter"],
-			format: __WEBPACK_IMPORTED_MODULE_0_three__["RGBFormat"],
-			stencilBuffer: false,
-			depthBuffer: false
-		});
+    this.renderTargetLuminosity = new __WEBPACK_IMPORTED_MODULE_0_three__["WebGLRenderTarget"](1, 1, {
+      minFilter: __WEBPACK_IMPORTED_MODULE_0_three__["LinearMipMapLinearFilter"],
+      magFilter: __WEBPACK_IMPORTED_MODULE_0_three__["LinearFilter"],
+      format: __WEBPACK_IMPORTED_MODULE_0_three__["RGBFormat"],
+      stencilBuffer: false,
+      depthBuffer: false
+    });
 
-		this.renderTargetLuminosity.texture.name = "ToneMapping.Luminosity";
+    this.renderTargetLuminosity.texture.name = "ToneMapping.Luminosity";
 
-		/**
-		 * The render target for adapted luminosity.
-		 *
-		 * @type {WebGLRenderTarget}
-		 * @private
-		 */
+    /**
+     * The render target for adapted luminosity.
+     *
+     * @type {WebGLRenderTarget}
+     * @private
+     */
 
-		this.renderTargetAdapted = this.renderTargetLuminosity.clone();
+    this.renderTargetAdapted = this.renderTargetLuminosity.clone();
 
-		this.renderTargetAdapted.texture.name = "ToneMapping.AdaptedLuminosity";
-		this.renderTargetAdapted.texture.generateMipmaps = false;
-		this.renderTargetAdapted.texture.minFilter = __WEBPACK_IMPORTED_MODULE_0_three__["LinearFilter"];
+    this.renderTargetAdapted.texture.name = "ToneMapping.AdaptedLuminosity";
+    this.renderTargetAdapted.texture.generateMipmaps = false;
+    this.renderTargetAdapted.texture.minFilter = __WEBPACK_IMPORTED_MODULE_0_three__["LinearFilter"];
 
-		/**
-		 * A render target that holds a copy of the adapted limonosity.
-		 *
-		 * @type {WebGLRenderTarget}
-		 * @private
-		 */
+    /**
+     * A render target that holds a copy of the adapted limonosity.
+     *
+     * @type {WebGLRenderTarget}
+     * @private
+     */
 
-		this.renderTargetPrevious = this.renderTargetAdapted.clone();
+    this.renderTargetPrevious = this.renderTargetAdapted.clone();
 
-		this.renderTargetPrevious.texture.name = "ToneMapping.PreviousLuminosity";
+    this.renderTargetPrevious.texture.name = "ToneMapping.PreviousLuminosity";
 
-		/**
-		 * Copy shader material used for saving the luminance map.
-		 *
-		 * @type {CopyMaterial}
-		 * @private
-		 */
+    /**
+     * Copy shader material used for saving the luminance map.
+     *
+     * @type {CopyMaterial}
+     * @private
+     */
 
-		this.copyMaterial = new __WEBPACK_IMPORTED_MODULE_1__materials__["f" /* CopyMaterial */]();
+    this.copyMaterial = new __WEBPACK_IMPORTED_MODULE_1__materials__["f" /* CopyMaterial */]();
 
-		/**
-		 * A luminosity shader material.
-		 *
-		 * @type {LuminosityMaterial}
-		 * @private
-		 */
+    /**
+     * A luminosity shader material.
+     *
+     * @type {LuminosityMaterial}
+     * @private
+     */
 
-		this.luminosityMaterial = new __WEBPACK_IMPORTED_MODULE_1__materials__["m" /* LuminosityMaterial */]();
+    this.luminosityMaterial = new __WEBPACK_IMPORTED_MODULE_1__materials__["m" /* LuminosityMaterial */]();
 
-		this.luminosityMaterial.uniforms.distinction.value = (options.distinction !== undefined) ? options.distinction : 1.0;
+    this.luminosityMaterial.uniforms.distinction.value = (options.distinction !== undefined) ? options.distinction : 1.0;
 
-		/**
-		 * An adaptive luminance shader material.
-		 *
-		 * @type {AdaptiveLuminosityMaterial}
-		 * @private
-		 */
+    /**
+     * An adaptive luminance shader material.
+     *
+     * @type {AdaptiveLuminosityMaterial}
+     * @private
+     */
 
-		this.adaptiveLuminosityMaterial = new __WEBPACK_IMPORTED_MODULE_1__materials__["a" /* AdaptiveLuminosityMaterial */]();
+    this.adaptiveLuminosityMaterial = new __WEBPACK_IMPORTED_MODULE_1__materials__["a" /* AdaptiveLuminosityMaterial */]();
 
-		this.resolution = options.resolution;
+    this.resolution = options.resolution;
 
-		/**
-		 * A tone mapping shader material.
-		 *
-		 * @type {ToneMappingMaterial}
-		 * @private
-		 */
+    /**
+     * A tone mapping shader material.
+     *
+     * @type {ToneMappingMaterial}
+     * @private
+     */
 
-		this.toneMappingMaterial = new __WEBPACK_IMPORTED_MODULE_1__materials__["s" /* ToneMappingMaterial */]();
+    this.toneMappingMaterial = new __WEBPACK_IMPORTED_MODULE_1__materials__["s" /* ToneMappingMaterial */]();
 
-		this.adaptive = options.adaptive;
+    this.adaptive = options.adaptive;
 
-	}
+  }
 
-	/**
-	 * The resolution of the render targets.
-	 *
-	 * @type {Number}
-	 * @default 256
-	 */
+  /**
+   * The resolution of the render targets.
+   *
+   * @type {Number}
+   * @default 256
+   */
 
-	get resolution() { return this.renderTargetLuminosity.width; }
+  get resolution() { return this.renderTargetLuminosity.width; }
 
-	/**
-	 * The resolution of the render targets. Must be a power of two for mipmaps.
-	 *
-	 * @type {Number}
-	 */
+  /**
+   * The resolution of the render targets. Must be a power of two for mipmaps.
+   *
+   * @type {Number}
+   */
 
-	set resolution(x = 256) {
+  set resolution(x = 256) {
 
-		x = ceil2(x);
+    x = ceil2(x);
 
-		this.renderTargetLuminosity.setSize(x, x);
-		this.renderTargetPrevious.setSize(x, x);
-		this.renderTargetAdapted.setSize(x, x);
+    this.renderTargetLuminosity.setSize(x, x);
+    this.renderTargetPrevious.setSize(x, x);
+    this.renderTargetAdapted.setSize(x, x);
 
-		this.adaptiveLuminosityMaterial.defines.MIP_LEVEL_1X1 = (Math.round(Math.log(x)) / Math.log(2)).toFixed(1);
-		this.adaptiveLuminosityMaterial.needsUpdate = true;
+    this.adaptiveLuminosityMaterial.defines.MIP_LEVEL_1X1 = (Math.round(Math.log(x)) / Math.log(2)).toFixed(1);
+    this.adaptiveLuminosityMaterial.needsUpdate = true;
 
-	}
+  }
 
-	/**
-	 * Whether this pass uses adaptive luminosity.
-	 *
-	 * @type {Boolean}
-	 * @default true
-	 */
+  /**
+   * Whether this pass uses adaptive luminosity.
+   *
+   * @type {Boolean}
+   * @default true
+   */
 
-	get adaptive() { return (this.toneMappingMaterial.defines.ADAPTED_LUMINANCE !== undefined); }
+  get adaptive() { return (this.toneMappingMaterial.defines.ADAPTED_LUMINANCE !== undefined); }
 
-	/**
-	 * Whether this pass should use adaptive luminosity.
-	 *
-	 * @type {Boolean}
-	 */
+  /**
+   * Whether this pass should use adaptive luminosity.
+   *
+   * @type {Boolean}
+   */
 
-	set adaptive(x = true) {
+  set adaptive(x = true) {
 
-		if(x) {
+    if(x) {
 
-			this.toneMappingMaterial.defines.ADAPTED_LUMINANCE = "1";
-			this.toneMappingMaterial.uniforms.luminanceMap.value = this.renderTargetAdapted.texture;
+      this.toneMappingMaterial.defines.ADAPTED_LUMINANCE = "1";
+      this.toneMappingMaterial.uniforms.luminanceMap.value = this.renderTargetAdapted.texture;
 
-		} else {
+    } else {
 
-			delete this.toneMappingMaterial.defines.ADAPTED_LUMINANCE;
-			this.toneMappingMaterial.uniforms.luminanceMap.value = null;
+      delete this.toneMappingMaterial.defines.ADAPTED_LUMINANCE;
+      this.toneMappingMaterial.uniforms.luminanceMap.value = null;
 
-		}
+    }
 
-		this.toneMappingMaterial.needsUpdate = true;
+    this.toneMappingMaterial.needsUpdate = true;
 
-	}
+  }
 
-	/**
-	 * Renders the effect.
-	 *
-	 * @param {WebGLRenderer} renderer - The renderer.
-	 * @param {WebGLRenderTarget} readBuffer - The read buffer.
-	 * @param {WebGLRenderTarget} writeBuffer - The write buffer.
-	 * @param {Number} delta - The render delta time.
-	 */
+  /**
+   * Renders the effect.
+   *
+   * @param {WebGLRenderer} renderer - The renderer.
+   * @param {WebGLRenderTarget} readBuffer - The read buffer.
+   * @param {WebGLRenderTarget} writeBuffer - The write buffer.
+   * @param {Number} delta - The render delta time.
+   */
 
-	render(renderer, readBuffer, writeBuffer, delta) {
+  render(renderer, readBuffer, writeBuffer, delta) {
 
-		const quad = this.quad;
-		const scene = this.scene;
-		const camera = this.camera;
+    const quad = this.quad;
+    const scene = this.scene;
+    const camera = this.camera;
 
-		const adaptiveLuminosityMaterial = this.adaptiveLuminosityMaterial;
-		const luminosityMaterial = this.luminosityMaterial;
-		const toneMappingMaterial = this.toneMappingMaterial;
-		const copyMaterial = this.copyMaterial;
+    const adaptiveLuminosityMaterial = this.adaptiveLuminosityMaterial;
+    const luminosityMaterial = this.luminosityMaterial;
+    const toneMappingMaterial = this.toneMappingMaterial;
+    const copyMaterial = this.copyMaterial;
 
-		const renderTargetPrevious = this.renderTargetPrevious;
-		const renderTargetLuminosity = this.renderTargetLuminosity;
-		const renderTargetAdapted = this.renderTargetAdapted;
+    const renderTargetPrevious = this.renderTargetPrevious;
+    const renderTargetLuminosity = this.renderTargetLuminosity;
+    const renderTargetAdapted = this.renderTargetAdapted;
 
-		if(this.adaptive) {
+    if(this.adaptive) {
 
-			// Render the luminance of the current scene into a render target with mipmapping enabled.
-			quad.material = luminosityMaterial;
-			luminosityMaterial.uniforms.tDiffuse.value = readBuffer.texture;
-			renderer.render(scene, camera, renderTargetLuminosity);
+      // Render the luminance of the current scene into a render target with mipmapping enabled.
+      quad.material = luminosityMaterial;
+      luminosityMaterial.uniforms.tDiffuse.value = readBuffer.texture;
+      renderer.render(scene, camera, renderTargetLuminosity);
 
-			// Use the new luminance values, the previous luminance and the frame delta to adapt the luminance over time.
-			quad.material = adaptiveLuminosityMaterial;
-			adaptiveLuminosityMaterial.uniforms.delta.value = delta;
-			adaptiveLuminosityMaterial.uniforms.tPreviousLum.value = renderTargetPrevious.texture;
-			adaptiveLuminosityMaterial.uniforms.tCurrentLum.value = renderTargetLuminosity.texture;
-			renderer.render(scene, camera, renderTargetAdapted);
+      // Use the new luminance values, the previous luminance and the frame delta to adapt the luminance over time.
+      quad.material = adaptiveLuminosityMaterial;
+      adaptiveLuminosityMaterial.uniforms.delta.value = delta;
+      adaptiveLuminosityMaterial.uniforms.tPreviousLum.value = renderTargetPrevious.texture;
+      adaptiveLuminosityMaterial.uniforms.tCurrentLum.value = renderTargetLuminosity.texture;
+      renderer.render(scene, camera, renderTargetAdapted);
 
-			// Copy the new adapted luminance value so that it can be used by the next frame.
-			quad.material = copyMaterial;
-			copyMaterial.uniforms.tDiffuse.value = renderTargetAdapted.texture;
-			renderer.render(scene, camera, renderTargetPrevious);
+      // Copy the new adapted luminance value so that it can be used by the next frame.
+      quad.material = copyMaterial;
+      copyMaterial.uniforms.tDiffuse.value = renderTargetAdapted.texture;
+      renderer.render(scene, camera, renderTargetPrevious);
 
-		}
+    }
 
-		// Apply the tone mapping to the colours.
-		quad.material = toneMappingMaterial;
-		toneMappingMaterial.uniforms.tDiffuse.value = readBuffer.texture;
+    // Apply the tone mapping to the colours.
+    quad.material = toneMappingMaterial;
+    toneMappingMaterial.uniforms.tDiffuse.value = readBuffer.texture;
 
-		renderer.render(this.scene, this.camera, this.renderToScreen ? null : writeBuffer);
+    renderer.render(this.scene, this.camera, this.renderToScreen ? null : writeBuffer);
 
-	}
+  }
 
-	/**
-	 * Renders something into the previous luminosity texture.
-	 *
-	 * @param {WebGLRenderer} renderer - The renderer.
-	 */
+  /**
+   * Renders something into the previous luminosity texture.
+   *
+   * @param {WebGLRenderer} renderer - The renderer.
+   */
 
-	initialise(renderer) {
+  initialise(renderer) {
 
-		this.quad.material = new __WEBPACK_IMPORTED_MODULE_0_three__["MeshBasicMaterial"]({ color: 0x7fffff });
-		renderer.render(this.scene, this.camera, this.renderTargetPrevious);
-		this.quad.material.dispose();
+    this.quad.material = new __WEBPACK_IMPORTED_MODULE_0_three__["MeshBasicMaterial"]({ color: 0x7fffff });
+    renderer.render(this.scene, this.camera, this.renderTargetPrevious);
+    this.quad.material.dispose();
 
-	}
+  }
 
 }
 /* unused harmony export ToneMappingPass */
