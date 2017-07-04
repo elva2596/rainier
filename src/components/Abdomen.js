@@ -4,6 +4,7 @@ import {
   tentacleTexture,
   footTexture
 } from '../materials'
+import SimpleModule from '../modules/advanceModules/AlertModule.js'
 const abdomen = new WHS.Importer({
   loader: new THREE.OBJLoader(),
   url:'/static/models/ShuFu/ShuFu.obj',
@@ -27,7 +28,10 @@ const abdomen = new WHS.Importer({
   },
 
   position: [-50, 0, 0],
-  scale:[20,20,20]
+  scale:[20,20,20],
+  modules:[
+    new SimpleModule()
+  ]
 })
 
 
